@@ -18,12 +18,7 @@ export function Text_Opacity() {
   return (
     <main>
 
-
-
         <Character paragraph={paragraph} className={styles.char} />
-
-
-
 
     </main>
   )
@@ -35,12 +30,7 @@ export function Text_Opacity1() {
   return (
     <main>
 
-
-
         <Character paragraph={paragraph1} className={styles.char1} />
-
-
-
 
     </main>
   )

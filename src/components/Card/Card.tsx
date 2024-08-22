@@ -21,7 +21,7 @@ function Card({ val }: { val: any }) {
                 // opacity: opacityProgress,
                 backgroundColor: val.bg
             }}
-            className={`w-full xs:py-[2vw] py-[4vw] 
+            className={` text-[#e3d0f1] w-full xs:py-[2vw] py-[4vw] 
             px-[4vw] xs:px-[2vw] 
             rounded-2xl flex gap-[1vw]`
             }

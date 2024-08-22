@@ -10,7 +10,7 @@ function Cards() {
             logo: '/images/git.svg',
             videoUrl: '/medias/pubg.mp4',
             desc: 'Pubg, FPS , Multiplayer, Battle Royale , Survival , Shooter',
-            bg: '#5355ee',
+            bg: '#071940',
             heading: "Team up and win the prize money in the biggest battle royale game of all time. Play with your friends and win the chicken dinner. Do you have what it takes to be the winner winner chicken dinner? Join now and find out."
         },
         {
@@ -18,7 +18,7 @@ function Cards() {
             image2: '/images/2.jpeg',
             logo: '/images/git.svg',
             videoUrl: '/medias/pubg.mp4',
-            bg: '#4a576b',
+            bg: '#073440',
             desc: 'Pubg, FPS , Multiplayer, Battle Royale , Survival , Shooter',
             heading: "Team up and win the prize money in the biggest battle royale game of all time. Play with your friends and win the chicken dinner. Do you have what it takes to be the winner winner chicken dinner? Join now and find out."
         },
@@ -27,7 +27,7 @@ function Cards() {
             image2: '/images/2.jpeg',
             logo: '/images/git.svg',
             videoUrl: '/medias/pubg.mp4',
-            bg: '#3e4365',
+            bg: '#3d505c',
             desc: 'Pubg, FPS , Multiplayer, Battle Royale , Survival , Shooter',
             heading: "Team up and win the prize money in the biggest battle royale game of all time. Play with your friends and win the chicken dinner. Do you have what it takes to be the winner winner chicken dinner? Join now and find out."
         },

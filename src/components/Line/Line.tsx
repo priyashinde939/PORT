@@ -41,14 +41,14 @@ const LineAnimation: React.FC<{ direction?: 'right' | 'left' }> = ({ direction =
         display: 'inline-block',
         width: '100%',
         visibility: 'visible',
-        height: '2px',
+        height: '50px',
         
       }}
     >
       <motion.span
         style={{
-          height: '2px',
-          backgroundColor: 'gray', // Replace with $col-boulder if using SCSS variables
+          height: '1px',
+          backgroundColor: 'black', // Replace with $col-boulder if using SCSS variables
           position: 'absolute',
           left: 0,
           top: 0,
