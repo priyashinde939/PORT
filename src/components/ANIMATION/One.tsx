@@ -1,10 +1,10 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 export const O1 = () => {
     return (
         <div className="relative bg-white">
-            <motion.div 
+            {/* <motion.div 
             
             animate={{
                 scale:[0, 2, 3, 4, 0],
@@ -21,7 +21,7 @@ export const O1 = () => {
             }}
             className="relative  bg-black h-20 w-20  ">
 
-            </motion.div>
+            </motion.div> */}
         </div>
 
     );
