@@ -1,43 +1,49 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image'
 
-const SvgPathAnimation: React.FC = () => {
-  return (
-    <svg width="400" height="400" viewBox="0 0 400 400">
-      {/* Define the path */}
-      <path
-        id="motionPath"
-        fill="transparent"
-        stroke="gray"
-        strokeWidth="2"
-        d="M 100 200 Q 200 50, 300 200 T 400 200"
-      />
+const Three: React.FC = () => {
+    return (
+        <div className="relative h-[100vh] bg-black">
+          <motion.div 
+          animate={{
+            x: [-1600, -1400, -1200, -1000, -800, -600, -400, -200, 0, 200, 400, 600, 800, 1000, 1200, 1400, 1600],
+            y: [0, 30, 0, 30, 0, 30, 0, 30, 0, 30, 0, 30, 0, 30, 0, 30, 0, 30, 0]
+          }}
+          transition={{
+              duration: 6,
+              ease: 'linear',
+              repeat: Infinity
+          }}
+          className="relative flex flex-row place-content-between w-full h-[35vh]">
 
-      {/* Motion component for the image */}
-      <motion.image
-        href="path/to/your/image.png" // Replace with your image path
-        width="40"
-        height="40"
-        initial={{ pathLength: 0, pathOffset: 1 }}
-        animate={{ pathLength: 1, pathOffset: 0 }}
-        transition={{
-          duration: 4,
-          ease: "easeInOut",
-          repeat: Infinity,
-          repeatType: "loop",
-        }}
-        style={{
-          rotate: "0deg", // Keep the image upright
-        }}
-      >
-        <animateMotion
-          href="#motionPath"
-          dur="4s"
-          repeatCount="indefinite"
-        />
-      </motion.image>
-    </svg>
-  );
+              <Image 
+              alt="img" 
+              src="/images/glow.png" 
+              width={200}
+              height={200}
+              className="relativeh-full"/>
+              <Image 
+              alt="img" 
+              src="/images/glow.png" 
+              width={200}
+              height={200}
+              className="relativeh-full"/>
+              <Image 
+              alt="img" 
+              src="/images/glow.png" 
+              width={220}
+              height={200}
+              className="relativeh-full"/>
+              <Image 
+              alt="img" 
+              src="/images/glow.png" 
+              width={200}
+              height={200}
+              className="relativeh-full"/>
+
+          </motion.div>
+        </div>
+    );
 };
 
-export default SvgPathAnimation;
+export default Three;

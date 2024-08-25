@@ -7,6 +7,7 @@ import Head from 'next/head'
 import  Hero  from '@/components/Hero/Hero'
 import Sticky from '@/components/sticky-section/StickySection'
 import Two from '@/components/ANIMATION/Two'
+import Three from '@/components/ANIMATION/three'
 
 
 
@@ -27,6 +28,7 @@ const index = () => {
       <Sticky />
       <Hero /> 
       <Two />
+      <Three />
       <Cards />
       <Text_Mask />
       <Line />
