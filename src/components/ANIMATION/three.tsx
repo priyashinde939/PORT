@@ -19,27 +19,27 @@ const Three: React.FC = () => {
               <Image 
               alt="img" 
               src="/images/1c.png" 
-              width={200}
+              width={180}
               height={200}
-              className="relativeh-full"/>
+              className="relative h-full"/>
               <Image 
               alt="img" 
               src="/images/glow.png" 
-              width={200}
-              height={200}
-              className="relativeh-full"/>
+              width={250}
+              height={250}
+              className="relative h-full"/>
               <Image 
               alt="img" 
               src="/images/2c.png" 
-              width={220}
+              width={180}
               height={200}
-              className="relativeh-full"/>
+              className="relative h-full"/>
               <Image 
               alt="img" 
               src="/images/3c.png" 
-              width={200}
+              width={180}
               height={200}
-              className="relativeh-full"/>
+              className="relative h-full"/>
 
           </motion.div>
         </div>
