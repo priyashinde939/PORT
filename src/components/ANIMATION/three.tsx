@@ -18,7 +18,7 @@ const Three: React.FC = () => {
 
               <Image 
               alt="img" 
-              src="/images/glow.png" 
+              src="/images/1c.png" 
               width={200}
               height={200}
               className="relativeh-full"/>
@@ -30,13 +30,13 @@ const Three: React.FC = () => {
               className="relativeh-full"/>
               <Image 
               alt="img" 
-              src="/images/glow.png" 
+              src="/images/2c.png" 
               width={220}
               height={200}
               className="relativeh-full"/>
               <Image 
               alt="img" 
-              src="/images/glow.png" 
+              src="/images/3c.png" 
               width={200}
               height={200}
               className="relativeh-full"/>
