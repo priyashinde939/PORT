@@ -9,11 +9,12 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <> 
 
-      <SmoothScroll>
-        <main className="font-mont bg-light dark:bg-dark w-full min-h-screen" >
-          <Component key={router.asPath} {...pageProps} />
+        <main className="font-mont bg-dark w-full min-h-screen" >
+          <SmoothScroll>
+            <Component key={router.asPath} {...pageProps} />
+          </SmoothScroll>
         </main>
-      </SmoothScroll>
+      
 
       </>
     );

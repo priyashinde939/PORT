@@ -1,12 +1,12 @@
 import React from 'react'
 import { Reveal } from '../ANIMATION/Reveal'
-import {O1} from '../ANIMATION/One'
+
 
 export const Hero = () => {
+    const items = ['item1', 'item2', 'item3', 'item4', 'item5']
 return (
 <div className="relative h-screen">
     <Reveal />
-    <O1 />
 </div>
 )
 }

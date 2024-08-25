@@ -24,7 +24,8 @@ export default function Marquee() {
   });
 
   return (
-    <main className="overflow-hidden bg-black">
+    <main style={{fontFamily:'Brush Script MT'}}
+    className="overflow-hidden bg-black font-extralight">
       <div className="h-[25vh]" />
       <div ref={container}>
         <Slide src={Picture1} direction="left" left="-40%" progress={scrollYProgress} />

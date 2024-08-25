@@ -73,4 +73,6 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
     );
 };
 
+
+
 export default Sticky;

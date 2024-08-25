@@ -6,6 +6,7 @@ import Cards from '@/components/Card/Cards'
 import Head from 'next/head'
 import  Hero  from '@/components/Hero/Hero'
 import Sticky from '@/components/sticky-section/StickySection'
+import Two from '@/components/ANIMATION/Two'
 
 
 
@@ -16,7 +17,7 @@ const index = () => {
   return (
     <>
     <Head>
-        <title>Gaming Community Website</title>
+        <title>Hola</title>
         <meta
           name="description"
           content="Welcome to our Gaming Community"
@@ -25,6 +26,7 @@ const index = () => {
     <main className='min-h-screen w-full '>
       <Sticky />
       <Hero /> 
+      <Two />
       <Cards />
       <Text_Mask />
       <Line />
