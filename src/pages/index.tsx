@@ -27,7 +27,6 @@ const index = () => {
     <main className='min-h-screen w-full '>
       <Sticky />
       <Hero /> 
-      <Two />
       <Three />
       <Cards />
       <Text_Mask />
