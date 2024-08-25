@@ -81,6 +81,44 @@ const Three: React.FC = () => {
               className="relative h-full"/>
 
           </motion.div>
+          <motion.div 
+          animate={{
+            x: [1400, 1200, 1000, 800, 600, 400, 200, 0, -200, -400, -600, -800, -1000, -1200, -1400],
+            y: [10, 30, 35, 30, 20, 20, 0, 20, -10, 30, 35, 30, 0, 30, 0]
+          }}
+          transition={{
+              duration: 6,
+              ease: 'linear',
+              repeat: Infinity
+          }}
+          className="absolute top-0 flex flex-row place-content-between w-full h-[35vh]">
+
+              <Image 
+              alt="img" 
+              src="/images/1c_flipped.png" 
+              width={180}
+              height={200}
+              className="relative h-full"/>
+              <Image 
+              alt="img" 
+              src="/images/4c_flipped.png" 
+              width={180}
+              height={200}
+              className="relative h-full"/>
+              <Image 
+              alt="img" 
+              src="/images/2c_flipped.png" 
+              width={180}
+              height={200}
+              className="relative h-full"/>
+              <Image 
+              alt="img" 
+              src="/images/3c_flipped.png" 
+              width={180}
+              height={200}
+              className="relative h-full"/>
+
+          </motion.div>
         </div>
     );
 };
