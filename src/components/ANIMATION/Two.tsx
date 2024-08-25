@@ -7,7 +7,7 @@ const Two: React.FC = () => {
                 src="./images/glow.png"
                 alt="img" 
                 width={200}
-                className="relative overflow-clip overscroll-x-none"
+                className="relative overscroll-x-none"
                 animate={{
                     x: [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500],
                     y: [0, 0, 30, 0, 30, 0, 30, 0, 30, 0, 30, 0, 30, 0, 30, 0]
