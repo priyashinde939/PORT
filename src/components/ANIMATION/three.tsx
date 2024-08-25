@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Three: React.FC = () => {
     return (
-        <div className="relative h-[100vh] bg-black">
+        <div className="relative h-[100vh] bg-black overscroll-x-none overflow-x-hidden">
           <motion.div 
           animate={{
             x: [-1400, -1200, -1000, -800, -600, -400, -200, 0, 200, 400, 600, 800, 1000, 1200, 1400],
