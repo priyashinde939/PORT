@@ -4,8 +4,8 @@ const Two: React.FC = () => {
     return (
         <div className="relative h-[100vh] bg-black">
             <motion.img 
-                src="./images/1.jpg" // Replace with your image path
-                alt="Animated" 
+                src="./images/1.jpg"
+                alt="img" 
                 width={200}
                 className="relative"
                 animate={{
