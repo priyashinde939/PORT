@@ -6,8 +6,9 @@ import Cards from '@/components/Card/Cards'
 import Head from 'next/head'
 import  Hero  from '@/components/Hero/Hero'
 import Sticky from '@/components/sticky-section/StickySection'
-import Two from '@/components/ANIMATION/Two'
 import Three from '@/components/ANIMATION/three'
+import Two from '@/components/ANIMATION/Two'
+
 
 
 
