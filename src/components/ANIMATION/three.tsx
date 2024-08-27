@@ -244,7 +244,7 @@ transition={{
     repeat: Infinity,
     delay:5  
     }}
-className="absolute flex flex-row place-content-around bottom-0 w-full h-auto">
+className="absolute flex flex-row place-content-around bottom-0 w-full h-auto ">
 
     <Image alt="img" src="/images/R/10r.png" width={180} height={200}/>
     <Image alt="img" src="/images/R/11r.png" width={180} height={200} className='mx-60'/>
