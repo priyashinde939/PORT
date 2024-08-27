@@ -26,7 +26,7 @@ transition={{
     repeatDelay:6
     }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto-10 z-10">
-    <Image alt="img" src="/images/glow_l.png" width={260} height={80} className="relative h-full mx-10"/>
+    <Image alt="img" src="/images/L/glow_l.png" width={260} height={80} className="relative h-full mx-10"/>
 </motion.div> 
 
 
@@ -44,7 +44,7 @@ transition={{
     repeatDelay:6
     }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto-10 z-20">
-    <Image alt="img" src="/images/glow_l.png" width={260} height={80} className="relative h-full mx-10"/>
+    <Image alt="img" src="/images/L/glow_l.png" width={260} height={80} className="relative h-full mx-10"/>
 </motion.div> 
         
 {/* <motion.div 
@@ -61,7 +61,7 @@ transition={{
     repeatDelay:6
     }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto z-10">
-    <Image alt="img" src="/images/glow_r.png" width={260} height={80} className="relative h-full mx-10"/>
+    <Image alt="img" src="/images/R/glow_r.png" width={260} height={80} className="relative h-full mx-10"/>
 </motion.div>    */}
 
 
