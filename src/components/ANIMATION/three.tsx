@@ -25,7 +25,7 @@ transition={{
     delay:0,
     repeatDelay:6
     }}
-className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto-10 border">
+className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto-10">
     <Image alt="img" src="/images/glow_l.png" width={260} height={80} className="relative h-full mx-10"/>
 </motion.div> 
 
@@ -140,6 +140,25 @@ className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto">
     <Image alt="img" src="/images/3c_flipped.png" width={180} height={200}/>
     <Image alt="img" src="/images/9c_flipped.png" width={180} height={200}/>
 </motion.div>
+
+<motion.div 
+// <---------- 
+animate={{
+    x: ['420%','400%','380%','360%','340%','320%','300%','280%','260%','240%','220%','200%', '180%', '160%', '140%', '120%', '100%', '80%', '60%', '40%', '20%', '0%','-20%','-40%','-60%','-80%','-90%','-100%'],
+    y: [10, 40, 10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
+    }}
+transition={{
+    duration: 22,
+    delay:6,
+    ease: 'linear',
+    repeat: Infinity,
+    
+}}
+className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto">
+    <Image alt="img" src="/images/4c_flipped.png" width={180} height={200}/>
+    <Image alt="img" src="/images/3c_flipped.png" width={180} height={200}/>
+    <Image alt="img" src="/images/9c_flipped.png" width={180} height={200}/>
+</motion.div>
         
 <motion.div 
 // ---------->
@@ -196,6 +215,43 @@ className="absolute flex flex-row place-content-around bottom-0 w-full h-auto">
     <Image alt="img" src="/images/7c.png" width={180} height={200}/>
 </motion.div>
 
+<motion.div 
+// ---------> 
+animate={{
+    x: ['-420%','-400%','-380%','-360%','-340%','-320%','-300%','-280%','-260%','-240%','-220%','-200%', '-180%', '-160%', '-140%', '-120%', '-100%', '-80%', '-60%', '-40%', '-20%', '0%','20%','40%','60%','80%','90%','100%'],
+    y: [10, -20, 10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
+    }}
+transition={{
+    duration: 22,
+    ease: 'linear',
+    repeat: Infinity,
+    delay:5  
+    }}
+className="absolute flex flex-row place-content-around bottom-0 w-full h-auto">
+
+    <Image alt="img" src="/images/8c.png" width={180} height={200}/>
+    <Image alt="img" src="/images/2c.png" width={180} height={200} className='mx-60'/>
+    <Image alt="img" src="/images/7c.png" width={180} height={200}/>
+</motion.div>
+
+<motion.div 
+// ---------> 
+animate={{
+    x: ['-420%','-400%','-380%','-360%','-340%','-320%','-300%','-280%','-260%','-240%','-220%','-200%', '-180%', '-160%', '-140%', '-120%', '-100%', '-80%', '-60%', '-40%', '-20%', '0%','20%','40%','60%','80%','90%','100%'],
+    y: [10, -20, 10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
+    }}
+transition={{
+    duration: 28,
+    ease: 'linear',
+    repeat: Infinity,
+    delay:6  
+    }}
+className="absolute flex flex-row place-content-around bottom-0 w-full h-auto">
+
+    <Image alt="img" src="/images/8c.png" width={180} height={200}/>
+    <Image alt="img" src="/images/2c.png" width={180} height={200} className='mx-60'/>
+    <Image alt="img" src="/images/7c.png" width={180} height={200}/>
+</motion.div>
 
 <motion.div 
 // <---------- 
@@ -204,7 +260,7 @@ animate={{
     y: [10, 40, 10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
     }}
 transition={{
-    duration: 20,
+    duration: 25,
     ease: 'linear',
     repeat: Infinity,
     delay:2,
@@ -222,7 +278,7 @@ className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto ">
     y: [10, 40, 10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
     }}
     transition={{
-    duration: 20,
+    duration: 23,
     delay:7,
     ease: 'linear',
     repeat: Infinity,
@@ -240,12 +296,12 @@ className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto ">
     y: [10, 40, 10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
     }}
     transition={{
-    duration: 20,
+    duration: 25,
     delay:10,
     ease: 'linear',
     repeat: Infinity,
     }}
-    className="absolute flex justify-around bottom-0 w-full border-8 border-pink-700">
+    className="absolute flex justify-around bottom-0 w-full">
         <Image alt="img" src="/images/8c.png" width={180} height={200} />
         <Image alt="img" src="/images/2c.png" width={180} height={200} className="mx-60" />
         <Image alt="img" src="/images/7c.png" width={180} height={200} />
@@ -258,13 +314,13 @@ animate={{
     y: [10, 40, 10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
     }}
 transition={{
-    duration: 20,
+    duration: 25,
     ease: 'linear',
     repeat: Infinity,
     delay:12,
     repeatDelay:5   
     }}
-className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto border-8 border-red-700">
+className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto">
     <Image alt="img" src="/images/4c_flipped.png" width={180} height={200}/>
     <Image alt="img" src="/images/3c_flipped.png" width={180} height={200}/>
     <Image alt="img" src="/images/9c_flipped.png" width={180} height={200}/>
