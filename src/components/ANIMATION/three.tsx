@@ -25,12 +25,29 @@ transition={{
     delay:0,
     repeatDelay:6
     }}
-className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto-10">
+className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto-10 z-10">
     <Image alt="img" src="/images/glow_l.png" width={260} height={80} className="relative h-full mx-10"/>
 </motion.div> 
 
-        
+
 <motion.div 
+// glow  <-------
+animate={{
+    x: ['420%','400%','380%','360%','340%','320%','300%','280%','260%','240%','220%','200%', '180%', '160%', '140%', '120%', '100%', '80%', '60%', '40%', '20%', '0%','-20%','-40%','-60%','-80%','-90%','-100%'],
+    y: [0, 30, -10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
+    }}
+transition={{
+    duration: 20,
+    ease: 'linear',
+    repeat: Infinity,
+    delay:6,
+    repeatDelay:6
+    }}
+className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto-10 z-20">
+    <Image alt="img" src="/images/glow_l.png" width={260} height={80} className="relative h-full mx-10"/>
+</motion.div> 
+        
+{/* <motion.div 
 // glow  ------->
 animate={{
     x: ['-420%','-400%','-380%','-360%','-340%','-320%','-300%','-280%','-260%','-240%','-220%','-200%', '-180%', '-160%', '-140%', '-120%', '-100%', '-80%', '-60%', '-40%', '-20%', '0%','20%','40%','60%','80%','90%','100%'],
@@ -45,24 +62,24 @@ transition={{
     }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto z-10">
     <Image alt="img" src="/images/glow_r.png" width={260} height={80} className="relative h-full mx-10"/>
-</motion.div>   
+</motion.div>    */}
 
 
 <motion.div
 //------->
     animate={{
     x: ['-420%','-400%','-380%','-360%','-340%','-320%','-300%','-280%','-260%','-240%','-220%','-200%', '-180%', '-160%', '-140%', '-120%', '-100%', '-80%', '-60%', '-40%', '-20%', '0%','20%','40%','60%','80%','90%','100%'],
-    y: [10, 40, 10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
+    y: [10, 30, -10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
     }}
     transition={{
     duration: 20,
     ease: 'linear',
     repeat: Infinity,
     }}
-    className="absolute flex justify-around bottom-0 w-full ">
-        <Image alt="img" src="/images/8c.png" width={180} height={200} />
-        <Image alt="img" src="/images/2c.png" width={180} height={200} className="mx-60" />
-        <Image alt="img" src="/images/7c.png" width={180} height={200} />
+    className="absolute flex justify-around bottom-0 w-full">
+        <Image alt="img" src="/images/R/30r.png" width={180} height={200} />
+        <Image alt="img" src="/images/R/25r.png" width={180} height={200} className="mx-60" />
+        <Image alt="img" src="/images/R/1r.png" width={180} height={200} />
 </motion.div>
 
 
@@ -79,8 +96,8 @@ transition={{
     delay:6
 }}
 className="absolute flex flex-row place-content-around bottom-0 w-full h-auto ">
-    <Image alt="img" src="/images/5c.png" width={240} height={200} className="relative h-full mx-10 "/>
-    <Image alt="img" src="/images/4c.png" width={180} height={200} className="relative h-full mx-10"/>
+    <Image alt="img" src="/images/R/4r.png" width={180} height={200} className="relative h-full mx-10 "/>
+    <Image alt="img" src="/images/R/5r.png" width={180} height={200} className="relative h-full mx-10"/>
 </motion.div> 
 
 
@@ -99,13 +116,13 @@ transition={{
     repeatDelay:5
 }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto ">
-    <Image alt="img" src="/images/3c_flipped.png" width={180} height={200}/>
-    <Image alt="img" src="/images/4c_flipped.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/1l.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/30l.png" width={180} height={200}/>
 </motion.div> 
 
 
 <motion.div 
-// <---------- 2
+// <---------- 
 animate={{
 x: ['420%','400%','380%','360%','340%','320%','300%','280%','260%','240%','220%','200%', '180%', '160%', '140%', '120%', '100%', '80%', '60%', '40%', '20%', '0%','-20%','-40%','-60%','-80%','-90%','-100%'],
 y: [10, 40, 10, 0, 20, 0, 20, 0, 0, 20, 0, 20, 0, 30, 0, 20, 0, 30, 0, 30, -10, 30, 0, 10, 30, 0, 20, 30]
@@ -117,8 +134,8 @@ transition={{
     repeatDelay:2
 }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto">
-    <Image alt="img" src="/images/9c_flipped.png" width={180} height={200} className="relative h-full mr-40"/>
-    <Image alt="img" src="/images/2c_flipped.png" width={180} height={200} className="relative h-full ml-40"/>
+    <Image alt="img" src="/images/L/15l.png" width={180} height={200} className="relative h-full mr-40"/>
+    <Image alt="img" src="/images/L/4l.png" width={180} height={200} className="relative h-full ml-40"/>
 </motion.div>  
 
 
@@ -136,9 +153,9 @@ transition={{
     
 }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto">
-    <Image alt="img" src="/images/4c_flipped.png" width={180} height={200}/>
-    <Image alt="img" src="/images/3c_flipped.png" width={180} height={200}/>
-    <Image alt="img" src="/images/9c_flipped.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/28l.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/6l.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/7l.png" width={180} height={200}/>
 </motion.div>
 
 <motion.div 
@@ -155,9 +172,9 @@ transition={{
     
 }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto">
-    <Image alt="img" src="/images/4c_flipped.png" width={180} height={200}/>
-    <Image alt="img" src="/images/3c_flipped.png" width={180} height={200}/>
-    <Image alt="img" src="/images/9c_flipped.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/8l.png" width={250} height={180}/>
+    <Image alt="img" src="/images/L/27l.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/10l.png" width={180} height={200}/>
 </motion.div>
         
 <motion.div 
@@ -172,7 +189,7 @@ transition={{
     repeat: Infinity
 }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto">
-    <Image alt="img" src="/images/9c.png" width={180} height={200} className="relative h-full mx-10"/>
+    <Image alt="img" src="/images/R/6r.png" width={180} height={200} className="relative h-full mx-10"/>
 </motion.div> 
 
 
@@ -190,9 +207,9 @@ transition={{
     repeatDelay:5   
     }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto">
-    <Image alt="img" src="/images/4c_flipped.png" width={180} height={200}/>
-    <Image alt="img" src="/images/3c_flipped.png" width={180} height={200}/>
-    <Image alt="img" src="/images/9c_flipped.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/11l.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/26l.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/13l.png" width={180} height={200}/>
 </motion.div>
 
 
@@ -210,9 +227,9 @@ transition={{
     }}
 className="absolute flex flex-row place-content-around bottom-0 w-full h-auto">
 
-    <Image alt="img" src="/images/8c.png" width={180} height={200}/>
-    <Image alt="img" src="/images/2c.png" width={180} height={200} className='mx-60'/>
-    <Image alt="img" src="/images/7c.png" width={180} height={200}/>
+    <Image alt="img" src="/images/R/7r.png" width={180} height={200}/>
+    <Image alt="img" src="/images/R/8r.png" width={180} height={200} className='mx-60'/>
+    <Image alt="img" src="/images/R/9r.png" width={180} height={200}/>
 </motion.div>
 
 <motion.div 
@@ -229,9 +246,9 @@ transition={{
     }}
 className="absolute flex flex-row place-content-around bottom-0 w-full h-auto">
 
-    <Image alt="img" src="/images/8c.png" width={180} height={200}/>
-    <Image alt="img" src="/images/2c.png" width={180} height={200} className='mx-60'/>
-    <Image alt="img" src="/images/7c.png" width={180} height={200}/>
+    <Image alt="img" src="/images/R/10r.png" width={180} height={200}/>
+    <Image alt="img" src="/images/R/11r.png" width={180} height={200} className='mx-60'/>
+    <Image alt="img" src="/images/R/12r.png" width={180} height={200}/>
 </motion.div>
 
 <motion.div 
@@ -248,9 +265,9 @@ transition={{
     }}
 className="absolute flex flex-row place-content-around bottom-0 w-full h-auto">
 
-    <Image alt="img" src="/images/8c.png" width={180} height={200}/>
-    <Image alt="img" src="/images/2c.png" width={180} height={200} className='mx-60'/>
-    <Image alt="img" src="/images/7c.png" width={180} height={200}/>
+    <Image alt="img" src="/images/R/13r.png" width={180} height={200}/>
+    <Image alt="img" src="/images/R/14r.png" width={180} height={200} className='mx-60'/>
+    <Image alt="img" src="/images/R/15r.png" width={180} height={200}/>
 </motion.div>
 
 <motion.div 
@@ -267,8 +284,8 @@ transition={{
     repeatDelay:3
     }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto ">
-    <Image alt="img" src="/images/9c_flipped.png" width={180} height={200} className="relative h-full mr-40"/>
-    <Image alt="img" src="/images/2c_flipped.png" width={180} height={200} className="relative h-full ml-40"/>
+    <Image alt="img" src="/images/L/14l.png" width={180} height={200} className="relative h-full mr-40"/>
+    <Image alt="img" src="/images/L/25l.png" width={180} height={200} className="relative h-full ml-40"/>
 </motion.div>
 
 <motion.div
@@ -284,9 +301,9 @@ className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto ">
     repeat: Infinity,
     }}
     className="absolute flex justify-around bottom-0 w-full">
-        <Image alt="img" src="/images/8c.png" width={180} height={200} />
-        <Image alt="img" src="/images/2c.png" width={180} height={200} className="mx-60" />
-        <Image alt="img" src="/images/7c.png" width={180} height={200} />
+        <Image alt="img" src="/images/R/16r.png" width={250} height={180} />
+        <Image alt="img" src="/images/R/17r.png" width={180} height={200} className="mx-60" />
+        <Image alt="img" src="/images/R/18r.png" width={180} height={200} />
 </motion.div>
 
 <motion.div
@@ -302,9 +319,9 @@ className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto ">
     repeat: Infinity,
     }}
     className="absolute flex justify-around bottom-0 w-full">
-        <Image alt="img" src="/images/8c.png" width={180} height={200} />
-        <Image alt="img" src="/images/2c.png" width={180} height={200} className="mx-60" />
-        <Image alt="img" src="/images/7c.png" width={180} height={200} />
+        <Image alt="img" src="/images/R/19r.png" width={180} height={200} />
+        <Image alt="img" src="/images/R/20r.png" width={180} height={200} className="mx-60" />
+        <Image alt="img" src="/images/R/21r.png" width={180} height={200} />
 </motion.div>
 
 <motion.div 
@@ -321,9 +338,9 @@ transition={{
     repeatDelay:5   
     }}
 className="absolute flex flex-row place-content-evenly bottom-0 w-full h-auto">
-    <Image alt="img" src="/images/4c_flipped.png" width={180} height={200}/>
-    <Image alt="img" src="/images/3c_flipped.png" width={180} height={200}/>
-    <Image alt="img" src="/images/9c_flipped.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/23l.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/17l.png" width={180} height={200}/>
+    <Image alt="img" src="/images/L/18l.png" width={180} height={200}/>
 </motion.div>
 
         </div>
