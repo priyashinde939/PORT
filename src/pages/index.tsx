@@ -25,6 +25,7 @@ const index = () => {
           content="Welcome to our Gaming Community"
         />
     </Head>
+    
     <main className='min-h-screen w-full '>
       <Sticky />
       <Marquee />
