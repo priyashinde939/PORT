@@ -6,6 +6,7 @@ import Cards from '@/components/Card/Cards'
 import Head from 'next/head'
 import  Hero  from '@/components/Hero/Hero'
 import Sticky from '@/components/sticky-section/StickySection'
+import Test from '@/components/Marquee/Test'
 
 
 
@@ -25,12 +26,12 @@ const index = () => {
           content="Welcome to our Gaming Community"
         />
     </Head>
-    
+
     <main className='min-h-screen w-full '>
       <Sticky />
       <Marquee />
       <Hero /> 
-
+      <Test />
       <Cards />
       {/* <Text_Mask />
       <Line /> */}
