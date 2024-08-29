@@ -7,6 +7,9 @@ import Head from 'next/head'
 import  Hero  from '@/components/Hero/Hero'
 import Sticky from '@/components/sticky-section/StickySection'
 import Test from '@/components/Marquee/Test'
+import Test2 from '@/components/Marquee/Test2'
+import GridItems from '@/components/Grid/GridItems'
+
 
 
 
@@ -33,9 +36,13 @@ const index = () => {
       <Hero /> 
       <Test />
       <Cards />
+      <Test2 />
+      <GridItems />
+
       {/* <Text_Mask />
       <Line /> */}
       <Hero />
+
     </main>
     </>
   )

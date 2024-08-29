@@ -48,8 +48,6 @@ const translateX = useSpring(
   return (
     <motion.div 
     initial={{rotate:3}} animate={{rotate:3}}
-    whileHover={{ scale: 1.1 }}
-    transition={{ type: 'spring', stiffness: 300 }}
     style={{ x: translateX, right }} className="relative flex whitespace-nowrap">
       <Phrase src={src} />
     </motion.div>
@@ -58,28 +56,28 @@ const translateX = useSpring(
 
 const Phrase: React.FC<PhraseProps> = ({ src }) => {
   return (
-    <div className="px-5 flex gap-60 items-center text-white ">
-      
+    <div className="px-5 flex gap-1 items-center text-white ">
+      <p className="text-[4vw]">Some Text Content</p>
       <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
       </span>
-      
+      <p className="text-[4vw]">Some Text Content</p>
       <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
       </span>
-      
+      <p className="text-[4vw]">Some Text Content</p>
       <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
       </span>
-      
+      <p className="text-[4vw]">Some Text Content</p>
       <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
       </span>
-      
+      <p className="text-[4vw]">Some Text Content</p>
       <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
       </span>
-      
+      <p className="text-[4vw]">Some Text Content</p>
       <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
       </span>
