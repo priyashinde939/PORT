@@ -45,7 +45,9 @@ const translateX = useSpring(
 
 
   return (
-    <motion.div style={{ x: translateX, left }} className="relative flex whitespace-nowrap">
+    <motion.div 
+    initial={{rotate:-5}} animate={{rotate:-5}}
+    style={{ x: translateX, left }} className="relative flex whitespace-nowrap">
       <Phrase src={src} />
       <Phrase src={src} />
     </motion.div>

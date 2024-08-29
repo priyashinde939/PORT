@@ -1,5 +1,5 @@
 import React from 'react'
-import { Reveal } from '../ANIMATION/Reveal'
+import { Reveal } from './../ANIMATION/Reveal'
 
 
 export const Hero = () => {
