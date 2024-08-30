@@ -58,31 +58,28 @@ const translateX = useSpring(
 
 const Phrase: React.FC<PhraseProps> = ({ src }) => {
   return (
-    <div className="px-5 flex gap-60 items-center text-white ">
+    <div className=" flex gap-0 items-center text-white ">
       
-      <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
-        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
-      </span>
+      <div className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
+        <h1>SED CONDIMENTUM MUS AUGUE LUCTUS .</h1>
+      </div>
       
-      <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
-        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
-      </span>
+      <div className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
+        <h1>SED CONDIMENTUM MUS AUGUE LUCTUS .</h1>
+      </div>
       
-      <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
-        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
-      </span>
+      <div className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
+      <h1>SED CONDIMENTUM MUS AUGUE LUCTUS .</h1>
+      </div>
       
-      <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
-        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
-      </span>
+      <div className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
+      <h1>SED CONDIMENTUM MUS AUGUE LUCTUS .</h1>
+      </div>
       
-      <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
-        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
-      </span>
-      
-      <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
-        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
-      </span>
+      <div className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
+      <h1>SED CONDIMENTUM MUS AUGUE LUCTUS .</h1>
+      </div>
+    
     </div>
   );
 }

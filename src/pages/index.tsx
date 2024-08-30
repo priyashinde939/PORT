@@ -36,8 +36,8 @@ const index = () => {
       <Sticky />
       <Marquee />
       <Hero /> 
-      <Test />
-      <Cards />
+      {/* <Test /> */}
+  
       <Test2 />
       <GridItems />
       <Section3D />
@@ -46,6 +46,7 @@ const index = () => {
       {/* <Text_Mask />
       <Line /> */}
       <Hero />
+      <Cards />
       <Section3D1 />
 
     </main>
