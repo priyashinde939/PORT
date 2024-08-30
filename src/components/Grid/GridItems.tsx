@@ -5,14 +5,18 @@ import { GiAxeInLog } from 'react-icons/gi';
 const FlexGrid: FC = () => {
 
   return (
-    <div className="flex flex-row p-6 gap-4 mx-10 min-h-[60vh]">
+    <div 
+    style={{perspective: '300px'}}
+    className="flex flex-row p-6 gap-4 mx-10 min-h-[60vh] ">
       
         <motion.div
-          className={`relative basis-1/3 overflow-hidden rounded-lg shadow-lg flex border text-white items-center justify-center`}
+          className={`relative basis-1/3 overflow-hidden rounded-lg shadow-lg flex border text-white items-center justify-center text-7xl font-black`}
+          
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.95 }}
           style={{ flexGrow: 'FlexGrow' }}
         >
+          <h1> SLINK </h1>
         </motion.div>
 
         <div
@@ -55,21 +59,22 @@ className="relative  w-full  overflow-hidden rounded-lg shadow-lg flex flex-col 
         </div>
 
         <motion.div
-          className={`relative basis-2/3 overflow-hidden rounded-lg shadow-lg flex flex-row min-w-[150px] border text-white items-center justify-center`}
-          whileHover={{ scale: 1.02  }}
-          whileTap={{ scale: 0.95 }}
-          style={{ flexGrow: 'FlexGrow', padding: '2rem' }}
+          className={`relative basis-2/3 overflow-hidden rounded-lg shadow-lg flex flex-row min-w-[150px] border text-white items-center justify-center text-9xl font-black`}
+          initial={{  scaleX:1.2, rotateY:'30deg', skewY:'-10deg',  skewX:'20deg' }}
+          whileHover={{  scaleX:1, rotateY:'0deg', skewY:'0deg' ,  skewX:0}}
+          style={{ flexGrow: 'FlexGrow', padding: '2rem', transformOrigin:'top-left', perspectiveOrigin:'left'  }}
         >
 
+            <h1>SLINK</h1>
                         
-            <motion.h1
+            {/* <motion.h1
             initial={{ rotateY:'60deg', scaleX:2, scaleY:2,scaleZ:1.5}}
             whileHover={{  rotateY:'10deg', scaleX:1, scaleY:1}}
             transition={{ type: 'linear', stiffness: 30, duration:0.5 }}
             style={{perspectiveOrigin:'left', transformOrigin:'1%', transformStyle:'preserve-3d'}}
             className=" relative block text-9xl font-black text-start">
             SLINK
-            </motion.h1>
+            </motion.h1> */}
 
         </motion.div>
     </div>
