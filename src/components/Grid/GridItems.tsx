@@ -25,8 +25,8 @@ const FlexGrid: FC = () => {
             className="relative  w-full  overflow-hidden rounded-lg shadow-lg flex flex-col min-w-[100px] min-h-[47%] border text-white items-center justify-center">
                         
                         <motion.h1
-                        initial={{ rotateY:'60deg', scaleX:2, scaleY:2,scaleZ:2}}
-                        whileHover={{  rotateY:'10deg', scaleX:1, scaleY:1}}
+                        initial={{ rotateY:'60deg', scaleX:1.5, scaleY:2,scaleZ:2}}
+                        whileHover={{  rotateY:'0deg', scaleX:1, scaleY:1}}
                         transition={{ type: 'linear', stiffness: 30, duration:0.5 }}
                         style={{perspectiveOrigin:'left', transformOrigin:'1%'}}
                         className=" relative block text-9xl font-black">
