@@ -24,16 +24,16 @@ interface SectionProps {
 }
 
 const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
-    const scaleY = useTransform(scrollYProgress, [0, 1], [0.5, 0.7]);
-    const scaleX = useTransform(scrollYProgress, [0, 1], [0.5, 0.9]);
-    const rotate = useTransform(scrollYProgress, [0, 1], [4, 0]);
-    const skew= useTransform(scrollYProgress, [0, 1], [1, 0])
+    const scale = useTransform(scrollYProgress, [0, 1], [0.4, 0.9]);
+    const scaleX = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+    const rotateY = useTransform(scrollYProgress, [0, 1], [-4, 0]);
+    const skew= useTransform(scrollYProgress, [0, 1], [-8, 0])
 
 
     return (
         <motion.div
-            transition={{ type: "spring", stiffness: 100, damping: 200 }}
-            style={{ scaleY, rotate, scaleX, skew }}
+            transition={{ type: "linear", stiffness: 50, damping: 10 }}
+            style={{ scale, rotateY, scaleX, skew }}
             className="sticky top-0 h-screen border-lime-500 border-2 text-[3.5vw] font-extrabold text-black flex flex-col items-center justify-center pb-[10vh] rounded-3xl"
         >
             <p>Heading Heading</p>
