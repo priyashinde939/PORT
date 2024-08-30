@@ -11,6 +11,7 @@ import Test2 from '@/components/Marquee/Test2'
 import GridItems from '@/components/Grid/GridItems'
 import Section3D from '@/components/Section3D/Section3D'
 import Section3D1 from '@/components/Section3D/Section3D1'
+import Section3D2 from '@/components/Section3D/Section3D2'
 
 
 
@@ -48,7 +49,7 @@ const index = () => {
       {/* <Text_Mask />
       <Line /> */}
       <Hero />
-
+      <Section3D2 />
       <Section3D1 />
 
     </main>
