@@ -23,7 +23,7 @@ function Card({ val }: { val: any }) {
             }}
             className={` text-[#e3d0f1] w-full xs:py-[2vw] py-[4vw] 
             px-[4vw] xs:px-[2vw] 
-            rounded-[5rem] flex gap-[1vw]`
+            rounded-[5rem] flex gap-[1vw] border`
             }
         >
             <div className='xs:w-1/2 flex flex-col items-start gap-[1.5vw]  h-[40rem]'>
