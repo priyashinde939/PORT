@@ -16,7 +16,7 @@ const FlexGrid: FC = () => {
           whileTap={{ scale: 0.95 }}
           style={{ flexGrow: 'FlexGrow' }}
         >
-          <h1> SLINK </h1>
+
         </motion.div>
 
         <div
@@ -25,12 +25,12 @@ const FlexGrid: FC = () => {
 
             whileHover={{ scale: 1.02}}
             whileTap={{ scale: 0.95 }}
-            style={{ flexGrow: 'FlexGrow', perspective:'1000px' }}
-            className="relative  w-full  overflow-hidden rounded-lg shadow-lg flex flex-col min-w-[100px] min-h-[47%] border text-white items-center justify-center">
+            style={{ flexGrow: 'FlexGrow', perspective:'500px' }}
+            className="relative  w-full  overflow-hidden rounded-lg shadow-lg flex flex-col min-w-[100px] min-h-[47%] border text-c_grayish_blue items-center justify-center">
                         
                         <motion.h1
-                        initial={{ rotateY:'60deg', scaleX:1.5, scaleY:2,scaleZ:2}}
-                        whileHover={{  rotateY:'0deg', scaleX:1, scaleY:1}}
+                        initial={{ rotateY:'40deg', scaleX:0.9, scaleY:1.5,scaleZ:0.6}}
+                        whileHover={{  rotateY:'0deg', scaleX:1, scaleY:1, scaleZ:0}}
                         transition={{ type: 'linear', stiffness: 30, duration:0.5 }}
                         style={{perspectiveOrigin:'left', transformOrigin:'1%'}}
                         className=" relative block text-9xl font-black">
@@ -41,25 +41,25 @@ const FlexGrid: FC = () => {
 
             <motion.div 
 
-whileHover={{ scale: 1.02}}
-whileTap={{ scale: 0.95 }}
-style={{ flexGrow: 'FlexGrow', perspective:'1000px' }}
-className="relative  w-full  overflow-hidden rounded-lg shadow-lg flex flex-col min-w-[100px] min-h-[47%] border text-white items-center justify-center">
-            
-            <motion.h1
-            initial={{ rotateY:'60deg', scaleX:2, scaleY:2,scaleZ:1.5}}
-            whileHover={{  rotateY:'10deg', scaleX:1, scaleY:1}}
-            transition={{ type: 'linear', stiffness: 30, duration:0.5 }}
-            style={{perspectiveOrigin:'left', transformOrigin:'1%', transformStyle:'preserve-3d'}}
-            className=" relative block text-9xl font-black text-start">
-            SLINK
-            </motion.h1>
+            whileHover={{ scale: 1.02}}
+            whileTap={{ scale: 0.95 }}
+            style={{ flexGrow: 'FlexGrow', perspective:'500px' }}
+            className="relative  w-full  overflow-hidden rounded-lg shadow-lg flex flex-col min-w-[100px] min-h-[47%] border text-c_grayish_blue items-center justify-center">
+                        
+                        <motion.h1
+                        initial={{ rotateY:'40deg', scaleX:0.9, scaleY:1.5,scaleZ:0.6}}
+                        whileHover={{  rotateY:'0deg', scaleX:1, scaleY:1, scaleZ:0}}
+                        transition={{ type: 'linear', stiffness: 30, duration:0.5 }}
+                        style={{perspectiveOrigin:'left', transformOrigin:'1%'}}
+                        className=" relative block text-9xl font-black">
+                        SLINK
+                        </motion.h1>
 
-</motion.div>
+            </motion.div>
         </div>
 
         <motion.div
-          className={`relative basis-2/3 border border-gray-800 overflow-hidden rounded-lg shadow-lg flex flex-row min-w-[150px] text-red-700 items-center justify-center text-9xl font-black`}
+          className={`relative basis-2/3 border border-gray-800 overflow-hidden rounded-full shadow-lg flex flex-row min-w-[150px] text-red-700 items-center justify-center text-9xl font-black`}
           initial={{  scaleX:1.2, rotateY:'20deg', skewY:'-10deg',  skewX:'20deg' }}
           whileHover={{  scaleX:1, rotateY:'0deg', skewY:'0deg' ,  skewX:0}}
           transition={{ type: 'linear', stiffness: 30, duration:0.8 }}
