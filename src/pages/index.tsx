@@ -35,18 +35,20 @@ const index = () => {
     <main className='min-h-screen w-full '>
       <Sticky />
       <Marquee />
+      <Cards />
       <Hero /> 
       {/* <Test /> */}
   
-      <Test2 />
+
       <GridItems />
+      <Test2 />
       <Section3D />
 
 
       {/* <Text_Mask />
       <Line /> */}
       <Hero />
-      <Cards />
+
       <Section3D1 />
 
     </main>
