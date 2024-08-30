@@ -59,9 +59,10 @@ className="relative  w-full  overflow-hidden rounded-lg shadow-lg flex flex-col 
         </div>
 
         <motion.div
-          className={`relative basis-2/3 overflow-hidden rounded-lg shadow-lg flex flex-row min-w-[150px] border text-white items-center justify-center text-9xl font-black`}
-          initial={{  scaleX:1.2, rotateY:'30deg', skewY:'-10deg',  skewX:'20deg' }}
+          className={`relative basis-2/3 overflow-hidden rounded-lg shadow-lg flex flex-row min-w-[150px] text-white items-center justify-center text-9xl font-black`}
+          initial={{  scaleX:1.2, rotateY:'20deg', skewY:'-10deg',  skewX:'20deg' }}
           whileHover={{  scaleX:1, rotateY:'0deg', skewY:'0deg' ,  skewX:0}}
+          transition={{ type: 'linear', stiffness: 300, duration:1 }}
           style={{ flexGrow: 'FlexGrow', padding: '2rem', transformOrigin:'top-left', perspectiveOrigin:'left'  }}
         >
 

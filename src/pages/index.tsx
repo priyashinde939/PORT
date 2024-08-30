@@ -9,6 +9,8 @@ import Sticky from '@/components/sticky-section/StickySection'
 import Test from '@/components/Marquee/Test'
 import Test2 from '@/components/Marquee/Test2'
 import GridItems from '@/components/Grid/GridItems'
+import Section3D from '@/components/Section3D/Section3D'
+import Section3D1 from '@/components/Section3D/Section3D1'
 
 
 
@@ -38,10 +40,13 @@ const index = () => {
       <Cards />
       <Test2 />
       <GridItems />
+      <Section3D />
+
 
       {/* <Text_Mask />
       <Line /> */}
       <Hero />
+      <Section3D1 />
 
     </main>
     </>
