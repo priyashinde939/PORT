@@ -5,7 +5,7 @@ import Cube2 from './Cube2';
 const Cube3D: React.FC = () => {
   return (
     <div>
-      <h1 className=" z-50 absolute text-orange-600 text-clip text-6xl font-bold mb-8 mix-blend-hard-light">3D Cube with Framer Motion and Tailwind CSS</h1>
+      <h1 className=" z-50 absolute text-lime-300 text-wrap text-6xl font-black mb-8 mix-blend-screen text-center pl-5 -left-1">3D Cube with Framer Motion and Tailwind CSS</h1>
       <Cube />
     </div>
   );

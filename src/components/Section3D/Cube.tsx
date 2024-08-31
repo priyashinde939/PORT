@@ -5,7 +5,7 @@ const Cube: React.FC = () => {
   const size = 300; // Adjust the cube size here
 
   return (
-    <motion.div className="flex items-center justify-center -top-20  ">
+    <motion.div className="flex items-center justify-center -top-20 text-7xl text-gray-300 font-black ">
       <motion.div
         className="relative"
         style={{
@@ -17,64 +17,70 @@ const Cube: React.FC = () => {
         }}
       >
         <motion.div
-          className="absolute bg-violet-400 text-white flex items-center justify-center shadow-lg"
+          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
           style={{
             width: `${size}px`,
             height: `${size}px`,
             transform: `translateZ(${size / 2}px)`,
           }}
         >
-          Front
+          hello
+          {/* Front */}
         </motion.div>
         <motion.div
-          className="absolute bg-violet-400 text-white flex items-center justify-center shadow-lg"
+          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
           style={{
             width: `${size}px`,
             height: `${size}px`,
             transform: `rotateY(180deg) translateZ(${size / 2}px)`,
           }}
         >
-          Back
+          hola
+          {/* Back */}
         </motion.div>
         <motion.div
-          className="absolute bg-violet-400 text-white flex items-center justify-center shadow-lg"
+          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
           style={{
             width: `${size}px`,
             height: `${size}px`,
             transform: `rotateY(-90deg) translateZ(${size / 2}px)`,
           }}
         >
-          Left
+          hola hola
+          {/* Left */}
         </motion.div>
         <motion.div
-          className="absolute bg-violet-400 text-white flex items-center justify-center shadow-lg"
+          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
           style={{
             width: `${size}px`,
             height: `${size}px`,
             transform: `rotateY(90deg) translateZ(${size / 2}px)`,
           }}
         >
-          Right
+          ello
+          {/* Right */}
         </motion.div>
         <motion.div
-          className="absolute bg-violet-400 text-white flex items-center justify-center shadow-lg"
+          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
           style={{
             width: `${size}px`,
             height: `${size}px`,
             transform: `rotateX(90deg) translateZ(${size / 2}px)`,
           }}
         >
-          Top
+          top ello
+          {/* Top */}
         </motion.div>
         <motion.div
-          className="absolute bg-violet-400 text-white flex items-center justify-center shadow-lg"
+          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
           style={{
             width: `${size}px`,
             height: `${size}px`,
             transform: `rotateX(-90deg) translateZ(${size / 2}px)`,
           }}
         >
-          Bottom
+
+          {/* Bottom */}
         </motion.div>
       </motion.div>
     </motion.div>

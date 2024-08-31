@@ -25,7 +25,7 @@ const FlexGrid: FC = () => {
             whileHover={{ scale: 1.02}}
             whileTap={{ scale: 0.95 }}
             style={{ flexGrow: 'FlexGrow', perspective:'500px' }}
-            className="relative basis-3/4 w-full  overflow-hidden rounded-3xl shadow-lg flex flex-col min-w-[100px] min-h-[67%] bg-black items-center justify-center border border-gray-700 ">      
+            className="relative basis-2/3 w-full  overflow-hidden rounded-3xl shadow-lg flex flex-col min-w-[100px]  bg-black items-center justify-center border border-gray-700 ">      
                 <Cube3D />
             </motion.div>
 
@@ -33,7 +33,7 @@ const FlexGrid: FC = () => {
             whileHover={{ scale: 1.02}}
             whileTap={{ scale: 0.95 }}
             style={{ flexGrow: 'FlexGrow', perspective:'500px' }}
-            className="relative  w-full  overflow-hidden rounded-3xl shadow-lg flex flex-col min-w-[100px] min-h-[27%] border border-gray-800 items-center justify-center">
+            className="relative basis-1/3 w-full  overflow-hidden rounded-3xl shadow-lg flex flex-col min-w-[100px]  border border-gray-800 items-center justify-center">
                         
                 <motion.div
                 className={`relative overflow-hidden rounded-full w-fit left-16 text-red-700 items-center justify-center text-9xl font-black`}
@@ -50,18 +50,17 @@ const FlexGrid: FC = () => {
         
         <div className={`relative basis-2/3 flex flex-col gap-10`}>
               <motion.div
-                className={`relative basis-1/3 border border-gray-800 overflow-hidden rounded-full shadow-lg  min-w-[150px] items-center justify-center mx-5 `}
+                className={`relative basis-2/4 border border-gray-800 overflow-hidden rounded-full shadow-lg  min-w-[150px] items-center justify-center mx-16 `}
                 initial={{  scaleX:1.2, rotateY:'20deg', skewY:'-10deg',  skewX:'20deg' }}
                 whileHover={{  scaleX:1, rotateY:'0deg', skewY:'0deg' ,  skewX:0}}
                 transition={{ type: 'linear', stiffness: 30, duration:0.8 }}
                 style={{ transformOrigin:'top-left', perspectiveOrigin:'left'  }}
               >
                   <img className="object-cover"
-                  src="images/6.jpg" alt="img" />
-                  
+                  src="images/9.jpg" alt="img" />
 
               </motion.div>
-              <div className="relative basis-2/3 bg-slate-900 rounded-[2rem] ">
+              <div className="relative basis-2/4 bg-slate-900 rounded-[2rem] ">
 
               </div>
         </div>
