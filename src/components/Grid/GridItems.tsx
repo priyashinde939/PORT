@@ -16,7 +16,8 @@ const FlexGrid: FC = () => {
           whileTap={{ scale: 0.95 }}
           style={{ flexGrow: 'FlexGrow' }}
         >
-
+                  <img className="object-cover"
+                  src="images/7.jpg" alt="img" />
         </motion.div>
 
         <div className={`relative gap-5 basis-2/3  flex flex-col min-w-[150px] min-h-[150px] text-white items-center justify-center`}>
