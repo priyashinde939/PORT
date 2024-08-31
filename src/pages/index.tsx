@@ -31,7 +31,7 @@ const index = () => {
         <title>Hola</title>
         <meta
           name="description"
-          content="Welcome to our Gaming Community"
+          content="Welcome to our hola hola Community"
         />
     </Head>
 
