@@ -57,8 +57,8 @@ const FlexGrid: FC = () => {
                 transition={{ type: 'linear', stiffness: 30, duration:0.8 }}
                 style={{ transformOrigin:'top-left', perspectiveOrigin:'left'  }}
               >
-                  <img className="object-cover"
-                  src="images/6.jpg" alt="img" />
+                  <img className="object-cover overflow-clip "
+                  src="images/powell.jpg" alt="img" />
 
               </motion.div>
               <div className="relative basis-2/4 bg-slate-900 rounded-[2rem] ">
