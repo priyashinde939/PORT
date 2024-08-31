@@ -47,7 +47,6 @@ const index = () => {
       {/* <Text_Mask />
       <Line /> */}
       <Hero />
-      <Cube3D />
       {/* <Section3D2 /> */}
       <Section3D1 />
 
