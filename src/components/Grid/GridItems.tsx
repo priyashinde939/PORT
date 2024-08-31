@@ -58,7 +58,7 @@ const FlexGrid: FC = () => {
                 style={{ transformOrigin:'top-left', perspectiveOrigin:'left'  }}
               >
                   <img className="object-cover"
-                  src="images/9.jpg" alt="img" />
+                  src="images/6.jpg" alt="img" />
 
               </motion.div>
               <div className="relative basis-2/4 bg-slate-900 rounded-[2rem] ">
