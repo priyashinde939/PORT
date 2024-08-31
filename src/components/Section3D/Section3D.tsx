@@ -31,11 +31,17 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
 
 
     return (
-        <motion.div
+
+
+      <motion.div
             transition={{ type: "linear", stiffness: 50, damping: 10 }}
             style={{ scale, rotateY, scaleX, skew }}
             className="sticky top-0 h-screen border-lime-500 border-2 text-[3.5vw] font-extrabold text-black flex flex-col items-center justify-center pb-[10vh] rounded-3xl"
         >
+
+                
+    
+                <h1>SLINK</h1>
             <p>Heading Heading</p>
             <div className="flex gap-3">
                 <p>Section</p>
@@ -48,6 +54,8 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
                 Click
             </button>
         </motion.div>
+
+
     );
 };
 
