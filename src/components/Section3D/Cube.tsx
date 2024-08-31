@@ -68,7 +68,6 @@ const Cube: React.FC = () => {
             transform: `rotateX(90deg) translateZ(${size / 2}px)`,
           }}
         >
-          top ello
           {/* Top */}
         </motion.div>
         <motion.div
