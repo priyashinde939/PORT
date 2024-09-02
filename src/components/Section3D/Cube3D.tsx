@@ -1,6 +1,6 @@
 import React from 'react';
 import Cube from './Cube';
-import Cube2 from './Cube2';
+
 
 const Cube3D: React.FC = () => {
   return (
