@@ -4,7 +4,7 @@ import FooterMarquee from './FooterMarquee';
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" text-white py-12 h-[100vh] ">
+    <footer className="sticky -top-[200vh] text-white py-12 h-[100vh] ">
 
       <div className=" w-full mx-auto px-6 md:px-12">
         <div className="flex flex-row md:flex-row place-content-between justify-between items-start md:items-center mx-14">
