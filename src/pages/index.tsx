@@ -9,6 +9,7 @@ import GridItems from '@/components/Grid/GridItems'
 import Section3D from '@/components/Section3D/Section3D'
 import Section3D1 from '@/components/Section3D/Section3D1'
 import Section1 from '@/components/Section1/Section1'
+import Service from '@/components/Services/Services'
 
 
 
@@ -43,7 +44,7 @@ const index = () => {
       <Section3D />
       <Section1 />
       <Section3D1 />
-
+      <Service />
     </main>
     </>
   )

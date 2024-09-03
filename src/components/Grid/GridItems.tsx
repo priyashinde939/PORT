@@ -26,7 +26,7 @@ const FlexGrid: FC = () => {
             whileHover={{ scale: 1.02}}
             whileTap={{ scale: 0.95 }}
             style={{ flexGrow: 'FlexGrow', perspective:'500px' }}
-            className="relative basis-2/3 w-full  overflow-hidden rounded-3xl shadow-lg flex flex-col min-w-[100px] bg-white items-center justify-center border border-gray-700 ">      
+            className="relative basis-2/3 w-full  overflow-hidden rounded-3xl shadow-lg flex flex-col min-w-[100px] items-center justify-center border border-gray-700 ">      
                 <Cube3D />
             </motion.div>
 
