@@ -24,14 +24,14 @@ export default function Marquee() {
   });
 
   return (
-    <main style={{fontFamily:'Brush Script MT'}}
-    className="overflow-hidden bg-black font-extralight">
-      <div className="h-[25vh]" />
+    <main 
+    className="overflow-hidden bg-black font-black font-sans">
+      <div className="h-[20vh]" />
       <div ref={container}>
         <Slide src={Picture1} direction="left" left="-40%" progress={scrollYProgress} />
         <Slide src={Picture2} direction="right" left="-25%" progress={scrollYProgress} />
       </div>
-      <div className="h-[25vh]" />
+      <div className="h-[20vh]" />
     </main>
   );
 }

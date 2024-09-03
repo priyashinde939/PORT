@@ -17,14 +17,15 @@ const Cube: React.FC = () => {
         }}
       >
         <motion.div
-          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
+          className="absolute flex items-center justify-center shadow-lg "
           style={{
             width: `${size}px`,
             height: `${size}px`,
             transform: `translateZ(${size / 2}px)`,
+            backgroundImage: `url("./images/6.jpg")` 
           }}
         >
-          hello
+
           {/* Front */}
         </motion.div>
         <motion.div
@@ -33,9 +34,9 @@ const Cube: React.FC = () => {
             width: `${size}px`,
             height: `${size}px`,
             transform: `rotateY(180deg) translateZ(${size / 2}px)`,
+            backgroundImage: `url("./images/9.jpg")` 
           }}
         >
-          hola
           {/* Back */}
         </motion.div>
         <motion.div
@@ -44,9 +45,10 @@ const Cube: React.FC = () => {
             width: `${size}px`,
             height: `${size}px`,
             transform: `rotateY(-90deg) translateZ(${size / 2}px)`,
+            backgroundImage: `url("./images/8.jpg")` 
           }}
         >
-          hola hola
+          
           {/* Left */}
         </motion.div>
         <motion.div
@@ -55,9 +57,10 @@ const Cube: React.FC = () => {
             width: `${size}px`,
             height: `${size}px`,
             transform: `rotateY(90deg) translateZ(${size / 2}px)`,
+            backgroundImage: `url("./images/10.jpg")` 
           }}
         >
-          ello
+          
           {/* Right */}
         </motion.div>
         <motion.div
@@ -66,6 +69,7 @@ const Cube: React.FC = () => {
             width: `${size}px`,
             height: `${size}px`,
             transform: `rotateX(90deg) translateZ(${size / 2}px)`,
+            backgroundImage: `url("./images/9.jpg")` 
           }}
         >
           {/* Top */}
@@ -76,6 +80,7 @@ const Cube: React.FC = () => {
             width: `${size}px`,
             height: `${size}px`,
             transform: `rotateX(-90deg) translateZ(${size / 2}px)`,
+            backgroundImage: `url("./images/mid.jpg")` 
           }}
         >
 
