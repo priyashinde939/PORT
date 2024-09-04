@@ -1,5 +1,6 @@
 import React from 'react';
 import FooterMarquee from './FooterMarquee';
+import {motion} from 'framer-motion';
 
 
 const Footer: React.FC = () => {
@@ -50,7 +51,11 @@ const Footer: React.FC = () => {
         {/* Copyright and Back to Top */}
         <div className="flex justify-between mt-16 text-zinc-500 mx-14 my-20 font-sans ">
           <p className="font-semibold text-xl">© 2024, Format-3. All Rights Reserved.</p>
-          <a href="#" className="hover:text-zinc-500 text-3xl text-white">Back to top ↑</a>
+          <motion.a 
+          initial={{ color:'white'}}
+          whileHover={{color:'#71717a'}}
+          transition={{ duration:4, ease:'linear'}}
+          href="#" className="text-3xl">Back to top ↑</motion.a>
         </div>
       </div>
     </footer>

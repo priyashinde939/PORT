@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import RoundedButton from '@/common/RoundedButton'
+import {motion} from 'framer-motion'
 
 const Section1 = () => {
   return (
@@ -11,7 +11,7 @@ const Section1 = () => {
     </h1>
 <div className="relative h-[100vh] flex flex-row my-32 gap-9">
 
-<div className="relative flex flex-col basis-1/4  ">
+<div className=" group relative flex flex-col basis-1/4  ">
     <div className="relative flex h-[40%]">
     <Image
         src="/images/awards.jpg"
@@ -21,7 +21,7 @@ const Section1 = () => {
         className='relative overflow-hidden '
         />
     </div>
-    <span className="relative border w-fit content-start font-semibold -scale-x-100 hover:scale-x-100 rounded-3xl mt-5 px-3 hover:bg-white hover:text-black ">
+    <span className="relative border w-fit content-start font-semibold -scale-x-100 group-hover:scale-x-100 rounded-3xl mt-5 px-3 hover:bg-white hover:text-black ">
         CONTACT
     </span>
     <div className="text-2xl my-2 font-sans ">
@@ -32,7 +32,7 @@ const Section1 = () => {
     </p>
 </div>
 
-<div className="flex flex-col basis-3/4 ">
+<div className="group flex flex-col basis-3/4 ">
 <div className="relative flex h-[60%]">
     <Image
         src="/images/mid.jpg"
@@ -42,7 +42,7 @@ const Section1 = () => {
         className='relative overflow-hidden '
         />
     </div>
-    <span className="relative border w-fit content-start font-semibold rounded-3xl my-5 px-3 hover:bg-white hover:text-black -scale-x-100 hover:scale-x-100 ">
+    <span className="relative border w-fit content-start font-semibold rounded-3xl my-5 px-3 hover:bg-white hover:text-black -scale-x-100 group-hover:scale-x-100 ">
         DESIGN
     </span>
     <div className="text-2xl my-2 font-sans ">
@@ -53,7 +53,7 @@ const Section1 = () => {
     </p>
 </div>
 
-<div className="relative flex flex-col basis-1/4  ">
+<div className="group relative flex flex-col basis-1/4  ">
     <div className="relative flex h-[40%]">
     <Image
         src="/images/awards.jpg"
@@ -63,7 +63,7 @@ const Section1 = () => {
         className='relative overflow-hidden '
         />
     </div>
-    <span className="relative border w-fit content-start font-semibold rounded-3xl my-5 px-3 hover:bg-white hover:text-black -scale-x-100 hover:scale-x-100 ">
+    <span className="relative border w-fit content-start font-semibold rounded-3xl my-5 px-3 hover:bg-white hover:text-black -scale-x-100 group-hover:scale-x-100 ">
         SEE MORE
     </span>
     <div className="text-2xl my-2 font-sans ">

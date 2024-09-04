@@ -9,9 +9,8 @@ import GridItems from '@/components/Grid/GridItems'
 import Section3D from '@/components/Section3D/Section3D'
 import Section3D1 from '@/components/Section3D/Section3D1'
 import Section1 from '@/components/Section1/Section1'
-import Service from '@/components/Services/Services'
-import Footer from '@/components/Footer/Footer'
 import FooterSection from '@/components/Footer/FooterSection'
+import Contact from '@/components/Contact/Contact'
 
 
 
@@ -47,7 +46,7 @@ const index = () => {
       <Section3D />
       <Section1 />
       <Section3D1 />
-      <Service />
+      <Contact />
       <FooterSection />
 
     </main>
