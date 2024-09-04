@@ -7,7 +7,7 @@ const FlexGrid: FC = () => {
   return (
     <div 
     style={{perspective: '500px'}}
-    className="flex flex-row p-6 gap-4 mx-10 max-h-[90vh] ">
+    className="flex flex-row sm:flex-col p-6 gap-4 mx-10 h-auto sm:gap-6 ">
       
         <motion.div
           className={`relative basis-2/4 overflow-hidden rounded-3xl shadow-lg flex border border-gray-600 text-white items-center justify-center text-7xl font-black`}

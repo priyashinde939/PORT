@@ -55,17 +55,17 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
-            className="relative h-[100vh] bg-black flex flex-col text-9xl items-center justify-center text-white pb-[10vh]"
+            className="relative h-[100vh] bg-black flex flex-col items-center justify-center text-white p-[10vh]"
         >
-            <div className="relative flex flex-col gap-5 font-black">
+            <div className="relative flex flex-col text-[7vw] gap-5 font-black">
                 <p>IMAGE CONTAINER</p>
                 <h1 className="mt-3 font-bold text-2xl text-gray-400">
                     SED CONDIMENTUM MUS AUGUE LUCTUS .
                 </h1>
             </div>
-            <div className="top-5 left-[55vw] m-0 h-auto w-[600px] text-2xl text-start p-3 text-gray-500">
+            <div className="top-5 left-[30%] m-0 w-[50%] text-[2vw] min-w-[300px] text-start p-3 text-gray-500 text-wrap">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor laudantium, totam rem aperiam, ipsa quae abeaque ipsa quae ab illo ipsa quae abeaqueinventore veritatis
-                <h1 className="mt-3 font-bold text-sm text-gray-400">
+                <h1 className="mt-3 font-bold text-gray-400">
                     SED CONDIMENTUM MUS AUGUE LUCTUS .
                 </h1>
             </div>
