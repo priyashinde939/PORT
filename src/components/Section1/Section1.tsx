@@ -25,10 +25,10 @@ const Section1 = () => {
         CONTACT
     </span>
     <div className="text-2xl my-2 font-sans ">
-        WE'VE BEEN SHORTLISTED AS THE MARRIAGE THOUGHT PROVOKING STORIES 
+        WEVE BEEN SHORTLISTED AS THE MARRIAGE THOUGHT PROVOKING STORIES 
     </div>
     <p className="text-slate-500">
-    WE'VE BEEN SHORTLISTED AS THE MARRI AGE THOU GHT PROV OKING STOR IES 
+    WEVE BEEN SHORTLISTED AS THE MARRI AGE THOU GHT PROV OKING STOR IES 
     </p>
 </div>
 
@@ -46,10 +46,10 @@ const Section1 = () => {
         DESIGN
     </span>
     <div className="text-2xl my-2 font-sans ">
-        WE'VE BEEN SHORTLISTED AS THE MARRIAGE THOUGHT PROVOKING STORIES 
+        WEVE BEEN SHORTLISTED AS THE MARRIAGE THOUGHT PROVOKING STORIES 
     </div>
     <p className="text-slate-500">
-    WE'VE BEEN SHORTLISTED AS THE MARRI AGE THOU GHT PROV OKING STOR IES 
+    WEVE BEEN SHORTLISTED AS THE MARRI AGE THOU GHT PROV OKING STOR IES 
     </p>
 </div>
 
@@ -67,10 +67,10 @@ const Section1 = () => {
         SEE MORE
     </span>
     <div className="text-2xl my-2 font-sans ">
-        WE'VE BEEN SHORTLISTED AS THE MARRIAGE THOUGHT PROVOKING STORIES 
+        WEVE BEEN SHORTLISTED AS THE MARRIAGE THOUGHT PROVOKING STORIES 
     </div>
     <p className="text-slate-500">
-    WE'VE BEEN SHORTLISTED AS THE MARRI AGE THOU GHT PROV OKING STOR IES 
+    WEVE BEEN SHORTLISTED AS THE MARRI AGE THOU GHT PROV OKING STOR IES 
     </p>
 </div>
 
