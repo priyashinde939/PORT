@@ -131,7 +131,7 @@ const Form: React.FC = () => {
                   name="enquiry"
                   value={formData.enquiry}  
                   onChange={handleInputChange}  
-                  className="p-3 w-full h-[10vh] border border-blue-800 text-xl rounded-3xl text-neutral-400"
+                  className="p-3 w-full h-[10vh] min-h-[50px] border border-blue-800 text-xl rounded-3xl text-neutral-400"
                   >
                   <option value="" disabled hidden>Select a topic</option>  
                   <option value="Ui/Ux design" className="my-6 text-zinc-700">Ui/Ux design</option>
