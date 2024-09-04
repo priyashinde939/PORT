@@ -8,13 +8,14 @@ const Form: React.FC = () => {
     company: "",
     website: "",
     enquiry: "",
-    message: "", // New field for message
+    message: "", 
   });
 
   const [showEnquirySection, setShowEnquirySection] = useState(false); // State to manage showing the enquiry section
 
+
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement> // Include HTMLSelectElement here
   ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -31,12 +32,13 @@ const Form: React.FC = () => {
     }
   };
 
+  // Project / General
   const handleGeneralClick = () => {
-    setShowEnquirySection(true); // Show the enquiry text area when "General" is clicked
+    setShowEnquirySection(true); // Show "General" 
   };
 
   const handleProjectClick = () => {
-    setShowEnquirySection(false); // Hide the enquiry text area when "Project" is clicked
+    setShowEnquirySection(false); //  show "Project" 
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -44,6 +46,13 @@ const Form: React.FC = () => {
     // Handle form submission logic here (sending to backend)
     console.log("Form Data Submitted:", formData, "Selected Options:", selectedOptions);
   };
+
+  // select price 
+  const [price, setPrice] = useState<string | null>(null)
+  const handlePriceChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setPrice(e.target.value)
+  }
+
 
   return (
     <div className="flex flex-col items-center p-8 mx-10 my-20 px-20 sm:mx-2  bg-white text-black rounded-[3rem]">
@@ -99,7 +108,8 @@ const Form: React.FC = () => {
       )}
 
       <form className="flex flex-col w-full " onSubmit={handleSubmit}>
-        {/* Toggle the enquiry section visibility */}
+        {/* Toggle visibility */}
+
         {showEnquirySection && (
           <div className="mb-4">
             <label htmlFor="enquiry" className="block mb-2 font-medium text-slate-800">Your Enquiry</label>
@@ -116,7 +126,8 @@ const Form: React.FC = () => {
         )}
 
         <h1 className="text-[3vw] sm:text-xl font-medium my-7">Introduce Yourself</h1>
-        {/* Full name, email, company, and website fields are always visible */}
+
+        {/*  visible */}
         <div className="w-full flex flex-row sm:flex-col gap-9 text-lg">
           <div className="basis-1/2 flex flex-col gap-5">
             <div className="mb-4">
@@ -159,18 +170,23 @@ const Form: React.FC = () => {
                 className="w-full p-3 border rounded-3xl"
               />
             </div>
-
+            
             <div className="mb-4">
-              <label htmlFor="website" className="block mb-2 font-medium text-slate-800">Website</label>
-              <input
-                type="text"
-                id="website"
-                name="website"
-                value={formData.website}
-                onChange={handleInputChange}
-                placeholder="Website"
-                className="w-full p-3 border rounded-3xl"
-              />
+                <label htmlFor="website" className="block mb-2 font-medium text-slate-800">
+                  Website
+                </label>
+                <select
+                  id="website"
+                  name="website"
+                  value={formData.website}  
+                  onChange={handleInputChange}  
+                  className="p-3 border rounded-3xl text-neutral-400"
+                  >
+                  <option value="" disabled hidden>Select a price range</option>  
+                  <option value="100$- 200$" className="text-black">100$ - 200$</option>
+                  <option value="200$- 400$" className="text-black">200$ - 400$</option>
+                  <option value="400$- 700$" className="text-black">400$ - 700$</option>
+                </select>
             </div>
           </div>
 
