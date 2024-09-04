@@ -112,17 +112,6 @@ const Form: React.FC = () => {
 
         {showEnquirySection && (
           <div className="mb-4">
-            {/* <label htmlFor="enquiry" className="block mb-2 font-medium text-slate-800">Tell us what your enquiry relates to</label>
-            <textarea
-              id="enquiry"
-              name="enquiry"
-              value={formData.enquiry}
-              onChange={handleInputChange}
-              placeholder="Your Enquiry"
-              className="w-full p-2 mb-4 border rounded-md"
-              required
-            /> */}
-
                 <label htmlFor="website" className="block mb-2 font-medium text-slate-800 text-lg">
                   Tell us what your enquiry relates to
                 </label>
