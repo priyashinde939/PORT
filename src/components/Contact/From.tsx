@@ -55,8 +55,8 @@ const Form: React.FC = () => {
 
 
   return (
-    <div className="flex flex-col items-center p-8 mx-10 my-20 px-20 sm:mx-2  bg-white text-black rounded-[3rem]">
-      <div className="flex text-[3vw] sm:text-xl place-content-between w-full my-7 ">
+    <div className="flex flex-col items-center p-8 mx-10 my-20 px-20 sm:px-5 sm:mx-2 bg-white text-black rounded-[3rem]">
+      <div className="flex text-[3vw] sm:text-xl place-content-between w-full my-7 gap-10 ">
         <h1 className="font-medium mb-4">Brief us on what you need...</h1>
         <div className="flex gap-3">
           <h1
@@ -211,7 +211,7 @@ const Form: React.FC = () => {
 
         </div>
 
-        <div className="w-full flex place-content-between mt-10">
+        <div className="w-full flex gap-10 place-content-between mt-10">
                 <div className=" text-2xl my-10  text-zinc-400">
                     All set and filled? Email address looking good?
                 </div>
