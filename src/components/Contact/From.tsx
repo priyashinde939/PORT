@@ -112,7 +112,7 @@ const Form: React.FC = () => {
 
         {showEnquirySection && (
           <div className="mb-4">
-            <label htmlFor="enquiry" className="block mb-2 font-medium text-slate-800">Your Enquiry</label>
+            {/* <label htmlFor="enquiry" className="block mb-2 font-medium text-slate-800">Tell us what your enquiry relates to</label>
             <textarea
               id="enquiry"
               name="enquiry"
@@ -121,7 +121,26 @@ const Form: React.FC = () => {
               placeholder="Your Enquiry"
               className="w-full p-2 mb-4 border rounded-md"
               required
-            />
+            /> */}
+
+                <label htmlFor="website" className="block mb-2 font-medium text-slate-800 text-lg">
+                  Tell us what your enquiry relates to
+                </label>
+                <select
+                  id="enquiry"
+                  name="enquiry"
+                  value={formData.enquiry}  
+                  onChange={handleInputChange}  
+                  className="p-3 w-full h-[10vh] border border-blue-800 text-xl rounded-3xl text-neutral-400"
+                  >
+                  <option value="" disabled hidden>Select a topic</option>  
+                  <option value="Ui/Ux design" className="my-6 text-zinc-700">Ui/Ux design</option>
+                  <option value="Back-End" className="my-6 text-zinc-700">Front-End</option>
+                  <option value="Back-End" className="my-6 text-zinc-700">Back-End</option>
+                  <option value="Reactjs" className="my-6 text-zinc-700">Reactjs</option>
+                  <option value="Nextjs" className="my-6 text-zinc-700">Nextjs</option>
+                  <option value="ello" className="my-6 text-zinc-700">ello</option>
+                </select>
           </div>
         )}
 
@@ -183,9 +202,9 @@ const Form: React.FC = () => {
                   className="p-3 border rounded-3xl text-neutral-400"
                   >
                   <option value="" disabled hidden>Select a price range</option>  
-                  <option value="100$- 200$" className="text-black">100$ - 200$</option>
-                  <option value="200$- 400$" className="text-black">200$ - 400$</option>
-                  <option value="400$- 700$" className="text-black">400$ - 700$</option>
+                  <option value="100$- 200$" className="my-6 text-zinc-700">100$ - 200$</option>
+                  <option value="200$- 400$" className="my-6 text-zinc-700">200$ - 400$</option>
+                  <option value="400$- 700$" className="my-6 text-zinc-700">400$ - 700$</option>
                 </select>
             </div>
           </div>
