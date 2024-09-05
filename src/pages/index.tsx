@@ -40,7 +40,7 @@ const index = () => {
     <main className='min-h-screen w-full '>
       <Sticky />
       <AnimatedGrid />
-      <Services />
+      {/* <Services /> */}
       <Marquee />
       <Cards />
       <RevealText /> 
