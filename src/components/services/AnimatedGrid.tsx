@@ -36,8 +36,11 @@ const AnimatedGrid = () => {
   const [clickedSection, setClickedSection] = useState("large");
 
   const handleGridClick = (section: string) => {
-    setClickedSection(section);
-    setStep((prevStep) => (prevStep + 1) % 3);
+    // Only update state if a different section is clicked
+    if (section !== clickedSection) {
+      setClickedSection(section);
+      setStep((prevStep) => (prevStep + 1) % 3);
+    }
   };
 
   const getGridArea = () => {
