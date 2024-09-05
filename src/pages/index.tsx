@@ -12,6 +12,8 @@ import Section1 from '@/components/Section1/Section1'
 import FooterSection from '@/components/Footer/FooterSection'
 import Contact from '@/components/Contact/Contact'
 import VerticalMarquee from '@/components/Marquee/VerticalMarquee'
+import AnimatedGrid from '@/components/services/AnimatedGrid'
+import Services from '@/components/services/Services'
 
 
 
@@ -37,7 +39,8 @@ const index = () => {
 
     <main className='min-h-screen w-full '>
       <Sticky />
-
+      <AnimatedGrid />
+      <Services />
       <Marquee />
       <Cards />
       <RevealText /> 
