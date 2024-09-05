@@ -38,10 +38,10 @@ const FlexGrid: FC = () => {
                         
                 <motion.div
                 className={`relative overflow-hidden rounded-full w-fit left-16 text-orange-700 items-center justify-center text-[7vw] font-black`}
-                initial={{    transform: "matrix3d(1.3, 0, -0.2, 0.002,   0.2, 1, -0.6, 0,   0.1, 0, 1, 1,   0, -30, 40, 1)" }}
-                whileHover={{ transform: "matrix3d(1.5, 0, 0, 0,   0, 1.8, 0, 0,   0, 0, 1, 0,   -60, -55, 0, 1)"  }}
+                initial={{    transform: "matrix3d(1.3, 0, -0.2, 0.002,   0.2, 1, -0.1, 0,   -0.5, 0, 1, 1,   25, 0, 40, 1)" }}
+                whileHover={{ transform: "matrix3d(1.5, 0, 0, 0,   0, 1.8, 0, 0,   0, 0, 1, 0,   -60, 10, 0, 1)"  }}
                 transition={{ type: 'spring', stiffness: 30, duration:0.6 }}
-                style={{ flexGrow: 'FlexGrow', padding: '2rem', transformOrigin:'bottom-100%', perspectiveOrigin:'center'  }}
+                style={{ flexGrow: 'FlexGrow', padding: '2rem', transformOrigin:'bottom', perspectiveOrigin:'center'  }}
                 >
                     <h1>FLIKY</h1>
                 </motion.div>

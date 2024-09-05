@@ -11,6 +11,7 @@ import Section3D1 from '@/components/Section3D/Section3D1'
 import Section1 from '@/components/Section1/Section1'
 import FooterSection from '@/components/Footer/FooterSection'
 import Contact from '@/components/Contact/Contact'
+import VerticalMarquee from '@/components/Marquee/VerticalMarquee'
 
 
 
@@ -40,7 +41,7 @@ const index = () => {
       <Marquee />
       <Cards />
       <RevealText /> 
-
+      <VerticalMarquee />
       <GridItems />
       <Test2 />
       <Section3D />
