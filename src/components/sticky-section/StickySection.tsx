@@ -11,7 +11,8 @@ const Sticky: React.FC = () => {
     });
 
     return (
-        <div ref={container} className="relative h-[200vh] bg-black">
+        <div style={{fontFamily:'Oswald'}}
+        ref={container} className="relative h-[200vh] bg-black">
             <Section1 scrollYProgress={scrollYProgress} />
             <Section2 scrollYProgress={scrollYProgress} />
         </div>

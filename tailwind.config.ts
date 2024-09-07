@@ -12,7 +12,10 @@ module.exports = {
     extend: {
       fontFamily: {
         mont: ['var(--font-mont)', ...fontFamily.sans],
-        red_hat: ["Red Hat Text", "sans-serif"]
+        red_hat: ["Red Hat Text", "sans-serif"],
+        oswald: ['Oswald'],
+        jost: ['Jost'],
+        day: ['Day']
       },
       colors:{
         dark: "#000000",

@@ -5,7 +5,8 @@ import {motion} from 'framer-motion';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="sticky -top-[200vh] text-white py-12 h-[100vh] ">
+    <footer 
+    className="sticky -top-[200vh] text-white py-12 h-[100vh] ">
 
       <div className=" w-full mx-auto px-6 md:px-12">
         <div className="flex flex-row md:flex-row place-content-between justify-between items-start md:items-center mx-14">
@@ -49,7 +50,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Copyright and Back to Top */}
-        <div className="flex justify-between mt-16 text-zinc-500 mx-14 my-20 font-sans ">
+        <div className="flex justify-between mt-16 text-zinc-500 mx-14 my-20 ">
           <p className="font-semibold text-xl">© 2024, Format-3. All Rights Reserved.</p>
           <motion.a 
           initial={{ color:'white'}}

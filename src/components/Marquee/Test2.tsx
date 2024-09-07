@@ -24,8 +24,8 @@ export default function Test2() {
     offset: ['start end', 'end start']
   });
   return (
-    <main
-    className="overflow-hidden bg-black font-black font-sans ">
+    <main 
+    className="overflow-hidden bg-black font-black ">
       <div className="h-[25vh]" />
       <motion.div 
       ref={container}>

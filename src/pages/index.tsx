@@ -14,6 +14,7 @@ import Contact from '@/components/Contact/Contact'
 import VerticalMarquee from '@/components/Marquee/VerticalMarquee'
 import AnimatedGrid from '@/components/services/AnimatedGrid'
 import Services from '@/components/services/Services'
+import ExpandableGrid from '@/components/services/Services'
 
 
 
@@ -39,12 +40,13 @@ const index = () => {
 
     <main className='min-h-screen w-full '>
       <Sticky />
-      <AnimatedGrid />
-      {/* <Services /> */}
-      <Marquee />
+      {/* <AnimatedGrid />
+      <ExpandableGrid /> */}
+
       <Cards />
+      <Marquee />
       <RevealText /> 
-      <VerticalMarquee />
+      {/* <VerticalMarquee /> */}
       <GridItems />
       <Test2 />
       <Section3D />

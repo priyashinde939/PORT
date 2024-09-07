@@ -12,8 +12,8 @@ const FooterMarquee: React.FC = () => {
   ];
 
   return (
-    <div style={{fontFamily: 'saira-Saira '}}
-    className=" saira-Saira container mx-auto max-w-full sticky -top-[100vh] overflow-hidden ">
+    <div 
+    className=" container mx-auto max-w-full sticky -top-[100vh] overflow-hidden ">
       <MarqueeItems texts={upperMarqueeTexts} from={0} to={"-100%"} />
       <MarqueeItems texts={lowerMarqueeTexts} from={"-100%"} to={0} />
     </div>
