@@ -65,7 +65,7 @@ export const RibbonMarquee: React.FC = () => {
 
     // Marquee Animations
     gsap.to(marquee1Ref.current, {
-      x: 600,
+      x: -600,
       ease: "linear",
       scrollTrigger: {
         trigger: containerRef.current,
