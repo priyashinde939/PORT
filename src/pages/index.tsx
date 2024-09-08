@@ -15,6 +15,9 @@ import VerticalMarquee from '@/components/Marquee/VerticalMarquee'
 import AnimatedGrid from '@/components/services/AnimatedGrid'
 import Services from '@/components/services/Services'
 import ExpandableGrid from '@/components/services/Services'
+import { HorizontalMarquee } from '@/components/horizontal-marquee/HorizontalMarquee'
+import { RibbonMarquee } from '@/components/RibbonMarquee.tsx/RibbonMarquee'
+
 
 
 
@@ -47,8 +50,10 @@ const index = () => {
       <Marquee />
       <RevealText /> 
       {/* <VerticalMarquee /> */}
-      <GridItems />
-      <Test2 />
+      {/* <GridItems /> */}
+      <HorizontalMarquee />
+      <RibbonMarquee />
+      {/* <Test2 /> */}
       <Section3D />
       <Section1 />
       <Section3D1 />
