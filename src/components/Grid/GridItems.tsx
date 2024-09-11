@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
-import Cube3D from '../Section3D/Cube3D';
+import Cube3D from '../PerspectiveSection/Cube3D';
 
 const FlexGrid: FC = () => {
 

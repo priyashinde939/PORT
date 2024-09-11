@@ -116,20 +116,20 @@
 .marquees {
   display: flex;
   align-items: center;
-  width: 100vw;
+  width:  100vw;
   height:  auto;
   margin-top: tovw(200px);
   padding-bottom: tovw(100px);
 
   .marquee1 {
     position: absolute;
-    transform: rotate(-5.37deg) translateX(-50%) translateY(-10%) ;
-    width: calc(100% + 1000px);
+    transform: rotate(-5.37deg) translateX(10%)  ;
+    width: calc(100% + 800px);
   }
 
   .marquee2 {
     position: absolute;
-    transform: rotate(2.52deg) translateX(4%) ;
+    transform: rotate(2.52deg) translateX(2%) ;
     width: calc(100% + 800px);
     
   }
@@ -140,7 +140,7 @@
 .marqueeContainer {
   font-size: tovw(80px);
   font-weight: 900;
-  height: tovw(75px);
+  height: tovw(85px);
   display: flex;
   align-items: center;
   border-top: 2px solid var(--marquee-color);
@@ -160,7 +160,7 @@
 
 .marqueeAnimationContainer {
   flex-wrap: nowrap;
-  width: fit-content;
+  width: 110vw;
   display: flex;
   align-items: center;
   position: absolute;

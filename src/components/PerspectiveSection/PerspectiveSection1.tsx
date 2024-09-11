@@ -2,7 +2,7 @@
 import { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
 
-const Section3D: React.FC = () => {
+const PerspectiveSection1: React.FC = () => {
     const container = useRef<HTMLDivElement | null>(null);
 
     const { scrollYProgress } = useScroll({
@@ -32,16 +32,12 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
 
     return (
 
-
-      <motion.div
+    <motion.div
             transition={{ type: "linear", stiffness: 50, damping: 10 }}
             style={{ scale, rotateY, scaleX, skew }}
             className="sticky top-0 h-screen border-pink-600 border-4 text-[3.5vw] bg-violet-700 font-extrabold text-black flex flex-col items-center justify-center pb-[10vh] rounded-3xl"
         >
-
-                
-    
-                <h1>SLINK</h1>
+            <h1>SLINK</h1>
             <p>Heading Heading</p>
             <div className="flex gap-3">
                 <p>Section</p>
@@ -60,4 +56,4 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
 };
 
 
-export default Section3D;
+export default PerspectiveSection1;

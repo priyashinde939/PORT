@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, forwardRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import s from "./horizontal-marquee.module.scss";
+import s from "./horizontal-Text.module.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,7 +9,7 @@ const phrase = "FROM THE LABORATORY...";
 const splitted = phrase.split("");
 const charsLength = splitted.length;
 
-export const HorizontalMarquee: React.FC = () => {
+export const HorizontalText: React.FC = () => {
   const marqueeRef = useRef<HTMLDivElement | null>(null);
   const animatedTextRef = useRef<HTMLDivElement | null>(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
@@ -65,15 +65,24 @@ export const HorizontalMarquee: React.FC = () => {
     // Animation for the WorldSvg
     gsap.fromTo(
       svgRef.current,
-      { scale: 0.8, opacity: 0 },
-      {
-        scale: 1.45,
-        opacity: 1,
-        ease: "linear",
+      
+      { scale: 0.1, opacity: 0.6, y:-200, x: -300, rotate:0,
         scrollTrigger: {
           trigger: marqueeRef.current,
-          start: "90% top",
-          end: "100% top",
+          start: "0% top",
+          end: "30% top",
+          scrub: true,
+        },
+      },
+      {
+        scale: 3,
+        rotate:360,
+        opacity: 1,
+        ease: "linear", 
+        scrollTrigger: {
+          trigger: marqueeRef.current,
+          start: "30% top",
+          end: "120% top",
           scrub: true,
         },
       }
@@ -95,8 +104,10 @@ export const HorizontalMarquee: React.FC = () => {
               </span>
             ))}
           </p>
-          <WorldSvg ref={svgRef} />
+
+
         </div>
+        <WorldSvg ref={svgRef} />
       </div>
     </section>
   );
@@ -107,23 +118,14 @@ const WorldSvg = forwardRef<SVGSVGElement>((_, ref) => {
     <svg
       viewBox="0 0 699 467"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
       className={s.worldSvg}
       ref={ref}
+      
+      
     >
-      <path
-        d="M632.89 340.891c-.843 1.264-1.898 2.528-2.741 3.897-2.32 3.477-3.058 3.582-7.065.633l17.82-15.802-8.014 055Z"
-        fill="#fff"
-      />
-      <path
-        d="M349.922 0C170.967 0 25 104.714 25 233.447S170.545 467 349.5 467 674 362.286 674 233.447C674 104.609 528.876 0 349.922 0Zm-95.485 450.566c2.846-2.739 5.691-5.478 8.747-8.112.876-.617 1.575-1.454 2.025-2.427.45-.5275-3.325-2.7396-5.315-3.5668-1.99-.8272-4.124-1.253-6.279-1.253Z"
-        fill="#fff"
-      />
-      <path
-        d="M673.384 93.2323h7.698c1.434-.1341 2.866.28 4.007 1.1588.478.4137.852.9349 1.091 1.5209.238.586.334 1.22.425-.632h-5.378v5.5835Z"
-        fill="#fff"
-      />
+    <path d="M140 20C73 20 20 74 20 140c0 135 136 170 228 303 88-132 229-173 229-303 0-66-54-120-120-120-48 0-90 28-109 69-19-41-60-69-108-69z" fill="lime" />
     </svg>
   );
 });
 WorldSvg.displayName = "WorldSvg";
+

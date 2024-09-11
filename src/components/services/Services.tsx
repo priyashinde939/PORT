@@ -1,119 +1,152 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+'use client';
+import { useRef } from 'react';
+import { useScroll, useTransform, motion } from 'framer-motion';
 
-const Cube: React.FC = () => {
-  const size = 300; // Adjust the cube size here
-  const [rotation, setRotation] = useState({ x: 0, y: 0 });
+const Services: React.FC = () => {
+    // Create separate refs for each card
+    const containerRef = useRef<HTMLDivElement | null>(null);
+    const card1Ref = useRef<HTMLDivElement | null>(null);
+    const card2Ref = useRef<HTMLDivElement | null>(null);
+    const card3Ref = useRef<HTMLDivElement | null>(null);
+    const card4Ref = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      // Adjust these values to control rotation speed
-      const xRotation = scrollY * 0.1; // Rotation on the X-axis
-      const yRotation = scrollY * 0.1; // Rotation on the Y-axis
-      setRotation({ x: xRotation, y: yRotation });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <motion.div className="flex items-center justify-center -top-20 text-7xl text-gray-300 font-black">
-      <motion.div
-        className="relative"
-        style={{
-          width: `${size}px`,
-          height: `${size}px`,
-          transformStyle: 'preserve-3d',
-          transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`,
-        }}
-      >
-        <motion.div
-          className="absolute flex items-center justify-center shadow-lg"
-          style={{
-            width: `${size}px`,
-            height: `${size}px`,
-            transform: `translateZ(${size / 2}px)`,
-            backgroundImage: `url("./images/6.jpg")`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          {/* Front */}
-        </motion.div>
-        <motion.div
-          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
-          style={{
-            width: `${size}px`,
-            height: `${size}px`,
-            transform: `rotateY(180deg) translateZ(${size / 2}px)`,
-            backgroundImage: `url("./images/9.jpg")`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          {/* Back */}
-        </motion.div>
-        <motion.div
-          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
-          style={{
-            width: `${size}px`,
-            height: `${size}px`,
-            transform: `rotateY(-90deg) translateZ(${size / 2}px)`,
-            backgroundImage: `url("./images/8.jpg")`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          {/* Left */}
-        </motion.div>
-        <motion.div
-          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
-          style={{
-            width: `${size}px`,
-            height: `${size}px`,
-            transform: `rotateY(90deg) translateZ(${size / 2}px)`,
-            backgroundImage: `url("./images/10.jpg")`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          {/* Right */}
-        </motion.div>
-        <motion.div
-          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
-          style={{
-            width: `${size}px`,
-            height: `${size}px`,
-            transform: `rotateX(90deg) translateZ(${size / 2}px)`,
-            backgroundImage: `url("./images/9.jpg")`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          {/* Top */}
-        </motion.div>
-        <motion.div
-          className="absolute bg-violet-400 flex items-center justify-center shadow-lg"
-          style={{
-            width: `${size}px`,
-            height: `${size}px`,
-            transform: `rotateX(-90deg) translateZ(${size / 2}px)`,
-            backgroundImage: `url("./images/mid.jpg")`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          {/* Bottom */}
-        </motion.div>
-      </motion.div>
-    </motion.div>
-  );
+    return (
+        <div ref={containerRef} className="relative h-[500vh] bg-black">
+            {/* Different card components with unique content */}
+            <Card1 scrollRef={containerRef} />
+            <Card2 scrollRef={card1Ref} />
+            <Card3 scrollRef={card2Ref} />
+            <Card4 scrollRef={card3Ref} />
+            <Card5 scrollRef={card4Ref} />
+            {/* <Card1 scrollRef={card1Ref} />
+            <Card2 scrollRef={card2Ref} />
+            <Card3 scrollRef={card3Ref} />
+            <Card4 scrollRef={card4Ref} /> */}
+        </div>
+    );
 };
 
-export default Cube;
+interface CardProps {
+    scrollRef: React.RefObject<HTMLDivElement>;
+}
+
+// Card1 Component
+const Card1: React.FC<CardProps> = ({ scrollRef }) => {
+    // Use the individual scrollRef for each card
+    const { scrollYProgress } = useScroll({
+        target: scrollRef,
+        offset: ["start start", "end end"]
+    });
+
+    const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.5]);
+    const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+
+    return (
+        <motion.div
+            ref={scrollRef}
+            transition={{ type: "linear", stiffness: 50, damping: 10 }}
+            style={{ scale, opacity }}
+            className="sticky top-0 h-screen flex items-center justify-center"
+        >
+            <div className="bg-black text-white border w-[100vw] h-[100vh] flex items-center justify-center text-5xl font-black">
+                Card 1 Content
+            </div>
+        </motion.div>
+    );
+};
+
+// Card2 Component
+const Card2: React.FC<CardProps> = ({ scrollRef }) => {
+    const { scrollYProgress } = useScroll({
+        target: scrollRef,
+        offset: ["start start", "end end"]
+    });
+
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
+    const opacity = useTransform(scrollYProgress, [0, 1], [1, 1]);
+
+    return (
+        <motion.div
+            ref={scrollRef}
+            transition={{ type: "spring", stiffness: 50, damping: 10 }}
+            style={{ scale, opacity }}
+            className="sticky top-0 h-screen flex items-center justify-center"
+        >
+            <div className="rounded-[3rem] bg-pink-700 text-black w-full h-[100vh] flex items-center justify-center text-2xl font-bold">
+                Card 2 Content
+            </div>
+        </motion.div>
+    );
+};
+
+// Card3 Component
+const Card3: React.FC<CardProps> = ({ scrollRef }) => {
+    const { scrollYProgress } = useScroll({
+        target: scrollRef,
+        offset: ["start start", "end end"]
+    });
+
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
+    const opacity = useTransform(scrollYProgress, [0, 1], [1, 1]);
+
+    return (
+        <motion.div
+            ref={scrollRef}
+            style={{ scale, opacity }}
+            className="sticky top-0 h-screen flex items-center justify-center"
+        >
+            <div className="rounded-[3rem] bg-lime-500 text-black w-full h-[100vh] flex items-center justify-center text-2xl font-bold">
+                Card 3 Content
+            </div>
+        </motion.div>
+    );
+};
+
+// Card4 Component
+const Card4: React.FC<CardProps> = ({ scrollRef }) => {
+    const { scrollYProgress } = useScroll({
+        target: scrollRef,
+        offset: ["start start", "end end"]
+    });
+
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
+    const opacity = useTransform(scrollYProgress, [0, 1], [1, 1]);
+
+    return (
+        <motion.div
+            ref={scrollRef}
+            style={{ scale, opacity }}
+            className="sticky top-0 h-screen flex items-center justify-center"
+        >
+            <div className="rounded-[3rem] bg-orange-800 text-black w-full h-[100vh] flex items-center justify-center text-2xl font-bold">
+                Card 4 Content
+            </div>
+        </motion.div>
+    );
+};
+
+
+// Card5 Component
+const Card5: React.FC<CardProps> = ({ scrollRef }) => {
+    const { scrollYProgress } = useScroll({
+        target: scrollRef,
+        offset: ["start start", "end end"]
+    });
+
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
+    const opacity = useTransform(scrollYProgress, [0, 1], [1, 1]);
+
+    return (
+        <motion.div
+            ref={scrollRef}
+            style={{ scale, opacity }}
+            className="sticky top-0 h-screen flex items-center justify-center"
+        >
+            <div className="rounded-[3rem] bg-lime-500 text-black w-full h-[100vh] flex items-center justify-center text-2xl font-bold">
+                Card 5 Content
+            </div>
+        </motion.div>
+    );
+};
+
+export default Services;

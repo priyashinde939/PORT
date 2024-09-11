@@ -2,7 +2,7 @@
 import { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
 
-const Section3D1: React.FC = () => {
+const PerspectiveSection2: React.FC = () => {
     const container = useRef<HTMLDivElement | null>(null);
 
     const { scrollYProgress } = useScroll({
@@ -52,4 +52,4 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
 };
 
 
-export default Section3D1;
+export default PerspectiveSection2;

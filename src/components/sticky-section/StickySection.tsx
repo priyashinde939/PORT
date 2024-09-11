@@ -1,6 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
+import { TextEffect } from '../TextGenerateEffect/TextEffect';
 
 const Sticky: React.FC = () => {
     const container = useRef<HTMLDivElement | null>(null);
@@ -31,7 +32,7 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
-            className="sticky top-0 h-screen bg-lime-500 text-[3.5vw] font-extrabold text-black flex flex-col items-center justify-center pb-[10vh]"
+            className="sticky rounded-2xl top-0 h-screen bg-violet-700 text-[3.5vw] font-extrabold text-black flex flex-col items-center justify-center pb-[10vh]"
         >
             <p>Heading Heading</p>
             <div className="flex gap-3">
@@ -56,9 +57,9 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
-            className="relative h-[100vh] bg-black flex flex-col items-center justify-center text-white p-[10vh]"
+            className="relative h-auto"
         >
-            <div className="relative flex flex-col text-[7vw] gap-5 font-black">
+            {/* <div className="relative flex flex-col text-[7vw] gap-5 font-black">
                 <p>IMAGE CONTAINER</p>
                 <h1 className="mt-3 font-bold text-2xl text-gray-400">
                     SED CONDIMENTUM MUS AUGUE LUCTUS .
@@ -69,7 +70,12 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
                 <h1 className="mt-3 font-bold text-gray-400">
                     SED CONDIMENTUM MUS AUGUE LUCTUS .
                 </h1>
-            </div>
+            </div> */}
+
+
+                <TextEffect />
+
+
         </motion.div>
     );
 };

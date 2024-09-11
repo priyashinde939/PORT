@@ -1,5 +1,5 @@
 import React from 'react'
-import { Reveal } from '../com/Reveal'
+import { Reveal } from '../Reveal/Reveal'
 
 
 export const RevealText = () => {

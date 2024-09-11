@@ -65,25 +65,25 @@ export const RibbonMarquee: React.FC = () => {
 
     // Marquee Animations
     gsap.to(marquee1Ref.current, {
-      x: -600,
+      x: 1000,
       ease: "linear",
       scrollTrigger: {
         trigger: containerRef.current,
         start: "top bottom",
         end: "bottom top",
-        scrub: 1,
+        scrub: 1.1,
       },
     });
     // start: "top bottom",
     // end: "bottom top",
     gsap.to(marquee2Ref.current, {
-      x: -600,
+      x:  -1000,
       ease: "linear",
       scrollTrigger: {
         trigger: containerRef.current,
         start: "start bottom",
         end: "bottom top",
-        scrub: 1,
+        scrub: 1.1,
       },
     });
   }, []);
@@ -149,8 +149,8 @@ export const RibbonMarquee: React.FC = () => {
 
       {/* Marquees */}
       <div className={s.marquees}>
-        <Marquee className={s.marquee1} orange ref={marquee1Ref} />
-        <Marquee className={s.marquee2} reverse ref={marquee2Ref} />
+        <Marquee  className={s.marquee1} orange ref={marquee1Ref} />
+        <Marquee  className={s.marquee2} reverse ref={marquee2Ref} />
       </div>
     </div>
   );
@@ -168,7 +168,7 @@ const Marquee = React.forwardRef<HTMLDivElement, { reverse?: boolean; orange?: b
         }}
       >
         <div className={clsx(s.marqueeAnimationContainer, reverse && s.reverse)} data-marquee-animation-container>
-          {Array.from({ length: 20 }, (_, i) => (
+          {Array.from({ length: 10 }, (_, i) => (
             <div style={{ fontFamily: 'Day' }} key={i} className={s.marqueeItem}>
               THE LAB <LabSvg />
             </div>
