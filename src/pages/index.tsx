@@ -41,8 +41,8 @@ const index = () => {
       <Sticky />
       <Card />    
       <RevealText /> 
-      <Services />
-      <Services2 />-
+      {/* <Services /> */}
+      <Services2 />
       <PerspectiveSection1 />
       <HorizontalText />
       <RibbonMarquee2 />
