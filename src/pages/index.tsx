@@ -11,6 +11,7 @@ import { RibbonMarquee2 } from '@/components/RibbonMarquee2/RibbonMarquee2'
 import PerspectiveSection1 from '@/components/PerspectiveSection/PerspectiveSection1'
 import PerspectiveSection2 from '@/components/PerspectiveSection/PerspectiveSection2'
 import Services from '@/components/Services/Services'
+import Services2 from '@/components/Services/Services2'
 
 
 
@@ -41,6 +42,7 @@ const index = () => {
       <Card />    
       <RevealText /> 
       <Services />
+      <Services2 />-
       <PerspectiveSection1 />
       <HorizontalText />
       <RibbonMarquee2 />

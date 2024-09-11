@@ -66,7 +66,7 @@ export const HorizontalText: React.FC = () => {
     gsap.fromTo(
       svgRef.current,
       
-      { scale: 0.1, opacity: 0.6, y:-200, x: -300, rotate:0,
+      { scale: 0.1, opacity: 0, y:-200, x: -300, rotate:0,
         scrollTrigger: {
           trigger: marqueeRef.current,
           start: "0% top",
