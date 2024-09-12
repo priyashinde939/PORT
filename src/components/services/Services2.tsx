@@ -1,13 +1,11 @@
-'use client';
-import { useRef } from 'react';
+import { useRef, useLayoutEffect } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 
 const Services: React.FC = () => {
-    // Create a single ref for the entire container
     const containerRef = useRef<HTMLDivElement | null>(null);
 
     return (
-        <div ref={containerRef} className="relative h-[650vh] w-[100vw] bg-black">
+        <div ref={containerRef} className="relative h-[500vh] w-[100vw] bg-black">
             <Card1 scrollRef={containerRef} />
             <Card2 scrollRef={containerRef} />
             <Card3 scrollRef={containerRef} />
@@ -21,29 +19,30 @@ interface CardProps {
     scrollRef: React.RefObject<HTMLDivElement>;
 }
 
-// Card1 Component
 const Card1: React.FC<CardProps> = ({ scrollRef }) => {
     const { scrollYProgress } = useScroll({
         target: scrollRef,
         offset: ["start start", "end end"]
     });
 
-    // Adjust scroll range for delay
-    const scale = useTransform(scrollYProgress, [0, 0.1, 0.3], [1, 0.8, 0.5]);
-    const opacity = useTransform(scrollYProgress, [0, 0.1, 0.3], [1, 0.7, 0]);
+    const scale = useTransform(scrollYProgress, [0, 0.1, 1], [1, 0.8, 0]);
+//    const opacity = useTransform(scrollYProgress, [0, 0.1, 1], [1, 0.7, 0]);
 
     return (
         <motion.div
-            transition={{ type: "linear", stiffness: 50, damping: 10 }}
-            style={{ scale, opacity }}
+        transition={{ type: "linear", stiffness: 50, damping: 10,  delay:5, duration:10}}
+            style={{ scale}}
             className="sticky top-0  flex items-center justify-center"
         >
-            <div className=" bg-black text-white h-[100vh] border w-full flex items-center justify-center text-5xl font-black rounded-[3rem]">
-                Card 1 Content
+            <div className=" text-white border  w-[90vw] flex  text-5xl font-bold rounded-[3rem]">
+                <div className="relative w-full h-[100vh] top-0 bg-black rounded-[3rem] flex items-center justify-center">
+                    Card 1 Content
+                </div>
             </div>
         </motion.div>
     );
 };
+
 
 // Card2 Component
 const Card2: React.FC<CardProps> = ({ scrollRef }) => {
@@ -52,18 +51,19 @@ const Card2: React.FC<CardProps> = ({ scrollRef }) => {
         offset: ["start start", "end end"]
     });
 
-    // Adjust scroll range for delay after Card1
-    const scale = useTransform(scrollYProgress, [0.25, 0.35, 0.55], [1, 0.8, 0.5]);
-    const opacity = useTransform(scrollYProgress, [0.25, 0.35, 0.55], [1, 0.7, 0]);
+    const scale = useTransform(scrollYProgress, [0, 0.2, 1], [1, 0.8, 0]);
+//    const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.7, 0]);
 
     return (
         <motion.div
-            transition={{ type: "spring", stiffness: 50, damping: 10 }}
-            style={{ scale, opacity }}
+            transition={{ type: "linear", stiffness: 50, damping: 10, delay:5, duration:10}}
+            style={{ scale}}
             className="sticky top-0 flex items-center justify-center"
         >
-            <div className=" bg-pink-700 text-black h-[100vh] w-[90vw] flex items-center justify-center text-2xl font-bold rounded-[3rem]">
-                Card 2 Content
+            <div className=" text-black border  w-[90vw] flex  text-5xl font-bold rounded-[3rem]">
+                <div className="relative w-full h-[100vh] top-0 bg-pink-700 rounded-[3rem] flex items-center justify-center">
+                    Card 2 Content
+                </div>
             </div>
         </motion.div>
     );
@@ -76,18 +76,19 @@ const Card3: React.FC<CardProps> = ({ scrollRef }) => {
         offset: ["start start", "end end"]
     });
 
-    // Adjust scroll range for delay after Card2
-    const scale = useTransform(scrollYProgress, [0.45, 0.55, 0.75], [1, 0.8, 0.5]);
-    const opacity = useTransform(scrollYProgress, [0.45, 0.55, 0.75], [1, 0.7, 0]);
+    const scale = useTransform(scrollYProgress, [0, 0.3, 1], [1, 0.8, 0]);
+//    const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.7, 0]);
 
     return (
         <motion.div
-            transition={{ type: "linear", stiffness: 50, damping: 10 }}
-            style={{ scale, opacity }}
+            transition={{ type: "linear", stiffness: 50, damping: 10,  delay:2, duration:10}}
+            style={{ scale}}
             className="sticky top-0 flex items-center justify-center"
         >
-            <div className=" bg-lime-500 text-black h-[100vh] w-[90vw] flex items-center justify-center text-2xl font-bold rounded-[3rem]">
-                Card 3 Content
+            <div className=" text-black border  w-[90vw] flex  text-5xl font-bold rounded-[3rem]">
+                <div className="relative w-full h-[100vh] top-0 bg-lime-500 rounded-[3rem] flex items-center justify-center">
+                    Card 3 Content
+                </div>
             </div>
         </motion.div>
     );
@@ -100,18 +101,19 @@ const Card4: React.FC<CardProps> = ({ scrollRef }) => {
         offset: ["start start", "end end"]
     });
 
-    // Adjust scroll range for delay after Card3
-    const scale = useTransform(scrollYProgress, [0.65, 0.75, 0.95], [1, 0.8, 0.5]);
-    const opacity = useTransform(scrollYProgress, [0.65, 0.75, 0.95], [1, 0.7, 0]);
+    const scale = useTransform(scrollYProgress, [0, 0.4, 1], [1, 0.8, 0]);
+//    const opacity = useTransform(scrollYProgress, [0, 0.7, 1], [1, 0.7, 0]);
 
     return (
         <motion.div
             transition={{ type: "linear", stiffness: 50, damping: 10 }}
-            style={{ scale, opacity }}
+            style={{ scale}}
             className="sticky top-0 flex items-center justify-center"
         >
-            <div className=" bg-orange-800 text-black h-[100vh] w-[90vw]  flex items-center justify-center text-2xl font-bold rounded-[3rem]">
-                Card 4 Content
+            <div className=" text-black border  w-[90vw] flex  text-5xl font-bold rounded-[3rem]">
+                <div className="relative w-full h-[100vh] top-0 bg-orange-700 rounded-[3rem] flex items-center justify-center">
+                    Card 4 Content
+                </div>
             </div>
         </motion.div>
     );
@@ -124,21 +126,23 @@ const Card5: React.FC<CardProps> = ({ scrollRef }) => {
         offset: ["start start", "end end"]
     });
 
-    // Adjust scroll range for delay after Card4
-    const scale = useTransform(scrollYProgress, [0.85, 0.95, 1.15], [1, 0.8, 0.5]);
-    const opacity = useTransform(scrollYProgress, [0.85, 0.95, 1.15], [1, 0.7, 0]);
+    const scale = useTransform(scrollYProgress, [0, 0.2, 1], [1, 0.8, 0]);
+//    const opacity = useTransform(scrollYProgress, [0, 0.9, 1], [1, 0.7, 0]);
 
     return (
         <motion.div
             transition={{ type: "linear", stiffness: 50, damping: 10 }}
-            style={{ scale, opacity }}
+            style={{ scale}}
             className="sticky top-0 flex items-center justify-center"
         >
-            <div className=" bg-lime-500 text-black h-[100vh] w-[90vw]  flex items-center justify-center text-2xl font-bold rounded-[3rem]">
-                Card 5 Content
+            <div className=" text-black border  w-[90vw] flex  text-5xl font-bold rounded-[3rem]">
+                <div className="relative w-full h-[100vh] top-0 bg-lime-500 rounded-[3rem] flex items-center justify-center">
+                    Card 5 Content
+                </div>
             </div>
         </motion.div>
     );
 };
+
 
 export default Services;
