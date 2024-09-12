@@ -1,120 +1,124 @@
-.cardContainer{
-    height: 100vh;
+//StackCard.module.scss
+.cardContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  color: rgb(0, 0, 0);
+
+  @media screen and (max-width: 800px) {
+    height: 60vh;
+  }
+
+  .card {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
-    color:rgb(0, 0, 0);
+    flex-direction: column;
+    position: relative;
+    top: -25%;
+    height: 600px;
+    width: 95vw;
+    border-radius: 50px;
+    padding: 50px;
+    transform-origin: top;
+    box-shadow: 5px 5px 20px 5px #000000;
 
+    // First Card
+    .firstCard {
+      text-align: center;
+      padding: 100px 20px;
+      color: white;
 
-
-
-
-
-
-
-
-
-// -- Last Card  -- //
-
-
-
-
-    .card{
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      top: -25%;
-      height: 600px;
-      min-width: 95vw;
-      border-radius: 50px;
-      padding:50px;
-      transform-origin: top;
-      box-shadow: 5px 5px 20px 5px #000000;
-
-        // -- Fist Card  -- //
-
-      .ourServicesContainer {
-        text-align: center;
-        padding: 100px 20px;
-        color:white;
-        
-      }
-      
-      .ourServicesHeading {
-        font-size: 6rem; 
+      .firstCardHeading {
+        font-size: 6rem;
         font-weight: bold;
         margin-bottom: 20px;
-        font-family: Day;
+        font-family: 'Day', sans-serif;
       }
-      
+
       .arrowIcon {
         margin-top: 20px;
-        // You can further customize the size and style of the arrow as needed
       }
+    }
 
+    // Last Card
+    .lastCard {
+      text-align: center;
+      border-radius: 0px;
+      padding: 60px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+      height: 600px;
+      width: 95vw;
 
-      // .lastCard {
-      //   text-align: center;
-      //   color:white;
-      //   width: 100vw;
-      //   height: 800px;
-        
-      // }
-      
-      h2{
-        text-align: center;
-        margin: 0px;
-        font-size: 28px;
-      }
-      .title{
-        font-size: 4rem;
+      .lastCardHeading {
+        font-size: 6rem;
+        color: white;
         font-weight: bold;
+        margin-top: 200px;
+        font-family: 'Day', sans-serif;
       }
-      .body{
-        display: flex;
-        height: 100%;
-        margin-top: 50px;
-        gap: 50px;
-  
-        .description{
-          width: 40%;
-          position: relative;
-          top: 10%;
-          p{
+    }
+
+    h2 {
+      text-align: center;
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .title {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    .body {
+      display: flex;
+      height: 100%;
+      margin-top: 50px;
+      gap: 50px;
+
+      .description {
+        width: 40%;
+        position: relative;
+        top: 10%;
+
+        p {
+          font-size: 1rem;
+
+          &::first-letter {
             font-size: 1rem;
-            &::first-letter{
-              font-size: 1rem;
-            }
-          }
-          span{
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            a{
-              font-size: 12px;
-              text-decoration: underline;
-              cursor: pointer;
-            }
           }
         }
-  
-        .imageContainer{
-          position: relative;
-          width: 60%;
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          a {
+            font-size: 12px;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .imageContainer {
+        position: relative;
+        width: 60%;
+        height: 100%;
+        border-radius: 0px 100px 0px 0px;
+        overflow: hidden;
+
+        .inner {
+          width: 100%;
           height: 100%;
-          border-radius: 25px;
-          overflow: hidden;
-          border-radius: 0px 100px 0px 0px;
-          .inner{
-            width: 100%;
-            height: 100%;
-          }
-          img{
-            object-fit: cover;
-          }
+        }
+
+        img {
+          object-fit: cover;
         }
       }
     }
   }
+}

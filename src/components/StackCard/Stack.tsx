@@ -54,7 +54,7 @@ const projects: Project[] = [
   }
 ];
 
-export default function Stack() {
+export default function Stack1() {
   // Explicitly type the container ref
   const container = useRef<HTMLElement | null>(null);
   

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from './StackCard.module.scss';
 import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
+import clsx from "clsx";
 
 // Define an interface for the component props
 interface StackCardProps {
@@ -43,8 +44,8 @@ const StackCard: React.FC<StackCardProps> = ({ i, title, description, src, color
         className={styles.card}
       >
         {i === 0 ? (
-          <div className={styles.ourServicesContainer}>
-            <h1 className={styles.ourServicesHeading}>OUR SERVICES</h1>
+          <div className={styles.firstCard}>
+            <h1 className={styles.firstCardHeading}>OUR SERVICES</h1>
             <svg
               className={styles.arrowIcon}
               width="100"
@@ -55,12 +56,11 @@ const StackCard: React.FC<StackCardProps> = ({ i, title, description, src, color
             </svg>
           </div>
         ) : i === 4 ? (
-            <div className={`${styles.lastCard}`}>
-            <h2 className="flex">ello ellooo</h2>
-            <Image fill src={`/images/${src}`} alt="-_-" />
-            {/* <div className={styles.Footer}>
-              <p>Some information for card </p>
-            </div> */}
+          <div className={`${styles.lastCard} `}>
+            <div className={`${styles.lastCardHeading}`}>
+              last Card Content
+            </div>
+            {/* <Image fill src={`/images/${src}`} alt="-_-" /> */}
           </div>
         ) : (
           <>
