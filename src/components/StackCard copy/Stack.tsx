@@ -28,28 +28,28 @@ const projects: Project[] = [
     description: "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes.",
     src: "mid.jpg",
     link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
-    color: "#efecec"
+    color: "white"
   },
   {
     title: "Zissou",
     description: "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
     src: "mid.jpg",
     link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
-    color: "#efecec"
+    color: "white"
   },
   {
     title: "Mathias Svold and Ulrik Hasemann",
     description: "The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold.",
     src: "mid.jpg",
     link: "https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/",
-    color: "#efecec"
+    color: "white"
   },
   {
     title: "Mark Rammers",
     description: "Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project.",
     src: "mid.jpg",
     link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
-    color: "#efecec"
+    color: "white"
   }
 ];
 
@@ -78,9 +78,11 @@ export default function Stack() {
   }, []);
 
   return (
-    <section ref={container}>
+    <section 
+    ref={container}>
       {projects.map((project, i) => {
         const targetScale = 1 - ((projects.length - i) * 0.05);
+        const targetOpacity = 1 - ((projects.length - 0.9 - i) * 0.8);
         return (
           <StackCard 
             key={`p_${i}`} 
@@ -89,6 +91,7 @@ export default function Stack() {
             progress={scrollYProgress} 
             range={[i * 0.25, 1]} 
             targetScale={targetScale} 
+            targetOpacity={targetOpacity} 
           />
         );
       })}

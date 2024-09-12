@@ -5,28 +5,18 @@
     justify-content: center;
     position: sticky;
     top: 0px;
-    color:black;
+    color:rgb(0, 0, 0);
 
 
 
-    .ourServicesContainer {
-      text-align: center;
-      padding: 100px 20px;
-      color:white;
-      
-    }
-    
-    .ourServicesHeading {
-      font-size: 6rem; 
-      font-weight: bold;
-      margin-bottom: 20px;
-      font-family: Day;
-    }
-    
-    .arrowIcon {
-      margin-top: 20px;
-      // You can further customize the size and style of the arrow as needed
-    }
+
+
+
+
+
+
+
+// -- Last Card  -- //
 
 
 
@@ -37,11 +27,42 @@
       position: relative;
       top: -25%;
       height: 600px;
-      width: 90vw;
+      min-width: 95vw;
       border-radius: 50px;
       padding:50px;
       transform-origin: top;
       box-shadow: 5px 5px 20px 5px #000000;
+
+        // -- Fist Card  -- //
+
+      .ourServicesContainer {
+        text-align: center;
+        padding: 100px 20px;
+        color:white;
+        
+      }
+      
+      .ourServicesHeading {
+        font-size: 6rem; 
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: Day;
+      }
+      
+      .arrowIcon {
+        margin-top: 20px;
+        // You can further customize the size and style of the arrow as needed
+      }
+
+
+      // .lastCard {
+      //   text-align: center;
+      //   color:white;
+      //   width: 100vw;
+      //   height: 800px;
+        
+      // }
+      
       h2{
         text-align: center;
         margin: 0px;
@@ -62,10 +83,9 @@
           position: relative;
           top: 10%;
           p{
-            font-size: 16px;
+            font-size: 1rem;
             &::first-letter{
-              font-size: 28px;
-              font-family: 'Day';
+              font-size: 1rem;
             }
           }
           span{
@@ -86,6 +106,7 @@
           height: 100%;
           border-radius: 25px;
           overflow: hidden;
+          border-radius: 0px 100px 0px 0px;
           .inner{
             width: 100%;
             height: 100%;

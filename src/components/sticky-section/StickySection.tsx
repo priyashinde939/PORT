@@ -12,7 +12,7 @@ const Sticky: React.FC = () => {
     });
 
     return (
-        <div style={{fontFamily:'Oswald'}}
+        <div style={{fontFamily:'Day'}}
         ref={container} className="relative h-[200vh] bg-black">
             <Section1 scrollYProgress={scrollYProgress} />
             <Section2 scrollYProgress={scrollYProgress} />
