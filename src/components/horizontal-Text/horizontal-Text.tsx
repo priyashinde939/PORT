@@ -75,7 +75,7 @@ export const HorizontalText: React.FC = () => {
         },
       },
       {
-        scale: 3,
+        scale: 0.6,
         rotate:360,
         opacity: 1,
         ease: "linear", 
