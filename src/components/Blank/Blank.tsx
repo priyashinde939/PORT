@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
   const opacity = useTransform(
     scrollYProgress,
     [cardStart, cardStart + 0.1, cardEnd - 0.2, cardEnd],
-    [0, 1, 1, 0]
+    [0.8, 1, 1, 0.8]
   );
 
   const rotate = useTransform(
