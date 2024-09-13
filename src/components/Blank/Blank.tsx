@@ -114,7 +114,8 @@ const Heading: React.FC<{ scrollYProgress: MotionValue<number> }> = ({ scrollYPr
   return (
     <motion.div
       style={{ scale, opacity, y }}
-      className="h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600"
+//      className="h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600"
+      className="relative h-screen flex top-[6%] justify-center font-day"
     >
       <div className="flex flex-col items-center text-white">
         <motion.span 
