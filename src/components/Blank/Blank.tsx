@@ -84,11 +84,11 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
       <Button
-        text="Click Me"                // The text to display inside the button
-        border="border"                // Optional Tailwind class for the border style
-        borderCol="border-blue-500"    // Optional Tailwind class for border color
-        bg="bg-blue-500"               // Optional Tailwind class for background color
-        txt="text-white"               // Optional Tailwind class for text color
+        text="Click Me"                
+        border="border"                
+        borderCol="border-blue-500"   
+        bg="bg-blue-500"               
+        txt="text-white"               
       />
           </motion.button>
         </div>
