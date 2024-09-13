@@ -1,125 +1,37 @@
-//StackCard.module.scss
-
-
 .cardContainer {
-  height: 100vh;
+  height: 200vh; // Adjust this to control the scroll duration
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 0;
+  position: relative; // For sticky effect
   color: rgb(0, 0, 0);
 
-  @media screen and (max-width: 800px) {
-    height: 60vh;
-  }
-
+  // Make the card sticky
   .card {
+    position: sticky;
+    top: 0; // Stick at the top
+    height: 80vh; // Adjust based on your design
+    width: 95vw;
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: -25%;
-    height: 600px;
-    width: 95vw;
-    border-radius: 50px;
+    justify-content: center;
     padding: 50px;
-    transform-origin: top;
+    background-color: white;
+    border-radius: 50px;
     box-shadow: 5px 5px 20px 5px #000000;
 
-    // First Card
-    .firstCard {
-      text-align: center;
-      padding: 100px 20px;
-      color: white;
-
-      .firstCardHeading {
+    // Styling for first card
+    &.firstCard {
+      h1 {
         font-size: 6rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-        font-family: 'Day', sans-serif;
-      }
-
-      .arrowIcon {
-        margin-top: 20px;
       }
     }
 
-    // Last Card
-    .lastCard {
+    // Last card styling
+    &.lastCard {
       text-align: center;
       padding: 60px;
-      box-shadow: 0px;
-      height: 600px;
-      width: 95vw;
-
-      .lastCardHeading {
-        font-size: 6rem;
-        color: white;
-        font-weight: bold;
-        margin-top: 200px;
-        font-family: 'Day', sans-serif;
-      }
-    }
-
-    h2 {
-      text-align: center;
-      margin: 0;
-      font-size: 28px;
-    }
-
-    .title {
-      font-size: 4rem;
-      font-weight: bold;
-    }
-
-    .body {
-      display: flex;
       height: 100%;
-      margin-top: 50px;
-      gap: 50px;
-
-      .description {
-        width: 40%;
-        position: relative;
-        top: 10%;
-
-        p {
-          font-size: 1rem;
-
-          &::first-letter {
-            font-size: 1rem;
-          }
-        }
-
-        span {
-          display: flex;
-          align-items: center;
-          gap: 5px;
-
-          a {
-            font-size: 12px;
-            text-decoration: underline;
-            cursor: pointer;
-          }
-        }
-      }
-
-      .imageContainer {
-        position: relative;
-        width: 60%;
-        height: 100%;
-        border-radius: 0px 100px 0px 0px;
-        overflow: hidden;
-
-        .inner {
-          width: 100%;
-          height: 100%;
-        }
-
-        img {
-          object-fit: cover;
-        }
-      }
     }
   }
 }

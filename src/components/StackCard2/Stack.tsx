@@ -16,6 +16,7 @@ interface Project {
   color: string;
 }
 
+
 // Array of projects with type annotations
 const projects: Project[] = [
   {
@@ -55,14 +56,15 @@ const projects: Project[] = [
   }
 ];
 
+
+
 export default function Stack() {
-  // Explicitly type the container ref
   const container = useRef<HTMLElement | null>(null);
   
   // Use Framer Motion's scroll progress hook
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ['start start', 'end end']
+    offset: ['start start', 'end end'],
   });
 
   useEffect(() => {
@@ -75,58 +77,31 @@ export default function Stack() {
 
     requestAnimationFrame(raf);
     
-    // Clean up the effect
     return () => lenis.destroy();
   }, []);
 
-
-
-  // useEffect(() => {
-  //   // Initialize Lenis with custom settings
-  //   const lenis = new Lenis({
-  //     duration: 3, // Adjust the duration to control scroll speed (higher means slower)
-  //     // smooth: true, // Enable smooth scrolling
-  //     easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing function
-  //   });
-
-  //   function raf(time: number) {
-  //     lenis.raf(time); // Request animation frame for Lenis
-  //     requestAnimationFrame(raf);
-  //   }
-
-  //   requestAnimationFrame(raf);
-
-  //   // Cleanup on component unmount
-  //   return () => lenis.destroy();
-  // }, []);
-
-
-
   return (
-    <section className={`${styles.section}`}
-    ref={container}>
-        {projects.map((project, i) => {
-          const isSecondLastCard = i === projects.length - 2; // Second last card
-          const targetScale = 1 - ((projects.length - i) * 0.04); 
-          const targetOpacity = isSecondLastCard ? 0 : 1 - ((projects.length - 1.5 - i) * 1.2);
-          // const targetScale = 1 - ((projects.length - i) * 0.05);
-          // const targetOpacity = 1 - ((projects.length - 0.9 - i) * 0.9);
+    <section className={`${styles.section}`} ref={container}>
+      {projects.map((project, i) => {
+        const targetScale = 1 - ((projects.length - i) * 0.04);
+        const targetOpacity = 1 - ((projects.length - 1.5 - i) * 1.2);
 
-    
-          const adjustedRange = isSecondLastCard 
-            ? [(i * 0.25), 0.99] // This will fade out the second-last card earlier
-            : [i * 0.25, 1]; // Original range for other cards
-    
+        // Extend the range to simulate "stickiness" for the first part of the scroll
+        const adjustedRange = [i * 0.25, i * 0.25 + 0.05, 1]; // Adjusted to stick longer
+
+        // Updated scale and opacity output ranges to match the input range length
+        const scaleOutputRange = [1, 1, targetScale];   // Three elements to match input range
+        const opacityOutputRange = [1, 1, targetOpacity]; // Three elements to match input range
+
         return (
-          <StackCard 
-            key={`p_${i}`} 
-            i={i} 
-            {...project} 
-            progress={scrollYProgress} 
-            // range={[i * 0.25, 1]} 
-            range={[i * 0.25, 1]} 
-            targetScale={targetScale} 
-            targetOpacity={targetOpacity} 
+          <StackCard
+            key={`p_${i}`}
+            i={i}
+            {...project}
+            progress={scrollYProgress}
+            range={adjustedRange}
+            targetScale={scaleOutputRange}
+            targetOpacity={opacityOutputRange}
           />
         );
       })}
