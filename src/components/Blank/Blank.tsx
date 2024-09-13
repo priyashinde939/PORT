@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
 import { FaCode, FaMobile, FaPaintBrush, FaCloud } from 'react-icons/fa';
-import Button from '../Button/Button';
+
 
 interface CardProps {
   scrollYProgress: MotionValue<number>;
@@ -10,9 +10,10 @@ interface CardProps {
   bgColor: string;
   index: number;
   totalCards: number;
+  videoSrc?: string; // Add a videoSrc prop
 }
 
-const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, index, totalCards }) => {
+const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, index, totalCards, videoSrc  }) => {
   const cardStart = (index - 1) / totalCards;
   const cardEnd = index / totalCards;
 
@@ -43,10 +44,10 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
   return (
     <motion.div
       style={{ y, scale, opacity, rotate }}
-      className={`sticky top-[20vh] flex items-center justify-center w-full h-[80vh]`}
+      className={`sticky top-[20vh] flex items-center justify-center w-full h-[85vh] font-day`}
     >
       <motion.div 
-        className={`${bgColor} text-white h-[75vh] w-[90vw] rounded-[2rem] flex items-center justify-between text-3xl font-bold shadow-2xl p-8 overflow-hidden`}
+        className={`${bgColor} text-white h-[75vh] w-[90vw] rounded-[2rem] flex items-center justify-between text-3xl font-bold shadow-2xl px-8 overflow-hidden`}
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
@@ -88,21 +89,18 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
         </div>
 
         {/* Right Side - Video */}
-        <motion.div 
-          className="w-1/2 h-full bg-black rounded-[0px_150px_0px_0px] overflow-hidden"
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 0.6 }}
-        >
-          <iframe
-            className="w-full h-full"
-            src="https://www.youtube.com/embed/example-video-id"  // Replace with your video URL
-            title="Video title"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </motion.div>
+        {/* {videoSrc && ( */}
+          <motion.div className="flex-1 h-[80%] bg-black rounded-[0px_100px_0px_0px]">
+            {/* Video with autoplay, no controls, and muted */}
+            <video
+              src={videoSrc}
+              autoPlay
+              loop
+              muted
+              className="w-full h-auto rounded-[0px_100px_0px_0px]" // Custom border radius for video
+            />
+          </motion.div>
+        {/* )} */}
       </motion.div>
     </motion.div>
   );
@@ -158,7 +156,7 @@ const Blank: React.FC = () => {
   return (
     <div 
       ref={containerRef} 
-      className="relative w-full bg-gradient-to-r from-black to-gray-900" 
+      className="relative w-full bg-gradient-to-r from-black to-slate-900" 
       style={{ height: `${(cards.length + 1) * 150}vh` }}
     >
       <Heading scrollYProgress={scrollYProgress} />
