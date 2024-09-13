@@ -83,13 +83,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-      <Button
-        text="Click Me"                
-        border="border"                
-        borderCol="border-blue-500"   
-        bg="bg-blue-500"               
-        txt="text-white"               
-      />
+              Find Out More
           </motion.button>
         </div>
 
