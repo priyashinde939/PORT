@@ -70,7 +70,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
           {services.map((service, i) => (
             <motion.button
               key={i}
-              className="border border-white text-black text-sm font-medium px-4 py-2 rounded-[3rem]"
+              className="border border-white text-black text-sm  px-4 py-2 rounded-[3rem]"
               whileHover={{ backgroundColor: "#ffffff" }}
               transition={{ type: "linear", duration:0.4}}
             >
