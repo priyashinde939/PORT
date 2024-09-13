@@ -145,7 +145,7 @@ const Heading: React.FC<{ scrollYProgress: MotionValue<number> }> = ({ scrollYPr
           style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.3)' }}
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 300, damping: 20, delay: 0.2 }}
+          transition={{ type: "spring", stiffness: 100, damping: 2, delay: 0.2 }}
         >
           SERVICES
         </motion.span>
