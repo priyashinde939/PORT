@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-row md:flex-row place-content-between justify-between items-start md:items-center mx-14">
           {/* Logo */}
           <div className="mb-8 md:mb-0">
-            <img src="images/git.svg" alt="Format-3 Logo" className="w-32" />
+            <img src="images/logo/hand.png" alt="Format-3 Logo" className="w-32 -rotate-45" />
           </div>
 
           {/* Links Section */}

@@ -13,6 +13,7 @@ import PerspectiveSection2 from '@/components/PerspectiveSection/PerspectiveSect
 import Stack from '@/components/StackCard2/Stack'
 import Bubble from '@/components/Bubble/Bubble'
 import Blank from '@/components/Blank/Blank'
+import Services from '@/components/Services/Services'
 
 // import Stack from '@/components/StackCard/Stack'
 
@@ -47,6 +48,7 @@ const index = () => {
       <RevealText /> 
 
       <Stack />
+      <Services />
       {/* <Stack1 /> */}
       <PerspectiveSection1 />
       <HorizontalText />
