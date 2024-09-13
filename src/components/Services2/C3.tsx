@@ -8,14 +8,14 @@ const C3: React.FC = () => {
 
     const { scrollYProgress } = useScroll({
         target: container,
-        offset: ["start start", "end end"]
+        offset: ["-20vh start", "end end"]
     });
 
     return (
         <div 
             style={{ perspective: '300px' }} 
             ref={container} 
-            className="relative h-[400vh]" // Ensure height allows enough scrolling
+            className="relative h-[300vh]" // Ensure height allows enough scrolling
         >
             <Section1 scrollYProgress={scrollYProgress} />
         </div>
@@ -28,15 +28,15 @@ interface SectionProps {
 
 const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
 
-    const scale = useTransform(scrollYProgress, [0.7, 1], [0.9, 0.8]);
-    const opacity = useTransform(scrollYProgress, [0.7, 1], [1, 0]);
+    const scale = useTransform(scrollYProgress, [0.6, 1], [0.9, 0.8]);
+    const opacity = useTransform(scrollYProgress, [0.6, 1], [1, 0]);
     // const backgroundColor = useTransform(scrollYProgress, [0.4, 0.8], ['#000000', '#ffffff']);
 
     return (
         <motion.div
             // initial={{y:'-30px'}}
             // animate={{y:'0'}}
-            transition={{ type: 'linear', duration:5 }}
+            transition={{ type: 'linear' }}
             style={{  scale, opacity }} // Apply the dynamic backgroundColor
             className="sticky top-0 h-[100vh] text-[3.5vw] font-extrabold text-black flex flex-col items-center bg-slate-400 justify-center pb-[10vh] rounded-[3rem]"
         >

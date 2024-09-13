@@ -30,9 +30,13 @@ const Card1: React.FC<CardProps> = ({ scrollRef }) => {
 
     return (
         <motion.div
-            transition={{ type: "linear", stiffness: 50, damping: 10 }}
+            transition={{
+                duration: 5, // Duration for the card to transition out
+                delay: 5, // Delay before the next card starts transitioning in
+                ease: "linear"
+            }}
             style={{ scale, opacity }}
-            className="sticky top-0  flex items-center justify-center"
+            className="sticky top-0 flex items-center justify-center"
         >
             <div className="bg-black text-white h-[100vh] w-full flex items-center justify-center text-5xl font-black rounded-[3rem]">
                 Card 1 Content
@@ -54,16 +58,21 @@ const Card2: React.FC<CardProps> = ({ scrollRef }) => {
 
     return (
         <motion.div
-            transition={{ type: "spring", stiffness: 50, damping: 10 }}
+            transition={{
+                duration: 5,
+                delay: 5,
+                ease: "linear"
+            }}
             style={{ scale, opacity }}
             className="sticky top-0 flex items-center justify-center"
         >
-            <div className=" bg-pink-700 text-black h-[100vh] w-[90vw] flex items-center justify-center text-2xl font-bold rounded-[3rem]">
+            <div className="bg-pink-700 text-black h-[100vh] w-[90vw] flex items-center justify-center text-2xl font-bold rounded-[3rem]">
                 Card 2 Content
             </div>
         </motion.div>
     );
 };
+
 
 // Card3 Component
 const Card3: React.FC<CardProps> = ({ scrollRef }) => {
@@ -77,7 +86,11 @@ const Card3: React.FC<CardProps> = ({ scrollRef }) => {
 
     return (
         <motion.div
-            transition={{ type: "linear", stiffness: 50, damping: 10 }}
+            transition={{
+                duration: 5,
+                delay: 5,
+                ease: "linear"
+            }}
             style={{ scale, opacity }}
             className="sticky top-0 flex items-center justify-center"
         >
@@ -100,7 +113,11 @@ const Card4: React.FC<CardProps> = ({ scrollRef }) => {
 
     return (
         <motion.div
-            transition={{ type: "linear", stiffness: 50, damping: 10 }}
+            transition={{
+                duration: 5,
+                delay: 5,
+                ease: "linear"
+            }}
             style={{ scale, opacity }}
             className="sticky top-0 flex items-center justify-center"
         >
@@ -123,7 +140,11 @@ const Card5: React.FC<CardProps> = ({ scrollRef }) => {
 
     return (
         <motion.div
-            transition={{ type: "linear", stiffness: 50, damping: 10 }}
+            transition={{
+                duration: 5,
+                delay: 5,
+                ease: "linear"
+            }}
             style={{ scale, opacity }}
             className="sticky top-0 flex items-center justify-center"
         >

@@ -53,7 +53,7 @@ const index = () => {
       <RevealText /> 
 
       <Stack />
-      {/* <Services2 /> */}
+      <Services2 />
       <C1 />
       <C2 />
       <C3 />
