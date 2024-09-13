@@ -158,7 +158,7 @@ const Blank: React.FC = () => {
     <div 
       ref={containerRef} 
       className="relative w-full bg-gradient-to-r from-black to-slate-900" 
-      style={{ height: `${(cards.length + 1) * 100}vh` }}
+      style={{ height: `${(cards.length + 1) * 150}vh` }}
     >
       <Heading scrollYProgress={scrollYProgress} />
       {cards.map((card, index) => (

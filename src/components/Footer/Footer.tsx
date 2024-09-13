@@ -20,8 +20,8 @@ const Footer: React.FC = () => {
               src="images/logo/hand.png"
               alt="Format-3 Logo"
               className="w-32 -rotate-45"
-              initial={{ scale: 0.5 }} // Initial size
-              animate={{ scale: isInView ? 0.8 : 0.5 }} // Full size when in view
+              initial={{ scale: 0.5, rotate:10 }} // Initial size
+              animate={{ scale: isInView ? 0.8 : 0.5, rotate:0 }} // Full size when in view
               transition={{
                 type: 'spring',
                 stiffness: 400,   // Higher stiffness for a snappier feel
