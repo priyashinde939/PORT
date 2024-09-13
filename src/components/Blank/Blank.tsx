@@ -70,8 +70,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
           {services.map((service, i) => (
             <motion.button
               key={i}
-              className="border border-white border-opacity-25 text-black text-sm font-medium px-4 py-2 rounded-[3rem]"
-              // initial={{b}}
+              className="border border-white text-black text-sm font-medium px-4 py-2 rounded-[3rem]"
               whileHover={{ backgroundColor: "#ffffff" }}
               transition={{ type: "linear", duration:0.4}}
             >
@@ -81,7 +80,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
           </motion.div>
 
           <motion.p 
-            className="text-xl font-normal max-w-lg mt-4 text-slate-900"
+            className="text-xl font-normal max-w-lg mt-4 text-black"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6 }}
@@ -90,7 +89,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
           </motion.p>
 
           <motion.button
-            className="mt-10 flex items-center justify-between border text-black px-8 py-2 font-medium text-2xl  rounded-[3rem]"
+            className="mt-10 flex items-center justify-between border text-black px-8 py-2 font-medium text-2xl rounded-[3rem]"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -136,7 +135,7 @@ const Heading: React.FC<{ scrollYProgress: MotionValue<number> }> = ({ scrollYPr
           className="text-7xl font-bold mb-4"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 100, damping: 2 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
         >
           OUR
         </motion.span>
@@ -145,7 +144,7 @@ const Heading: React.FC<{ scrollYProgress: MotionValue<number> }> = ({ scrollYPr
           style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.3)' }}
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 100, damping: 2, delay: 0.2 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20, delay: 0.2 }}
         >
           SERVICES
         </motion.span>
