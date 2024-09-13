@@ -29,7 +29,7 @@ interface SectionProps {
 const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
 
     const scale = useTransform(scrollYProgress, [0, 1], [0.9, 0.8]);
-    const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+    const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
     // const backgroundColor = useTransform(scrollYProgress, [0.4, 0.8], ['#000000', '#ffffff']);
 
     return (
