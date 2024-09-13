@@ -53,10 +53,10 @@ const index = () => {
       <RevealText /> 
 
       <Stack />
-      <Services2 />
+      {/* <Services2 />
       <C1 />
       <C2 />
-      <C3 />
+      <C3 /> */}
       <Services />
       {/* <Stack1 /> */}
       <PerspectiveSection1 />
