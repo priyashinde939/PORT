@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
 import { FaCode, FaMobile, FaPaintBrush, FaCloud } from 'react-icons/fa';
+import Button from '../Button/Button';
 
 interface CardProps {
   scrollYProgress: MotionValue<number>;
@@ -82,7 +83,13 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-            Find out more
+      <Button
+        text="Click Me"                // The text to display inside the button
+        border="border"                // Optional Tailwind class for the border style
+        borderCol="border-blue-500"    // Optional Tailwind class for border color
+        bg="bg-blue-500"               // Optional Tailwind class for background color
+        txt="text-white"               // Optional Tailwind class for text color
+      />
           </motion.button>
         </div>
 
