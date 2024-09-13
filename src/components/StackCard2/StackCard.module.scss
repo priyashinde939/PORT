@@ -1,4 +1,6 @@
 //StackCard.module.scss
+
+
 .cardContainer {
   height: 100vh;
   display: flex;
@@ -45,9 +47,8 @@
     // Last Card
     .lastCard {
       text-align: center;
-      border-radius: 0px;
       padding: 60px;
-      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+      box-shadow: 0px;
       height: 600px;
       width: 95vw;
 

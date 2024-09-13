@@ -1,6 +1,7 @@
 import React , { useRef } from 'react'
 // import Card from './Card'
 import { useScroll, useTransform, motion } from 'framer-motion';
+import Doodle from './Doodle';
 
 
 function Card() {
@@ -28,13 +29,13 @@ function Card() {
                 }
                 >
                     <div className='xs:w-1/2 flex flex-col items-start gap-[1.5vw]  h-[40rem]'>
-                    
+
                     </div>
                 </motion.div>
             </div>        
         </div>
     </div>
-  )
+)
 }
 
 export default Card

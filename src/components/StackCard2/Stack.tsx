@@ -5,6 +5,7 @@ import StackCard from './StackCard';
 import { useScroll } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import Lenis from '@studio-freight/lenis';
+import styles from './Stack.module.scss';
 
 // Define the type for each project
 interface Project {
@@ -102,7 +103,7 @@ export default function Stack() {
 
 
   return (
-    <section 
+    <section className={`${styles.section}`}
     ref={container}>
         {projects.map((project, i) => {
           const isSecondLastCard = i === projects.length - 2; // Second last card

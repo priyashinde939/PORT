@@ -1,0 +1,38 @@
+// {
+//     margin: 0;
+//     overflow: hidden;
+//     height: 100%;
+//     width: 100%;
+//   }
+  
+  .doodle-container {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    width: 100vw;
+    height: 100vh;
+    perspective: 30vmin;
+    background-color: #270f34;
+    position: relative;
+  }
+  
+  .heart {
+    width: 18vmin;
+    height: 18vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    will-change: transform, opacity;
+  }
+  
+  .before, .after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  

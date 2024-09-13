@@ -6,9 +6,9 @@ import {motion} from 'framer-motion';
 const Footer: React.FC = () => {
   return (
     <footer 
-    className="sticky -top-[200vh] text-white py-12 h-[100vh] ">
+    className="sticky bottom-0 text-white py-12 h-[100vh] ">
 
-      <div className=" w-full mx-auto px-6 md:px-12">
+      <div className="w-full mx-auto px-6 md:px-12">
         <div className="flex flex-row md:flex-row place-content-between justify-between items-start md:items-center mx-14">
           {/* Logo */}
           <div className="mb-8 md:mb-0">
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Marquee */}
-        <div className="my-14 flex- justify-center content-center align-top pb-3 pt-2 border-y border-zinc-800">
+        <div className="my-14 justify-center content-center align-top pb-3 pt-2 border-y border-zinc-800">
         <FooterMarquee />
         </div>
 
@@ -62,11 +62,6 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
-
-
-
-
-
 
 
 
