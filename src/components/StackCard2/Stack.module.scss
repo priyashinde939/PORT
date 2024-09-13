@@ -1,16 +1,16 @@
-.section{
-    background-size: 40px 40px;
-    background-image:
-        linear-gradient(to right, rgb(46, 67, 59) 1px, transparent 1px),
-        linear-gradient(to bottom, rgb(38, 50, 41) 1px, transparent 1px);
-        mix-blend-mode:hard-light;
-
-}
-
 // .section{
-//     background-color: #e5e5f7;
-//     opacity: 0.8;
-//     background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #444cf7 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
-//     mix-blend-mode:luminosity;
+//     background-size: 40px 40px;
+//     background-image:
+//         linear-gradient(to right, rgb(46, 67, 59) 1px, transparent 1px),
+//         linear-gradient(to bottom, rgb(38, 50, 41) 1px, transparent 1px);
+//         mix-blend-mode:hard-light;
+
 // }
+
+.section{
+    background-color: #000000;
+    opacity: 1;
+ //   background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #444cf7 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
+    mix-blend-mode:screen;
+}
 

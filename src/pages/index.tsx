@@ -11,6 +11,8 @@ import { RibbonMarquee2 } from '@/components/RibbonMarquee2/RibbonMarquee2'
 import PerspectiveSection1 from '@/components/PerspectiveSection/PerspectiveSection1'
 import PerspectiveSection2 from '@/components/PerspectiveSection/PerspectiveSection2'
 import Stack from '@/components/StackCard2/Stack'
+import Bubble from '@/components/Bubble/Bubble'
+import Blank from '@/components/Blank/Blank'
 
 // import Stack from '@/components/StackCard/Stack'
 
@@ -51,7 +53,9 @@ const index = () => {
       <RibbonMarquee2 />
       <PerspectiveSection2 />
       <Marquee />
-      <Contact />
+      <Bubble />
+      <Blank />
+      {/* <Contact /> */}
       <FooterSection />
     </main>
     </>

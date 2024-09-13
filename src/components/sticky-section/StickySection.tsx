@@ -32,7 +32,7 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
-            className="sticky rounded-2xl top-0 h-screen bg-violet-700 text-[3.5vw] font-extrabold text-black flex flex-col items-center justify-center pb-[10vh]"
+            className="sticky rounded-2xl top-0 h-screen bg-indigo-700 text-[3.5vw] font-extrabold text-black flex flex-col items-center justify-center pb-[10vh]"
         >
             <p>Heading Heading</p>
             <div className="flex gap-3">

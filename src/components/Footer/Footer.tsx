@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
           initial={{ color:'white'}}
           whileHover={{color:'#71717a'}}
           transition={{ duration:4, ease:'linear'}}
-          href="#" className="text-3xl">Back to top ↑</motion.a>
+          href="#" className="text-3xl font-day">Back to top ↑</motion.a>
         </div>
       </div>
     </footer>
