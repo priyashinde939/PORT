@@ -1,19 +1,17 @@
 import React, { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
-import { FaCode, FaMobile, FaPaintBrush, FaCloud } from 'react-icons/fa';
-
 
 interface CardProps {
   scrollYProgress: MotionValue<number>;
   content: string;
-  icon: React.ReactNode;
   bgColor: string;
   index: number;
   totalCards: number;
-  videoSrc?: string; // Add a videoSrc prop
+  videoSrc?: string;
+  services: string[];
 }
 
-const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, index, totalCards, videoSrc  }) => {
+const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, totalCards, videoSrc, services }) => {
   const cardStart = (index - 1) / totalCards;
   const cardEnd = index / totalCards;
 
@@ -44,33 +42,45 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
   return (
     <motion.div
       style={{ y, scale, opacity, rotate }}
-      className={`sticky top-[20vh] flex items-center justify-center w-full h-[85vh] font-day`}
+      className={`sticky top-[20vh] flex items-center justify-center w-full h-[85vh]`}
     >
       <motion.div 
-        className={`${bgColor} text-white h-[75vh] w-[90vw] rounded-[2rem] flex items-center justify-between text-3xl font-bold shadow-2xl px-8 overflow-hidden`}
+        className={`${bgColor} text-white h-[75vh] w-[90vw] rounded-[2rem] flex items-center justify-between  shadow-2xl px-8 overflow-hidden`}
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
         {/* Left Side - Content */}
-        <div className="flex flex-col items-start justify-center w-1/2 h-full pr-8">
-          <motion.div 
-            className="text-8xl mb-6"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1, rotate: 360 }}
-            transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}
-          >
-            {icon}
-          </motion.div>
+        <div className="flex flex-col items-start justify-center text-4xl font-semibold w-1/2 h-full pr-8">
           <motion.h2 
-            className="text-4xl mb-4"
+            className="text-6xl mb-4"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
             {content}
           </motion.h2>
+
+          {/* Dynamic service buttons */}
+          <motion.div
+            className="flex flex-wrap gap-3 mt-4"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+          {services.map((service, i) => (
+            <motion.button
+              key={i}
+              className="border border-white text-black text-sm font-medium px-4 py-2 rounded-[3rem]"
+              whileHover={{ scale: 1.1, backgroundColor: "#ffffff", color: "#000000" }}
+              transition={{ type: "spring", stiffness: 300, damping: 2 }}
+            >
+              {service}
+            </motion.button>
+          ))}
+          </motion.div>
+
           <motion.p 
-            className="text-xl max-w-lg"
+            className="text-xl font-normal max-w-lg mt-4"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6 }}
@@ -78,29 +88,33 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </motion.p>
 
-          {/* Find Out More Button */}
           <motion.button
-            className="mt-6 bg-white text-black px-6 py-2 rounded-lg font-bold shadow-md"
+            className="mt-10 flex items-center justify-between border-2 border-white text-white px-8 py-2 font-medium text-2xl  rounded-[3rem]"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-              Find Out More
+            <span className="mr-4">Find Out More</span>
+            <span
+              className="flex items-center justify-center w-6 h-6"
+            >
+              ➔ 
+            </span>
           </motion.button>
+
         </div>
 
         {/* Right Side - Video */}
-        {/* {videoSrc && ( */}
-          <motion.div className="flex-1 h-[80%] bg-black rounded-[0px_100px_0px_0px]">
-            {/* Video with autoplay, no controls, and muted */}
+        {videoSrc && (
+          <motion.div className="flex-1 h-[80%] bg-black rounded-[0px_165px_0px_0px]">
             <video
               src={videoSrc}
               autoPlay
               loop
               muted
-              className="w-full h-auto rounded-[0px_100px_0px_0px]" // Custom border radius for video
+              className="w-full h-auto" // Custom border radius for video
             />
           </motion.div>
-        {/* )} */}
+        )}
       </motion.div>
     </motion.div>
   );
@@ -114,7 +128,6 @@ const Heading: React.FC<{ scrollYProgress: MotionValue<number> }> = ({ scrollYPr
   return (
     <motion.div
       style={{ scale, opacity, y }}
-//      className="h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600"
       className="relative h-screen flex top-[6%] justify-center font-day"
     >
       <div className="flex flex-col items-center text-white">
@@ -148,10 +161,10 @@ const Blank: React.FC = () => {
   });
 
   const cards = [
-    { content: "Web Development", icon: <FaCode />, bgColor: "bg-gradient-to-br from-pink-500 to-red-500" },
-    { content: "Mobile App Development", icon: <FaMobile />, bgColor: "bg-gradient-to-br from-green-400 to-blue-500" },
-    { content: "UI/UX Design", icon: <FaPaintBrush />, bgColor: "bg-gradient-to-br from-purple-500 to-indigo-500" },
-    { content: "Cloud Services", icon: <FaCloud />, bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" }
+    { content: "Web Development", bgColor: "bg-gradient-to-br from-pink-500 to-red-500", services: ["Creative Web Design", "Web Development", "Copywriting"], videoSrc: "path/to/video1.mp4" },
+    { content: "Mobile App Development", bgColor: "bg-gradient-to-br from-green-400 to-blue-500", services: ["iOS Development", "Android Development", "React Native"], videoSrc: "path/to/video2.mp4" },
+    { content: "UI/UX Design", bgColor: "bg-gradient-to-br from-purple-500 to-indigo-500", services: ["User Research", "Wireframing", "Prototyping"], videoSrc: "path/to/video3.mp4" },
+    { content: "Cloud Services", bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500", services: ["AWS", "Azure", "Google Cloud"], videoSrc: "path/to/video4.mp4" }
   ];
 
   return (
@@ -166,10 +179,11 @@ const Blank: React.FC = () => {
           key={index}
           scrollYProgress={scrollYProgress}
           content={card.content}
-          icon={card.icon}
           bgColor={card.bgColor}
           index={index + 1}
           totalCards={cards.length + 1}
+          services={card.services}
+          videoSrc={card.videoSrc} // Ensure videoSrc is passed dynamically
         />
       ))}
     </div>

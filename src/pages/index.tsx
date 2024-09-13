@@ -66,7 +66,7 @@ const index = () => {
       <Marquee />
       <Bubble />
       <Blank />
-      {/* <Contact /> */}
+      <Contact />
       <FooterSection />
     </main>
     </>
