@@ -36,9 +36,9 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
   return (
     <motion.div
       style={{ y, scale, opacity }}
-      className={`sticky top-[20vh] flex items-center justify-center w-full h-[80vh]`}
+      className={`sticky top-[20vh] flex items-center justify-center w-full h-[60vh]`}
     >
-      <div className={`${bgColor} text-black h-[75vh] w-[90vw] rounded-[3rem] flex items-center justify-center text-2xl font-bold`}>
+      <div className={`${bgColor} text-black h-[90vh] w-[90vw] rounded-[3rem] flex items-center justify-center text-2xl font-bold`}>
         {content}
       </div>
     </motion.div>
@@ -54,7 +54,7 @@ const Heading: React.FC<{ scrollYProgress: MotionValue<number> }> = ({ scrollYPr
     <motion.div
       style={{ scale, opacity, y }}
       className="h-screen flex items-center justify-center"
-      transition={{type:'spring', duration:'50', ease:"circIn"}}
+      transition={{type:'linear', duration:'10s'}}
     >
       <div className="flex flex-col items-start">
         <span className="text-[8vw]">OUR</span>
@@ -84,8 +84,9 @@ const Services2: React.FC = () => {
   return (
     <div 
       ref={containerRef} 
-      className="relative w-full bg-gradient-to-r from-blue-200 to-cyan-200" 
-      style={{ height: `${(cards.length + 1) * 150}vh` }}
+//      className="relative w-full bg-gradient-to-r from-blue-200 to-cyan-200" 
+className="relative w-full bg-black" 
+      style={{ height: `${(cards.length + 1) * 200}vh` }}
     >
       <Heading scrollYProgress={scrollYProgress} />
       {cards.map((card, index) => (
