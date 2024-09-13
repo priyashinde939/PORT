@@ -52,7 +52,7 @@ const index = () => {
       <Card />    
       <RevealText /> 
 
-      {/* <Stack /> */}
+      <Stack />
       {/* <Services2 /> */}
       <C1 />
       <C2 />
