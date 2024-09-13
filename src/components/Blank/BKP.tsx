@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
   const opacity = useTransform(
     scrollYProgress,
     [cardStart, cardStart + 0.1, cardEnd - 0.2, cardEnd],
-    [0, 1, 1, 0]
+    [0.8, 1, 1, 0.8]
   );
 
   const rotate = useTransform(
@@ -65,6 +65,25 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
         >
           {content}
         </motion.h2>
+
+        {/* Video Section */}
+
+        <motion.div 
+          className="w-full h-48 bg-black rounded-lg overflow-hidden mb-4"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 0.6 }}
+        >
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/example-video-id"  // Replace with your video URL
+            title="Video title"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </motion.div>opacity
+
         <motion.p 
           className="text-xl text-center max-w-2xl"
           initial={{ y: 20, opacity: 0 }}
@@ -73,6 +92,17 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </motion.p>
+
+         {/* Find Out More Button */}
+        <motion.button
+          className="bg-white text-black px-6 py-2 rounded-lg font-bold shadow-md"
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        >
+          Find out more
+        </motion.button>
+
+
       </motion.div>
     </motion.div>
   );

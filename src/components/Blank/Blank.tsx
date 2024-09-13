@@ -45,34 +45,63 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, icon, bgColor, in
       className={`sticky top-[20vh] flex items-center justify-center w-full h-[80vh]`}
     >
       <motion.div 
-        className={`${bgColor} text-white h-[75vh] w-[90vw] rounded-[2rem] flex flex-col items-center justify-center text-3xl font-bold shadow-2xl p-8 overflow-hidden`}
+        className={`${bgColor} text-white h-[75vh] w-[90vw] rounded-[2rem] flex items-center justify-between text-3xl font-bold shadow-2xl p-8 overflow-hidden`}
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
+        {/* Left Side - Content */}
+        <div className="flex flex-col items-start justify-center w-1/2 h-full pr-8">
+          <motion.div 
+            className="text-8xl mb-6"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1, rotate: 360 }}
+            transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}
+          >
+            {icon}
+          </motion.div>
+          <motion.h2 
+            className="text-4xl mb-4"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4 }}
+          >
+            {content}
+          </motion.h2>
+          <motion.p 
+            className="text-xl max-w-lg"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.6 }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </motion.p>
+
+          {/* Find Out More Button */}
+          <motion.button
+            className="mt-6 bg-white text-black px-6 py-2 rounded-lg font-bold shadow-md"
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          >
+            Find out more
+          </motion.button>
+        </div>
+
+        {/* Right Side - Video */}
         <motion.div 
-          className="text-8xl mb-6"
+          className="w-1/2 h-full bg-black rounded-[0px_150px_0px_0px] overflow-hidden"
           initial={{ scale: 0 }}
-          animate={{ scale: 1, rotate: 360 }}
-          transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}
-        >
-          {icon}
-        </motion.div>
-        <motion.h2 
-          className="text-4xl mb-4 text-center"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4 }}
-        >
-          {content}
-        </motion.h2>
-        <motion.p 
-          className="text-xl text-center max-w-2xl"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          animate={{ scale: 1 }}
           transition={{ delay: 0.6 }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </motion.p>
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/example-video-id"  // Replace with your video URL
+            title="Video title"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
@@ -128,7 +157,7 @@ const Blank: React.FC = () => {
   return (
     <div 
       ref={containerRef} 
-      className="relative w-full bg-gradient-to-r from-gray-900 to-gray-800" 
+      className="relative w-full bg-gradient-to-r from-black to-gray-900" 
       style={{ height: `${(cards.length + 1) * 150}vh` }}
     >
       <Heading scrollYProgress={scrollYProgress} />
