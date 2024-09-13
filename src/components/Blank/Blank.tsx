@@ -70,9 +70,10 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
           {services.map((service, i) => (
             <motion.button
               key={i}
-              className="border border-white text-black text-sm font-medium px-4 py-2 rounded-[3rem]"
-              whileHover={{ scale: 1.1, backgroundColor: "#ffffff", color: "#000000" }}
-              transition={{ type: "spring", stiffness: 300, damping: 2 }}
+              className="border border-white border-opacity-25 text-black text-sm font-medium px-4 py-2 rounded-[3rem]"
+              // initial={{b}}
+              whileHover={{ backgroundColor: "#ffffff" }}
+              transition={{ type: "linear", duration:0.4}}
             >
               {service}
             </motion.button>
@@ -80,7 +81,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
           </motion.div>
 
           <motion.p 
-            className="text-xl font-normal max-w-lg mt-4"
+            className="text-xl font-normal max-w-lg mt-4 text-slate-900"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6 }}
@@ -89,9 +90,9 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
           </motion.p>
 
           <motion.button
-            className="mt-10 flex items-center justify-between border-2 border-white text-white px-8 py-2 font-medium text-2xl  rounded-[3rem]"
+            className="mt-10 flex items-center justify-between border text-black px-8 py-2 font-medium text-2xl  rounded-[3rem]"
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
             <span className="mr-4">Find Out More</span>
             <span
