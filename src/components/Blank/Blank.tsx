@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
+import Button57 from '../Button/Button';
 import Button from '../Button/Button';
-import GsapButton from '../Button/Button';
 
 interface CardProps {
   scrollYProgress: MotionValue<number>;
@@ -52,7 +52,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
         {/* Left Side - Content */}
-        <div className="flex flex-col text-white items-start justify-center  w-1/2 h-full pr-8">
+        <div className="flex flex-col text-green-100 items-start justify-center  w-1/2 h-full pr-8">
           <motion.h2 
             className="text-6xl mb-4 font-day"
             initial={{ y: 20, opacity: 0 }}
@@ -91,7 +91,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
           </motion.p>
 
 
-              <GsapButton  />
+          <Button  />
 
 
 
