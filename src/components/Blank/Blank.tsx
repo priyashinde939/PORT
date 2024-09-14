@@ -71,8 +71,8 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
             <motion.button
               key={i}
               className="border border-white text-black text-sm  px-4 py-2 rounded-[3rem]"
-              whileHover={{ backgroundColor: "#ffffff" }}
-              transition={{ type: "linear", duration:0.4}}
+              // whileHover={{ backgroundColor: "#ffffff" }}
+              // transition={{ type: "linear", duration:0.4}}
             >
               {service}
             </motion.button>
@@ -90,15 +90,15 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
 
           <motion.button
             className="mt-10 flex items-center justify-between border text-black px-8 py-2 font-medium text-2xl rounded-[3rem]"
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300, damping: 10 }}
+            // whileHover={{ scale: 1.1 }}
+            // transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
-            <span className="mr-4">Find Out More</span>
+            {/* <span className="mr-4">Find Out More</span>
             <span
               className="flex items-center justify-center w-6 h-6"
             >
               ➔ 
-            </span>
+            </span> */}
           </motion.button>
 
         </div>
