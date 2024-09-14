@@ -111,7 +111,7 @@ const Heading: React.FC<{ scrollYProgress: MotionValue<number> }> = ({ scrollYPr
   );
 };
 
-const Services: React.FC = () => {
+const Servicesj: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -147,4 +147,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default Servicesj;

@@ -153,7 +153,7 @@ const Heading: React.FC<{ scrollYProgress: MotionValue<number> }> = ({ scrollYPr
   );
 };
 
-const Blank3: React.FC = () => {
+const Blank: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -190,4 +190,4 @@ const Blank3: React.FC = () => {
   );
 };
 
-export default Blank3;
+export default Blank;
