@@ -36,13 +36,13 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
   const rotate = useTransform(
     scrollYProgress,
     [cardStart, cardEnd],
-    [6, -5]
+    [10, -10]
   );
 
   return (
     <motion.div
       style={{ y, scale, opacity, rotate }}
-      className={`sticky top-[20vh] flex items-center justify-center w-full h-[85vh]`}
+      className={`sticky top-[15vh] flex items-center justify-center w-full h-[80vh]`}
     >
       <motion.div 
         className={`${bgColor} text-white h-[75vh] w-[90vw] rounded-[3rem] flex items-center justify-between  shadow-2xl px-8 overflow-hidden`}
