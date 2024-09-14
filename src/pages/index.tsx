@@ -11,12 +11,13 @@ import PerspectiveSection1 from '@/components/PerspectiveSection/PerspectiveSect
 import PerspectiveSection2 from '@/components/PerspectiveSection/PerspectiveSection2'
 import Stack from '@/components/StackCard2/Stack'
 import Bubble from '@/components/Bubble/Bubble'
-import Services2 from '@/components/Services2/Services2'
-import C1 from '@/components/Services2/C1'
-import C2 from '@/components/Services2/C2'
-import C3 from '@/components/Services2/C3'
+// import Services2 from '@/components/Services2/Services2'
+// import C1 from '@/components/Services2/C1'
+// import C2 from '@/components/Services2/C2'
+// import C3 from '@/components/Services2/C3'
 import Contact from '@/components/Contact/Contact'
 import Blank from '@/components/Blank/Blank'
+
 
 
 
@@ -49,15 +50,18 @@ const index = () => {
       <Sticky />
       <Card />    
       <RevealText /> 
-      <Blank />
-      <Stack />
+
+      {/* 
       <Services2 />
       <C1 />
       <C2 />
-      <C3 /> 
-      <Stack />
+      <C3 />  
       <Contact />
+      */}
+
+      <Stack />
       <Bubble /> 
+      <Blank />
       <PerspectiveSection1 />
       <HorizontalText />
       <RibbonMarquee2 />

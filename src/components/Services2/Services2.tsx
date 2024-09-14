@@ -54,7 +54,7 @@ const Heading: React.FC<{ scrollYProgress: MotionValue<number> }> = ({ scrollYPr
     <motion.div
       style={{ scale, opacity, y }}
       className="h-screen flex items-center justify-center"
-      transition={{type:'linear', duration:'10s'}}
+      transition={{type:'linear', duration:2}}
     >
       <div className="flex flex-col items-start">
         <span className="text-[8vw]">OUR</span>
@@ -86,7 +86,7 @@ const Services2: React.FC = () => {
       ref={containerRef} 
 //      className="relative w-full bg-gradient-to-r from-blue-200 to-cyan-200" 
 className="relative w-full bg-black" 
-      style={{ height: `${(cards.length + 1) * 200}vh` }}
+      style={{ height: `${(cards.length + 1) * 130}vh` }}
     >
       <Heading scrollYProgress={scrollYProgress} />
       {cards.map((card, index) => (

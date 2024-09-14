@@ -36,7 +36,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
   const rotate = useTransform(
     scrollYProgress,
     [cardStart, cardEnd],
-    [10, -10]
+    [6, -5]
   );
 
   return (
