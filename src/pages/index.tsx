@@ -11,14 +11,12 @@ import PerspectiveSection1 from '@/components/PerspectiveSection/PerspectiveSect
 import PerspectiveSection2 from '@/components/PerspectiveSection/PerspectiveSection2'
 import Stack from '@/components/StackCard2/Stack'
 import Bubble from '@/components/Bubble/Bubble'
-
 import Services2 from '@/components/Services2/Services2'
 import C1 from '@/components/Services2/C1'
 import C2 from '@/components/Services2/C2'
 import C3 from '@/components/Services2/C3'
-
-import Blank from '@/components/Blank/Blank'
 import Contact from '@/components/Contact/Contact'
+import Blank from '@/components/Blank/Blank'
 
 
 
@@ -51,7 +49,7 @@ const index = () => {
       <Sticky />
       <Card />    
       <RevealText /> 
-
+      <Blank />
       <Stack />
       <Services2 />
       <C1 />
@@ -60,19 +58,11 @@ const index = () => {
       <Stack />
       <Contact />
       <Bubble /> 
-
-    
-
-
       <PerspectiveSection1 />
       <HorizontalText />
       <RibbonMarquee2 />
       <PerspectiveSection2 />
       <Marquee />
-      <Blank />
-
-
-
       <FooterSection />
     </main>
     </>

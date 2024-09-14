@@ -1,5 +1,4 @@
 import React from 'react'
-import Blank from './Blank'
 import Footer from './Footer'
 
 const FooterSection = () => {
