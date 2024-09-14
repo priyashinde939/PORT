@@ -121,7 +121,7 @@ useEffect(() => {
             >
             {/* SVG Path */}
             <path
-            d="M628.193 67.9406C563.929 76.1379 499.499 80.8854 435.955 96.0051..."
+            d="M10 10 H 90 V 90 H 10 L 10 10" 
             stroke="#FF4D00"
             strokeWidth="1.15257"
             strokeLinecap="round"
@@ -145,7 +145,7 @@ useEffect(() => {
             xmlns="http://www.w3.org/2000/svg"
             className={s.arrowDown}
             >
-            <path d="M4.14645 152.354C4.34171 152.549 4.65829 152.549 4.85355 152.354L8.03553 149.172..." fill="#EFEFEF" />
+            <path d="M10 10 H 90 V 90 H 10 L 10 10"  fill="#EFEFEF" />
             </svg>
             BSMNT LAB is carving out a vanguard position by combining intensive
             technology with formal design expertise – we are making the internet

@@ -5,7 +5,6 @@ import Head from 'next/head'
 import  { RevealText }  from '@/components/RevealText/RevealText'
 import Sticky from '@/components/sticky-section/StickySection'
 import FooterSection from '@/components/Footer/FooterSection'
-import Contact from '@/components/Contact/Contact'
 import { HorizontalText } from '@/components/horizontal-Text/horizontal-Text'
 import { RibbonMarquee2 } from '@/components/RibbonMarquee2/RibbonMarquee2'
 import PerspectiveSection1 from '@/components/PerspectiveSection/PerspectiveSection1'
@@ -14,15 +13,16 @@ import Stack from '@/components/StackCard2/Stack'
 import Bubble from '@/components/Bubble/Bubble'
 
 import Services from '@/components/Services/Services'
-// import Services2 from '@/components/Services2/Services2'
-// import C1 from '@/components/Services2/C1'
-// import C2 from '@/components/Services2/C2'
-// import Cube3D from '@/components/PerspectiveSection/Cube3D'
-// import C3 from '@/components/Services2/C3'
+import Services2 from '@/components/Services2/Services2'
+import C1 from '@/components/Services2/C1'
+import C2 from '@/components/Services2/C2'
+import Cube3D from '@/components/PerspectiveSection/Cube3D'
+import C3 from '@/components/Services2/C3'
+
 import Blank from '@/components/Blank/Blank'
+import Contact from '@/components/Contact/Contact'
 
 
-// import Stack from '@/components/StackCard/Stack'
 
 
 
@@ -55,21 +55,27 @@ const index = () => {
       <RevealText /> 
 
       <Stack />
-      {/* <Services2 />
+      <Services2 />
       <C1 />
       <C2 />
-      <C3 /> */}
+      <C3 /> 
+      <Stack />
       <Services />
-      {/* <Stack1 /> */}
+      <Contact />
+      <Bubble /> 
+
+    
+
+
       <PerspectiveSection1 />
       <HorizontalText />
       <RibbonMarquee2 />
       <PerspectiveSection2 />
       <Marquee />
-      <Bubble />
       <Blank />
 
-      <Contact />
+
+
       <FooterSection />
     </main>
     </>
