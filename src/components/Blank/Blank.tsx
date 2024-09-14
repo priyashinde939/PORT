@@ -45,7 +45,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
       className={`sticky top-[20vh] flex items-center justify-center w-full h-[85vh]`}
     >
       <motion.div 
-        className={`${bgColor} text-white h-[75vh] w-[90vw] rounded-[2rem] flex items-center justify-between  shadow-2xl px-8 overflow-hidden`}
+        className={`${bgColor} text-white h-[75vh] w-[90vw] rounded-[3rem] flex items-center justify-between  shadow-2xl px-8 overflow-hidden`}
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
@@ -70,7 +70,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
           {services.map((service, i) => (
             <motion.button
               key={i}
-              className="border border-white text-black text-sm  px-4 py-2 rounded-[3rem]"
+              className="border border-white text-black text-sm  px-7 py-2 rounded-[3rem]"
               whileHover={{ backgroundColor: "#ffffff" }}
               transition={{ type: "linear", duration:0.4}}
             >
@@ -162,8 +162,8 @@ const Blank3: React.FC = () => {
 
   const cards = [
     { content: "Web Development", bgColor: "bg-gradient-to-br from-pink-500 to-red-500", services: ["Creative Web Design", "Web Development", "Copywriting"], videoSrc: "./medias/pubg.mp4" },
-    { content: "Mobile App Development", bgColor: "bg-gradient-to-br from-green-400 to-blue-500", services: ["iOS Development", "Android Development", "React Native"], videoSrc: "./medias/pubg.mp4" },
-    { content: "UI/UX Design", bgColor: "bg-gradient-to-br from-purple-500 to-indigo-500", services: ["User Research", "Wireframing", "Prototyping"], videoSrc: "./medias/pubg.mp4" },
+    { content: "Mobile App Development", bgColor: "bg-gradient-to-br from-green-400 to-blue-500", services: ["iOS Development", "Android Development", "React Native", "Wireframing", "Prototyping"], videoSrc: "./medias/pubg.mp4" },
+    { content: "UI/UX Design", bgColor: "bg-gradient-to-br from-purple-500 to-indigo-500", services: ["User Research", "Wireframing", "Prototyping", "Creative Web Design" ], videoSrc: "./medias/pubg.mp4" },
     { content: "Cloud Services", bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500", services: ["AWS", "Azure", "Google Cloud"], videoSrc: "./medias/pubg.mp4" }
   ];
 
