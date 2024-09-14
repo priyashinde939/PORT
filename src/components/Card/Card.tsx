@@ -2,6 +2,7 @@ import React , { useRef } from 'react'
 // import Card from './Card'
 import { useScroll, useTransform, motion } from 'framer-motion';
 import Doodle from './Doodle';
+import StarButton from '../Button/Button';
 
 
 function Card() {
@@ -28,9 +29,10 @@ function Card() {
                 rounded-[5rem] flex gap-[1vw] border border-sky-200`
                 }
                 >
-                    <div className='xs:w-1/2 flex flex-col items-start gap-[1.5vw]  h-[40rem]'>
-
+                    <div className='xs:w-1/2 flex flex-col items-center justify-center gap-[1.5vw]  h-[40rem]'>
+                        <StarButton />
                     </div>
+
                 </motion.div>
             </div>        
         </div>

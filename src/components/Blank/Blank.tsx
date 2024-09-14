@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
+import Button from '../Button/Button';
+import GsapButton from '../Button/Button';
 
 interface CardProps {
   scrollYProgress: MotionValue<number>;
@@ -41,18 +43,18 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
 
   return (
     <motion.div
-      style={{ y, scale, opacity, rotate }}
+      style={{ y, scale, opacity, rotate,  }}
       className={`sticky top-[15vh] flex items-center justify-center w-full h-[80vh]`}
     >
-      <motion.div 
-        className={`${bgColor} text-white h-[75vh] w-[90vw] rounded-[3rem] flex items-center justify-between  shadow-2xl px-8 overflow-hidden`}
+      <motion.div
+        className={`${bgColor}  h-[75vh] w-[90vw] rounded-[3rem] flex items-center justify-between  shadow-2xl px-8 overflow-hidden`}
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
         {/* Left Side - Content */}
-        <div className="flex flex-col items-start justify-center text-4xl font-semibold w-1/2 h-full pr-8">
+        <div className="flex flex-col text-white items-start justify-center  w-1/2 h-full pr-8">
           <motion.h2 
-            className="text-6xl mb-4"
+            className="text-6xl mb-4 font-day"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
@@ -60,7 +62,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
             {content}
           </motion.h2>
 
-          {/* Dynamic service buttons */}
+          {/* service buttons */}
           <motion.div
             className="flex flex-wrap gap-3 mt-4"
             initial={{ y: 20, opacity: 0 }}
@@ -70,7 +72,7 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
           {services.map((service, i) => (
             <motion.button
               key={i}
-              className="border border-white text-black text-sm  px-7 py-2 rounded-[3rem]"
+              className="border border-gray-700 text-black text-lg  px-7 py-2 rounded-[3rem]"
               whileHover={{ backgroundColor: "#ffffff" }}
               transition={{ type: "linear", duration:0.4}}
             >
@@ -88,18 +90,11 @@ const Card: React.FC<CardProps> = ({ scrollYProgress, content, bgColor, index, t
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </motion.p>
 
-          <motion.button
-            className="mt-10 flex items-center justify-between border text-black px-8 py-2 font-medium text-2xl rounded-[3rem]"
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300, damping: 10 }}
-          >
-            <span className="mr-4">Find Out More</span>
-            <span
-              className="flex items-center justify-center w-6 h-6"
-            >
-              ➔ 
-            </span>
-          </motion.button>
+
+              <GsapButton  />
+
+
+
 
         </div>
 
@@ -166,6 +161,19 @@ const Blank: React.FC = () => {
     { content: "UI/UX Design", bgColor: "bg-gradient-to-br from-purple-500 to-indigo-500", services: ["User Research", "Wireframing", "Prototyping", "Creative Web Design" ], videoSrc: "./medias/pubg.mp4" },
     { content: "Cloud Services", bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500", services: ["AWS", "Azure", "Google Cloud"], videoSrc: "./medias/pubg.mp4" }
   ];
+
+  
+  // const cards = [
+  //   { content: "Web Development", bgColor: "bg-white ", services: ["Creative Web Design", "Web Development", "Copywriting"], videoSrc: "./medias/pubg.mp4" },
+  //   { content: "Mobile App Development", bgColor: "bg-white", services: ["iOS Development", "Android Development", "React Native", "Wireframing", "Prototyping"], videoSrc: "./medias/pubg.mp4" },
+  //   { content: "UI/UX Design", bgColor: "bg-white", services: ["User Research", "Wireframing", "Prototyping", "Creative Web Design" ], videoSrc: "./medias/pubg.mp4" },
+  //   { content: "Cloud Services", bgColor: "bg-white", services: ["AWS", "Azure", "Google Cloud"], videoSrc: "./medias/pubg.mp4" }
+  // ];
+
+
+
+
+  
 
   return (
     <div 
