@@ -12,13 +12,14 @@ import PerspectiveSection1 from '@/components/PerspectiveSection/PerspectiveSect
 import PerspectiveSection2 from '@/components/PerspectiveSection/PerspectiveSection2'
 import Stack from '@/components/StackCard2/Stack'
 import Bubble from '@/components/Bubble/Bubble'
-import Blank from '@/components/Blank/Blank'
+
 import Services from '@/components/Services/Services'
 import Services2 from '@/components/Services2/Services2'
 import C1 from '@/components/Services2/C1'
 import C2 from '@/components/Services2/C2'
 import Cube3D from '@/components/PerspectiveSection/Cube3D'
 import C3 from '@/components/Services2/C3'
+import Blank from '@/components/Blank/Blank'
 
 // import Stack from '@/components/StackCard/Stack'
 
@@ -66,6 +67,7 @@ const index = () => {
       <Marquee />
       <Bubble />
       <Blank />
+
       <Contact />
       <FooterSection />
     </main>

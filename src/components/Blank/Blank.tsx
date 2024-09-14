@@ -183,7 +183,7 @@ const Blank: React.FC = () => {
           index={index + 1}
           totalCards={cards.length + 1}
           services={card.services}
-          videoSrc={card.videoSrc} // Ensure videoSrc is passed dynamically
+          videoSrc={card.videoSrc} 
         />
       ))}
     </div>
