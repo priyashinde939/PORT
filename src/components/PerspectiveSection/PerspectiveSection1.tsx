@@ -9,13 +9,13 @@ const PerspectiveSection1: React.FC = () => {
         target: container,
         offset: ["start start", "end end"]
     });
-
+    
     return (
-        <div 
+        <motion.div 
         style={{perspective:'300px'}}
-        ref={container} className="relative h-[200vh] bg-black">
+        ref={container} className="relative h-[200vh]">
             <Section1 scrollYProgress={scrollYProgress} />
-        </div>
+        </motion.div>
     );
 };
 
