@@ -11,11 +11,9 @@ import PerspectiveSection1 from '@/components/PerspectiveSection/PerspectiveSect
 import PerspectiveSection2 from '@/components/PerspectiveSection/PerspectiveSection2'
 import Stack from '@/components/StackCard2/Stack'
 import Bubble from '@/components/Bubble/Bubble'
-// import Services2 from '@/components/Services2/Services2'
-// import C1 from '@/components/Services2/C1'
-// import C3 from '@/components/Services2/C3'
-import Contact from '@/components/Contact/Contact'
-import Blank from '@/components/Blank/Blank'
+// import Contact from '@/components/Contact/Contact'
+import CircleCards from '@/components/CircleCards/CircleCards'
+import Test from '@/components/Test/Test'
 
 
 
@@ -47,7 +45,8 @@ const index = () => {
 
     <main className='min-h-screen w-full '>
       <Sticky />
-      <Card />    
+      <Card />   
+      <Test /> 
       <RevealText /> 
 
       {/* 
@@ -60,7 +59,7 @@ const index = () => {
 
       <Stack />
       <Bubble /> 
-      <Blank />
+      <CircleCards />
       <PerspectiveSection1 />
       <HorizontalText />
       <RibbonMarquee2 />

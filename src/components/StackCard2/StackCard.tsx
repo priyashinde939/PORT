@@ -6,6 +6,7 @@ import styles from './StackCard.module.scss';
 import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import clsx from "clsx";
+import Texteffect from '../Test/Texteffect';
 
 // Define an interface for the component props
 interface StackCardProps {
@@ -64,7 +65,9 @@ const StackCard: React.FC<StackCardProps> = ({ i, title, description, src, color
           </div>
         ) : (
           <>
-            <h2 className={styles.title}>{title}</h2>
+            <h2 className={styles.title}>
+              <Texteffect words={title}/>
+            </h2>
             <div className={styles.body}>
               <div className={styles.description}>
                 <h1 className="text-4xl font-black p-5"> Hola Hola Hola </h1>
@@ -73,7 +76,9 @@ const StackCard: React.FC<StackCardProps> = ({ i, title, description, src, color
                   <div> directory rena </div>
                   <div> client-deve </div>
                 </div>
-                <p>{description}</p>
+                <p>
+                  {description}
+                </p>
                 <span>
                   <a className="my-5 font-medium" target="_blank" rel="noopener noreferrer">See more</a>
                   <svg width="22" height="12" viewBox="0 0 22 12" fill="none">
