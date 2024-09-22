@@ -57,7 +57,7 @@ const translateX = useSpring(
 
 const Phrase: React.FC<PhraseProps> = ({ src }) => {
   return (
-    <div className="px-5 text-[3vw] flex gap-1 items-center text-white border-y border-gray-600 ">
+    <div className="px-5 text-[3vw] flex gap-1 items-center text-[#cb8b93] border-y border-gray-600 ">
       <p>Some Text Content</p>
       <span className="relative h-[5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />

@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
+import AnimatedButton from "./ContaxtButton";
+import styles from './Form.module.css'
+import clsx from 'clsx'
 
 const Form: React.FC = () => {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
@@ -55,22 +59,22 @@ const Form: React.FC = () => {
 
 
   return (
-    <div className=" flex flex-col items-center p-8 mx-10 my-20 px-20 sm:px-5 sm:mx-2 bg-white text-black rounded-[3rem]">
+    <div className=" flex flex-col items-center py-24 mx-14 my-7 px-32 sm:px-5 sm:mx-2 bg-white text-black rounded-[2rem]">
       <div className="flex text-[3vw] sm:text-xl place-content-between w-full my-7 gap-10 ">
-        <h1 className="font-medium mb-4">Brief us on what you need...</h1>
+        <h1 className="font-normal mb-4">Brief us on what you need...</h1>
         <div className="flex gap-3">
           <h1
-            className={`font-medium cursor-pointer ${
-              !showEnquirySection ? "text-black" : "text-gray-300"
+            className={` cursor-pointer ${
+              !showEnquirySection ? "text-black" : "text-gray-400"
             }`}
             onClick={handleProjectClick}
           >
             Project
           </h1>
-          <span className="text-gray-300 font-medium cursor-pointer">/</span>
+          <span className="text-gray-400 mx-1  cursor-pointer">/</span>
           <span
-            className={`ml-2 font-medium cursor-pointer ${
-              showEnquirySection ? "text-black" : "text-gray-300"
+            className={` cursor-pointer ${
+              showEnquirySection ? "text-black" : "text-gray-400"
             }`}
             onClick={handleGeneralClick}
           >
@@ -81,7 +85,7 @@ const Form: React.FC = () => {
 
       {/* Conditionally render options or nothing, based on the enquiry section visibility */}
       {!showEnquirySection && (
-        <div className="flex flex-wrap justify-center mb-6">
+          <div className="flex flex-wrap mb-6">
           {[
             "Website",
             "Mobile App",
@@ -92,17 +96,24 @@ const Form: React.FC = () => {
             "Branding",
             "Illustration",
           ].map((option) => (
-            <button
+            <motion.button
               key={option}
               onClick={() => handleOptionClick(option)}
-              className={`p-4 m-3 rounded-full text-2xl border border-zinc-200 hover:border-zinc-400 hover:bg-zinc-200 hover ${
-                selectedOptions.includes(option)
-                  ? "bg-slate-950 text-white"
-                  : "bg-white"
-              }`}
+              className={`p-4 m-2 rounded-full text-2xl border border-zinc-200`}
+              initial={{ backgroundColor: selectedOptions.includes(option) ? "#1e293b" : "#ffffff" }}
+              animate={{
+                backgroundColor: selectedOptions.includes(option) ? "#000000" : "#ffffff",
+                color: selectedOptions.includes(option) ? "#ffffff" : "#000000",
+                borderColor: selectedOptions.includes(option) ? "#ffffff" : "#e4e4e7",
+              }}
+              whileHover={{
+                borderColor: "#a1a1aa",
+                backgroundColor: "#e4e4e7",
+              }}
+              transition={{ duration: 0.3 }}
             >
               {option}
-            </button>
+            </motion.button>
           ))}
         </div>
       )}
@@ -120,11 +131,11 @@ const Form: React.FC = () => {
                   name="enquiry"
                   value={formData.enquiry}  
                   onChange={handleInputChange}  
-                  className="p-3 w-full h-[10vh] min-h-[50px] border border-blue-800 text-xl rounded-3xl text-neutral-400"
+                  className={`p-3 w-full h-[10vh] min-h-[50px] border border-blue-800 text-xl rounded-3xl text-neutral-400 font-medium`}
                   >
                   <option value="" disabled hidden>Select a topic</option>  
                   <option value="Ui/Ux design" className="my-6 text-zinc-700">Ui/Ux design</option>
-                  <option value="Back-End" className="my-6 text-zinc-700">Front-End</option>
+                  <option value="Fack-End" className="my-6 text-zinc-700">Front-End</option>
                   <option value="Back-End" className="my-6 text-zinc-700">Back-End</option>
                   <option value="Reactjs" className="my-6 text-zinc-700">Reactjs</option>
                   <option value="Nextjs" className="my-6 text-zinc-700">Nextjs</option>
@@ -133,10 +144,10 @@ const Form: React.FC = () => {
           </div>
         )}
 
-        <h1 className="text-[3vw] sm:text-xl font-medium my-7">Introduce Yourself</h1>
+        <h1 className="text-[3vw] sm:text-xl  my-7">Introduce Yourself</h1>
 
         {/*  visible */}
-        <div className="w-full flex flex-row sm:flex-col gap-9 text-lg">
+        <div className="w-full flex flex-row sm:flex-col gap-24 text-lg">
           <div className="basis-1/2 flex flex-col gap-5">
             <div className="mb-4">
               <label htmlFor="fullName" className="block mb-2 font-medium text-slate-800">Full Name</label>
@@ -147,7 +158,7 @@ const Form: React.FC = () => {
                 value={formData.fullName}
                 onChange={handleInputChange}
                 placeholder="Full name"
-                className="w-full p-3 border rounded-3xl"
+                className="w-full px-3 py-6 font-medium border rounded-3xl"
                 required
               />
             </div>
@@ -161,7 +172,7 @@ const Form: React.FC = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="Email"
-                className="w-full p-3 border rounded-3xl"
+                className="w-full px-3 py-6 font-medium border rounded-3xl"
                 required
               />
             </div>
@@ -175,7 +186,7 @@ const Form: React.FC = () => {
                 value={formData.company}
                 onChange={handleInputChange}
                 placeholder="Company"
-                className="w-full p-3 border rounded-3xl"
+                className="w-full px-3 py-6 font-medium border rounded-3xl"
               />
             </div>
             
@@ -188,7 +199,7 @@ const Form: React.FC = () => {
                   name="website"
                   value={formData.website}  
                   onChange={handleInputChange}  
-                  className="p-3 border rounded-3xl text-neutral-400"
+                  className="w-full px-3 py-6 font-medium border text-lg rounded-3xl text-neutral-400 "
                   >
                   <option value="" disabled hidden>Select a price range</option>  
                   <option value="100$- 200$" className="my-6 text-zinc-700">100$ - 200$</option>
@@ -207,14 +218,30 @@ const Form: React.FC = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
-                placeholder="Your Message"
-                className="w-full p-3 pb-10 mb-4  border rounded-3xl h-full"
+                placeholder="Enter Your Message Here"
+                className="w-full mb-4 border rounded-3xl h-full px-3 py-6 font-medium text-lg"
                 required
               />
             </div>
-            <div className="my-4 h-[10%]">
-            Please read our privacy policy and cookies policy so you understand how we collect and use your personal data.
-            </div>
+            <div className="my-4 h-[10%] text-neutral-400">
+  Please read our
+  <a
+    href="/privacy-policy"
+    className="underline text-neutral-500 hover:text-neutral-700 pl-1"
+  >
+
+    privacy policy
+  </a>{" "}
+  and
+  <a
+    href="/cookies-policy"
+    className="underline text-neutral-500 hover:text-neutral-700 pl-1"
+  >
+
+    cookies policy
+  </a>{" "}
+  so you understand how we collect and use your personal data.
+</div>
           </div>
 
         </div>
@@ -223,11 +250,7 @@ const Form: React.FC = () => {
                 <div className=" text-2xl my-10  text-zinc-400">
                     All set and filled? Email address looking good?
                 </div>
-                <button
-                  type="submit"
-                  className=" px-20 py-3 my-10  bg-black text-white font-medium text-2xl rounded-full hover:bg-gray-800">
-                  Send
-                </button>
+                <AnimatedButton />
         </div>
 
       </form>

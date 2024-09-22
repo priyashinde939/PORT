@@ -9,11 +9,13 @@ import { HorizontalText } from '@/components/horizontal-Text/horizontal-Text'
 import { RibbonMarquee2 } from '@/components/RibbonMarquee2/RibbonMarquee2'
 import PerspectiveSection1 from '@/components/PerspectiveSection/PerspectiveSection1'
 import PerspectiveSection2 from '@/components/PerspectiveSection/PerspectiveSection2'
-import Stack from '@/components/StackCard2/Stack'
+// import Stack from '@/components/StackCard2/Stack'
 import Bubble from '@/components/Bubble/Bubble'
-// import Contact from '@/components/Contact/Contact'
+import Contact from '@/components/Contact/Contact'
 import CircleCards from '@/components/CircleCards/CircleCards'
-import Test from '@/components/Test/Test'
+import Clump from '@/components/Balls/Clump'
+import Projects from '@/components/CircleCards/Projects'
+import { RibbonMarquee } from '@/components/RibbonMarquee/RibbonMarquee'
 
 
 
@@ -39,33 +41,30 @@ const index = () => {
         <title>Hola</title>
         <meta
           name="description"
-          content="Welcome to our hola hola Community"
+          // content="Welcome to our hola hola Community"
+          content="width=device-width, initial-scale=1.0"
+          
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </Head>
 
     <main className='min-h-screen w-full '>
       <Sticky />
-      <Card />   
-      <Test /> 
-      <RevealText /> 
+      {/* <Card /> */}
+      <Projects />
+      {/* <Contact /> */}
 
-      {/* 
-      <Services2 />
-      <C1 />
-      <C2 />
-      <C3 />  
-      <Contact />
-      */}
 
-      <Stack />
-      <Bubble /> 
-      <CircleCards />
+
+
+      {/* <Bubble /> 
       <PerspectiveSection1 />
       <HorizontalText />
-      <RibbonMarquee2 />
+      <RibbonMarquee />
       <PerspectiveSection2 />
+      <Clump />
       <Marquee />
-      <FooterSection />
+      <FooterSection /> */}
     </main>
     </>
   )

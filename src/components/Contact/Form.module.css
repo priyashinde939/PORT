@@ -1,0 +1,45 @@
+form{
+    @media (max-width: 1535px) {
+        /* Styles for screens 2xl and smaller */
+      }
+      
+      @media (max-width: 1279px) {
+        /* Styles for screens xl and smaller */
+      }
+      
+      @media (max-width: 1023px) {
+        /* Styles for screens lg and smaller */
+      }
+      
+      @media (max-width: 767px) {
+        /* Styles for screens md and smaller */
+      }
+      
+      @media (max-width: 639px) {
+        /* Styles for screens sm and smaller */
+      }
+      
+      @media (min-width: 479px) {
+        /* Styles for screens xs and larger */
+      }
+}
+
+select, input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  select {
+    appearance: none; /* Remove default styling */
+    background: white; /* Set background color */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 0.5rem; /* Padding */
+    width: 100%; /* Full width */
+  }
+  
+  select:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none; /* Remove default outline */
+  }

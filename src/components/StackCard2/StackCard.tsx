@@ -47,14 +47,6 @@ const StackCard: React.FC<StackCardProps> = ({ i, title, description, src, color
         {i === 0 ? (
           <div className={styles.firstCard}>
             <h1 className={styles.firstCardHeading}>OUR SERVICES</h1>
-            <svg
-              className={styles.arrowIcon}
-              width="100"
-              height="100"
-              viewBox="0 0 100 100"
-            >
-              <path d="M0,50 L100,50 M75,25 L100,50 L75,75" stroke="black" strokeWidth="50" fill="none" />
-            </svg>
           </div>
         ) : i === 4 ? (
           <div className={`${styles.lastCard} `}>

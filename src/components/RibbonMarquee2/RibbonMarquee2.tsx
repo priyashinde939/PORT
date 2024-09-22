@@ -170,7 +170,7 @@ const Marquee = React.forwardRef<HTMLDivElement, { reverse?: boolean; orange?: b
             ref={ref}
             className={clsx(s.marqueeContainer, className)}
             style={{
-            ["--marquee-color" as string]: orange ? "#ff4d00" : "white",
+            ["--marquee-color" as string]: orange ? "#cb8b93" : "#979cba",
             }}
         >
             <div className={clsx(s.marqueeAnimationContainer, reverse && s.reverse)} data-marquee-animation-container>
@@ -192,3 +192,5 @@ const Star: React.FC = () => {
     <img className={s.star} src="/images/git.svg" alt="img"/>
   );
 };
+
+export default RibbonMarquee2
