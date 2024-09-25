@@ -29,12 +29,13 @@ interface SectionProps {
 const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
     const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
     const rotate = useTransform(scrollYProgress, [0, 1], [0, -4]);
+    const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
 
 
     return (
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
-            style={{ scale, rotate, backgroundImage: 'url("./images/bg/2.jpg")'}}
+            style={{ scale, rotate, opacity, backgroundImage: 'url("./images/bg/2.jpg")'}}
             className="sticky top-0 h-[100vh] bg-no-repeat bg-cover rounded-xl border-2 "
         >
             <SectionOne />

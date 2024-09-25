@@ -64,9 +64,9 @@ const Contact: React.FC = () => {
       className="relative flex text-7xl mx-14 mb-20 mt-36 ">
         Lets get started...
       </motion.h1>
-
+{/* 
       <Form />
-      
+       */}
       <div className="my-20 py-28 max-h-28w-[100vw] flex flex-row place-content-center bg-[#0c0e15]">
       <motion.div
           ref={ref}
