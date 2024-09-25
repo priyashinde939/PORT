@@ -34,7 +34,7 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
     return (
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
-            style={{ scale, rotate, backgroundImage: 'url("./images/bg/3.jpg")'}}
+            style={{ scale, rotate, backgroundImage: 'url("./images/bg/2.jpg")'}}
             className="sticky top-0 h-[100vh] bg-no-repeat bg-cover rounded-xl border-2 "
         >
             <SectionOne />
