@@ -15,7 +15,7 @@ const Sticky: React.FC = () => {
 
     return (
         <div 
-        ref={container} className="relative h-[200vh] bg-black">
+        ref={container} className="relative h-[190vh] bg-black">
             <Section1 scrollYProgress={scrollYProgress} />
             <Section2 scrollYProgress={scrollYProgress} />
         </div>
@@ -34,7 +34,7 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
-            className="sticky rounded-xl border-2 top-0 h-[100vh] bg-[#7f808d]  "
+            className="sticky top-0 h-[100vh] bg-[#afbeed]  "
         >
 
 
@@ -50,7 +50,7 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
-            className="relative h-[100vh]"
+            className="relative h-[100vh] w-full"
         >
                 <TextEffect />
         </motion.div>

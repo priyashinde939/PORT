@@ -6,7 +6,7 @@ const words = `ASTERON! TECH - The Worldwide Leader Helping People And Businesse
 
 export function TextEffect() {
   return (
-    <div className="flex rounded-2xl items-center justify-center h-[100vh] w-[100vw] bg-black text-white">
+    <div className="flex rounded-2xl items-center justify-center h-[100vh] bg-black text-white overflow-hidden ">
         
       <div className="text-center px-4 md:px-8  ">
         

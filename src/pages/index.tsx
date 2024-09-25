@@ -54,7 +54,7 @@ const index = () => {
       {/* <Projects /> */}
       {/* <Contact /> */}
       {/* <Marquee /> */}
-
+      <div className='raltive h-[100vh] bg-black'/>
 
       <Clump />
       {/* <Bubble /> 
