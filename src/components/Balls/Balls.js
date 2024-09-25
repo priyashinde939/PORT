@@ -11,7 +11,7 @@ const baubleMaterial = new THREE.MeshStandardMaterial({ color: "#7cf73e", roughn
 
 export const Balls = () => (
   <Canvas style={{height: '100vh'}}
-  shadows gl={{ antialias: false }} dpr={[1, 1.5]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}>
+  shadows gl={{ antialias: false }} dpr={[0.5, 1]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}>
     <ambientLight intensity={0.5} />
     <color attach="background" args={["#000"]} />
     <spotLight intensity={1} angle={0.2} penumbra={1} position={[30, 30, 30]} castShadow shadow-mapSize={[512, 512]} />

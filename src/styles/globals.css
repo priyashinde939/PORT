@@ -20,14 +20,10 @@
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url('../../public/Fonts/Oswald.ttf') format('truetype');
-  font-family: 'Jost';
-  src: url('../../public/Fonts/Jost.ttf') format('truetype');
   font-family: 'Day';
   src: url('../../public/Fonts/Day.ttf') format('truetype')
 }
-/* 
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -36,11 +32,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    margin: 0;
+    inset:0;
+    padding:0
 
+}
 
-} */
-
-
+/* 
 body::before,
 body::after {
   position: fixed;
@@ -54,15 +52,15 @@ body::after {
   opacity: 1; /* 20% opacity */
   /* mix-blend-mode:multiply; */
 
-  mix-blend-mode: overlay;
+  /* mix-blend-mode:multiply;
 
-}
+} */
 
-body::before {
+/* body::before {
   filter: url(#grainy);
 
 
-}
+} */ 
 
 
 .text-gradient {
@@ -97,7 +95,7 @@ body::before {
     rgba(123, 83, 232, 0.845)
   );
 }
-
+/* 
 @keyframes rotateCube {
   0% { transform: rotateX(0deg) rotateY(0deg); }
   100% { transform: rotateX(360deg) rotateY(360deg); }
@@ -106,7 +104,7 @@ body::before {
 @keyframes rotateCube2 {
   0% { transform: rotateX(0deg) rotateY(0deg); }
   100% { transform: rotateX(360deg) rotateY(360deg); }
-}
+} */
 
 @keyframes marquee {
   0% {

@@ -48,21 +48,21 @@ const index = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </Head>
 
-    <main className='min-h-screen w-full '>
+    <main className='min-h-screen w-[100%] '>
       <Sticky />
       {/* <Card /> */}
-      <Projects />
+      {/* <Projects /> */}
       {/* <Contact /> */}
+      {/* <Marquee /> */}
 
 
-
-
+      <Clump />
       {/* <Bubble /> 
       <PerspectiveSection1 />
       <HorizontalText />
       <RibbonMarquee />
       <PerspectiveSection2 />
-      <Clump />
+
       <Marquee />
       <FooterSection /> */}
     </main>
