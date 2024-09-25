@@ -38,7 +38,7 @@ body {
 
 }
 
-/* 
+
 body::before,
 body::after {
   position: fixed;
@@ -50,17 +50,12 @@ body::after {
   z-index: 3023023023020;
   pointer-events: none;
   opacity: 1; /* 20% opacity */
-  /* mix-blend-mode:multiply; */
+  mix-blend-mode: overlay;
+} 
 
-  /* mix-blend-mode:multiply;
-
-} */
-
-/* body::before {
+body::before {
   filter: url(#grainy);
-
-
-} */ 
+} 
 
 
 .text-gradient {

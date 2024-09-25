@@ -2,7 +2,7 @@
 import ShootingStars from "../Stars/Stars";
 import { TextGenerateEffect } from "./TextGenerateEffect";
 
-const words = `ASTERON! TECH - The Worldwide Leader Helping People And Businesses Realize Their Full Potential.`;
+const words = `Bringing ideas to life through engaging, user-friendly front-end development.`;
 
 export function TextEffect() {
   return (

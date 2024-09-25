@@ -30,11 +30,12 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
     const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
     const rotate = useTransform(scrollYProgress, [0, 1], [0, -4]);
 
+
     return (
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
-            style={{ scale, rotate }}
-            className="sticky top-0 h-[100vh] bg-[#afbeed]  "
+            style={{ scale, rotate, backgroundImage: 'url("./images/bg/3.jpg")'}}
+            className="sticky top-0 h-[100vh] bg-[#afbeed] bg-no-repeat bg-cover rounded-xl border-2"
         >
 
 
