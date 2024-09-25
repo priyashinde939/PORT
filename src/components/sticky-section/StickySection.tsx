@@ -1,8 +1,8 @@
 'use client';
 import { useRef } from 'react';
-// import Link from 'next/link'
 import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
 import { TextEffect } from '../TextGenerateEffect/TextEffect';
+import SectionOne from './SectionOne';
 
 
 const Sticky: React.FC = () => {
@@ -35,9 +35,9 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate, backgroundImage: 'url("./images/bg/3.jpg")'}}
-            className="sticky top-0 h-[100vh] bg-[#afbeed] bg-no-repeat bg-cover rounded-xl border-2"
+            className="sticky top-0 h-[100vh] bg-no-repeat bg-cover rounded-xl border-2 "
         >
-
+            <SectionOne />
 
         </motion.div>
     );

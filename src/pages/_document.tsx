@@ -7,7 +7,7 @@ export default function Document() {
           <svg width="0" height="0" style={{ position: 'absolute' }}>
             <filter id="grainy">
               <feTurbulence type="fractalNoise" baseFrequency="1" numOctaves="1" stitchTiles="stitch"  />
-              <feColorMatrix type="saturate" values="1" />
+              <feColorMatrix type="saturate" values="10" />
             </filter>
           </svg>
       </Head>

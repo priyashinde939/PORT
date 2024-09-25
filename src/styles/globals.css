@@ -17,12 +17,21 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+  
 }
 
 @font-face {
   font-family: 'Day';
   src: url('../../public/Fonts/Day.ttf') format('truetype')
 }
+/* @font-face {
+  font-family: 'Con';
+  src: url('../../public/Fonts/Con.woff') format('woff')
+}
+@font-face {
+  font-family: 'Nor';
+  src: url('../../public/Fonts/Nor.woff') format('woff')
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -49,8 +58,8 @@ body::after {
   height: 100%;
   z-index: 3023023023020;
   pointer-events: none;
-  opacity: 1; /* 20% opacity */
-  mix-blend-mode: overlay;
+  opacity:0.6; /* 20% opacity */
+  mix-blend-mode:overlay;
 } 
 
 body::before {

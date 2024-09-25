@@ -2,11 +2,20 @@
 import React from 'react';
 import s from './Button.module.scss'; // Import custom CSS file
 
-const Button: React.FC = () => {
+
+export const Button = ({
+  text,
+  className
+}: {
+  text: string;
+  className?: string;
+  onClick?: () => void;
+}) => {
+  
   return (
     <a >
       <button className={s.bn54}>
-        <span className={s.bn54span}> Find Out More ➔</span>
+        <span className={s.bn54span}> {text}</span>
       </button>
     </a>
   );
