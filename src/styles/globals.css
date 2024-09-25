@@ -58,7 +58,8 @@ body::after {
   height: 100%;
   z-index: 3023023023020;
   pointer-events: none;
-  opacity:0.6; /* 20% opacity */
+  opacity:0.7; 
+  /* mix-blend-mode:overlay; */
   mix-blend-mode:overlay;
 } 
 

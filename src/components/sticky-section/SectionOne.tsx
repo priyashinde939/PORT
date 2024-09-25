@@ -48,7 +48,7 @@ const SectionOne: React.FC = () => {
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-        className="flex place-self-end  text-end max-w-[70%] text-3xl">
+        className="flex place-self-end p-3 text-end max-w-[70%] font-medium text-[#000000] text-pretty text-3xl border border-[#35353549] backdrop-blur-sm rounded-3xl">
         I am a Front-End Web Developer, I focus on creating creative and interactive websites. I’m passionate about building user-friendly, dynamic experiences and continuously improving my coding skills.
  
         </motion.p>
