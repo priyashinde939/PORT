@@ -6,7 +6,7 @@ const words = `Bringing ideas to life through engaging, user-friendly front-end 
 
 export function TextEffect() {
   return (
-    <div className="flex rounded-2xl items-center justify-center h-[100vh] bg-black text-white overflow-hidden ">
+    <div className="flex rounded-2xl items-center justify-center h-[100vh] bg-black text-white overflow-hidden">
         
       <div className="text-center px-4 md:px-8  ">
         

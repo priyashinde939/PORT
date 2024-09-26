@@ -1,6 +1,5 @@
 import React from 'react'
 import Marquee from '@/components/Marquee/Marquee'
-import Card from '@/components/Card/Card'
 import Head from 'next/head'
 import  { RevealText }  from '@/components/RevealText/RevealText'
 import Sticky from '@/components/sticky-section/StickySection'
@@ -12,9 +11,7 @@ import PerspectiveSection2 from '@/components/PerspectiveSection/PerspectiveSect
 // import Stack from '@/components/StackCard2/Stack'
 import Bubble from '@/components/Bubble/Bubble'
 import Contact from '@/components/Contact/Contact'
-import CircleCards from '@/components/CircleCards/CircleCards'
 import Clump from '@/components/Balls/Clump'
-import Projects from '@/components/CircleCards/Projects'
 import { RibbonMarquee } from '@/components/RibbonMarquee/RibbonMarquee'
 
 
@@ -54,16 +51,22 @@ const index = () => {
       {/* <Projects /> */}
       {/* <Contact /> */}
       {/* <Marquee /> */}
-      <div className='raltive h-[100vh] bg-black'/>
+
+
+      <div className='raltive h-[100vh] bg-[#b4b2c5]'/>
 
       <Clump />
-      {/* <Bubble /> 
-      <PerspectiveSection1 />
+
+      {/* <Bubble />
+      
+      <PerspectiveSection2 /> 
+            <PerspectiveSection1 />
+            <Marquee />  
       <HorizontalText />
       <RibbonMarquee />
-      <PerspectiveSection2 />
 
-      <Marquee />  
+
+
       */}
       <FooterSection /> 
     </main>

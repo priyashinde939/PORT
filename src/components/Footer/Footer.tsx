@@ -3,32 +3,28 @@ import FooterMarquee from './FooterMarquee';
 import { motion, useInView } from 'framer-motion';
 
 const Footer: React.FC = () => {
-  // Ref for the hand image
-  const handImageRef = useRef(null);
-  
-  // useInView hook to track when the image is in view
-  const isInView = useInView(handImageRef, { once: true, margin: '-50px' });
+  const handLogoRef = useRef(null);
+  const isInView = useInView(handLogoRef, { once: true, margin: '-50px' });
 
   return (
     <footer className="sticky bottom-0 text-white py-12 h-[100vh]">
       <div className="w-full mx-auto px-6 md:px-12">
         <div className="flex flex-row md:flex-row place-content-between justify-between items-start md:items-center mx-14">
-          {/* Logo with Hand Image */}
           <div className="mb-8 md:mb-0">
-            <motion.img
-              ref={handImageRef} // Use ref to track the image
-              src="images/logo/hand.png"
-              alt="Format-3 Logo"
-              className="w-32 -rotate-45"
-              initial={{ scale: 0.5, rotate:10 }} // Initial size
-              animate={{ scale: isInView ? 0.8 : 0.5, rotate:0 }} // Full size when in view
+            <motion.h1
+              ref={handLogoRef} 
+              className="w-32 -rotate-45 text-3xl"
+              initial={{ scale: 0.5, rotate:10 }} 
+              animate={{ scale: isInView ? 0.8 : 0.5, rotate:0 }} 
               transition={{
                 type: 'spring',
-                stiffness: 400,   // Higher stiffness for a snappier feel
-                damping: 10,      // Lower damping for more bounce
+                stiffness: 400,   
+                damping: 10,      
                 duration: 1,
               }}
-            />
+            >
+              Portfolio
+            </motion.h1>
           </div>
 
           {/* Links Section */}

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Product from './Product';
+import Product from './Project';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-function Products() {
+function Projects() {
   const data = [
     {
       title: 'UI & UX Design',
@@ -32,22 +32,15 @@ function Products() {
       live: true,
       case: true,
       bg: '#2dcb76',
-    },
-    // {
-    //   title: 'Singularity',
-    //   desc: 'A new site for Singularity that supports their growth and showcases their true identity as industry innovators.',
-    //   live: true,
-    //   case: true,
-    //   bg: '#ff7548',
-    // },
+    }
   ];
 
   const images = [
     '/images/1.jpg',
-    '/images/1.jpg',
-    '/images/1.jpg',
-    '/images/1.jpg',
-    '/images/2.jpg',
+    '/images/5.jpg',
+    '/images/3.jpg',
+    '/images/4.jpg',
+    '/images/5.jpg',
   ];
 
   const [pos, setPos] = useState(0);
@@ -88,4 +81,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default Projects;

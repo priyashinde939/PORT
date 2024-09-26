@@ -16,26 +16,26 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="./contacts" passHref>
-              <div className="text-gray-300 text-xl font-medium">PRIYA SHINDE | FRONT-END WEB DEVELOPER</div>
+              <div className="text-zinc-300 text-xl font-medium">PRIYA SHINDE | FRONT-END WEB DEVELOPER</div>
             </Link>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Link href="/" passHref>
-                <div className="text-gray-300 hover:border-2 hover:border-zinc-400 hover:text-white px-3 py-2 rounded-3xl text-xl font-medium">Home</div>
+                <div className="text-zinc-300 hover:border-2 hover:border-zinc-400 hover:text-white px-3 py-2 rounded-3xl text-xl font-medium">Home</div>
+              </Link>
+              <Link href="/projects" passHref>
+                <div className="text-zinc-300 hover:border-2 hover:border-zinc-400 hover:text-white px-3 py-2 rounded-3xl text-xl font-medium">Projects</div>
               </Link>
               <Link href="/contacts" passHref>
-                <div className="text-gray-300 hover:border-2 hover:border-zinc-400 hover:text-white px-3 py-2 rounded-3xl text-xl font-medium">About</div>
-              </Link>
-              <Link href="/contacts" passHref>
-                <div className="text-gray-300 hover:border-2 hover:border-zinc-400 hover:text-white px-3 py-2 rounded-3xl text-xl font-medium">Contact</div>
+                <div className="text-zinc-300 hover:border-2 hover:border-zinc-400 hover:text-white px-3 py-2 rounded-3xl text-xl font-medium">Contact</div>
               </Link>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-300 hover:text-white focus:outline-none focus:text-white"
+              className="text-zinc-300 hover:text-white focus:outline-none focus:text-white"
             >
               <svg
                 className="h-6 w-6"
@@ -65,14 +65,14 @@ const Navbar: React.FC = () => {
           className="md:hidden"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/contacts" passHref>
-              <div className="text-gray-300 hover:border-2 hover:border-zinc-400 hover:text-white block px-3 py-2 rounded-3xl text-base font-medium">Home</div>
+            <Link href="/" passHref>
+              <div className="text-zinc-300 hover:border-2 hover:border-zinc-400 hover:text-white block px-3 py-2 rounded-3xl text-base font-medium">Home</div>
+            </Link>
+            <Link href="/projects" passHref>
+              <div className="text-zinc-300 hover:border-2 hover:border-zinc-400 hover:text-white block px-3 py-2 rounded-3xl text-base font-medium">About</div>
             </Link>
             <Link href="/contacts" passHref>
-              <div className="text-gray-300 hover:border-2 hover:border-zinc-400 hover:text-white block px-3 py-2 rounded-3xl text-base font-medium">About</div>
-            </Link>
-            <Link href="/contacts" passHref>
-              <div className="text-gray-300 hover:border-2 hover:border-zinc-400 hover:text-white block px-3 py-2 rounded-3xl text-base font-medium">Contact</div>
+              <div className="text-zinc-300 hover:border-2 hover:border-zinc-400 hover:text-white block px-3 py-2 rounded-3xl text-base font-medium">Contact</div>
             </Link>
           </div>
         </motion.div>
