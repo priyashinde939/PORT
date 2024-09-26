@@ -13,7 +13,7 @@ const SectionOne: React.FC = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
          className="items-start ">
-          <span className="text-xl lg:text-2xl font-medium mix-blend-darken">
+          <span className="text-xl lg:text-2xl font-medium text-[#c9652a]">
             Creative
           </span>
         </motion.div>
@@ -22,7 +22,7 @@ const SectionOne: React.FC = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8,delay:0.4 }}
          className="items-start  font-black lg:text-7xl md:text-6xl text-5xl">
-          DESIGNER <span className="text-2xl font-medium">&</span>
+          DESIGNER <span className="text-2xl font-medium text-[#db6b2b]">&</span>
         </motion.div>
         <motion.div 
                                 initial={{ opacity: 0, y: -20 }}
