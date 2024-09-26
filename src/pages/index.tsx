@@ -63,8 +63,9 @@ const index = () => {
       <RibbonMarquee />
       <PerspectiveSection2 />
 
-      <Marquee />
-      <FooterSection /> */}
+      <Marquee />  
+      */}
+      <FooterSection /> 
     </main>
     </>
   )
