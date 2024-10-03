@@ -1,13 +1,12 @@
 'use client';
 import { useRef } from 'react';
-import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
-import { TextEffect } from '../TextGenerateEffect/TextEffect';
+import { useScroll, useTransform, motion, MotionValue, useInView } from 'framer-motion';
 import SectionOne from './SectionOne';
-
+import { TextEffectWithCustomVariants } from '../TextEffects/TextEffectClr';
 
 const Sticky: React.FC = () => {
     const container = useRef<HTMLDivElement | null>(null);
-
+    
     const { scrollYProgress } = useScroll({
         target: container,
         offset: ["start start", "end end"]
@@ -15,7 +14,10 @@ const Sticky: React.FC = () => {
 
     return (
         <div 
-        ref={container} className="relative h-[190vh] bg-black">
+            style={{ backgroundImage: 'url("./images/bg/stone1.jpg")' }}
+            ref={container} 
+            className="relative h-[200vh] bg-contain bg-blend-multiply "
+        >
             <Section1 scrollYProgress={scrollYProgress} />
             <Section2 scrollYProgress={scrollYProgress} />
         </div>
@@ -28,37 +30,41 @@ interface SectionProps {
 
 const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
     const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
-    const rotate = useTransform(scrollYProgress, [0, 1], [0, -4]);
+    const rotate = useTransform(scrollYProgress, [0, 1], [0, 4]);
     const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
-
 
     return (
         <motion.div
-            transition={{ type: "spring", stiffness: 50, damping: 10 }}
-            style={{ scale, rotate, opacity, backgroundImage: 'url("./images/bg/2.jpg")'}}
-            className="sticky top-0 h-[100vh] bg-no-repeat bg-cover rounded-xl border-2 "
+            transition={{ type: "spring", stiffness: 40, damping: 100 }}
+            style={{ scale, rotate, opacity }}
+            className="sticky top-10 h-[90vh] bg-[#050404be] backdrop-blur-sm rounded-3xl mx-6"
         >
             <SectionOne />
-
         </motion.div>
     );
 };
 
 const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
-    const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+    const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
     const rotate = useTransform(scrollYProgress, [0, 1], [4, 0]);
+
+    // Create a ref for the section and use useInView to track its visibility
+    const sectionRef = useRef(null);
+    const isInView = useInView(sectionRef, { once: true });
 
     return (
         <motion.div
+            ref={sectionRef}
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
-            className="relative h-[100vh] w-full"
+            className="relative h-[120vh] bg-[#000000] rounded-3xl"
         >
-                <TextEffect />
+            <div className="relative rounded-3xl text-4xl font-semibold w-[60%] top-[40%] left-[20%]">
+                {/* Trigger the text effect when Section 2 is in view */}
+                {isInView && <TextEffectWithCustomVariants />}
+            </div>
         </motion.div>
     );
 };
-
-
 
 export default Sticky;

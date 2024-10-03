@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from 'framer-motion';
 import AnimatedButton from "./ContaxtButton";
-import styles from './Form.module.css'
-import clsx from 'clsx'
+// import styles from './Form.module.css'
+// import clsx from 'clsx'
 
 const Form: React.FC = () => {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
