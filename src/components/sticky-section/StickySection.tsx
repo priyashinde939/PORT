@@ -37,7 +37,7 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 40, damping: 100 }}
             style={{ scale, rotate, opacity }}
-            className="sticky top-10 h-[90vh] bg-[#050404be] backdrop-blur-sm rounded-3xl mx-6"
+            className="sticky top-10 h-[90vh] bg-[#050404be] backdrop-blur-sm rounded-3xl mx-6 border border-[#a22327]"
         >
             <SectionOne />
         </motion.div>
@@ -59,8 +59,7 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
             style={{ scale, rotate }}
             className="relative h-[120vh] bg-[#000000] rounded-3xl"
         >
-            <div className="relative rounded-3xl text-4xl font-semibold w-[60%] top-[40%] left-[20%]">
-                {/* Trigger the text effect when Section 2 is in view */}
+            <div className="relative rounded-3xl text-[1rem] md:lg:text-[2rem] font-semibold w-[60%] top-[40%] left-[20%]">
                 {isInView && <TextEffectWithCustomVariants />}
             </div>
         </motion.div>

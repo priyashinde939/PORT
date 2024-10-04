@@ -5,7 +5,7 @@ import  TextEffectPresence  from '../TextEffects/TextEffectPresence'
 const FlowerSection = () => {
     const sectionRef = useRef(null)
   return (
-    <section>
+    <section className="my-10">
 
     <div className="relative h-screen bg-black flex flex-col lg:md:flex-row mx-20">
         <div style={{backgroundImage:'url(./images/bg/stone.jpg)'}}
@@ -33,10 +33,10 @@ const FlowerSection = () => {
         </div>
 
     </div>
-    <div className='relative text-xl w-[30%] p-10 text-wrap'>
+    {/* <div className='relative text-xl w-[30%] p-10 text-wrap'>
     <TextEffectPresence  text="I specialize in creating dynamic, interactive websites using Framer Motio"/> 
 
-    </div>
+    </div> */}
 
 
     {/* Marquee Section*/}

@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
         <main className="font-mont bg-dark w-full min-h-screen" >
           <SmoothScroll>
-            <Navbar />
+            {/* <Navbar /> */}
             <Component key={router.asPath} {...pageProps} />
           </SmoothScroll>
         </main>

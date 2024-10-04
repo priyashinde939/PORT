@@ -38,7 +38,7 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate}}
-            className="sticky top-0 h-[100vh] bg-[#8e7c93] border border-[#1e222e]"
+            className="sticky top-0 h-[100vh] bg-[#2941a0] border border-[#1e222e]"
         >
             <SectionOne />
 

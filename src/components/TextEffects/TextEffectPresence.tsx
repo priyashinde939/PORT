@@ -1,3 +1,6 @@
+
+//TextEffectPresence
+
 import React, { useRef, useState, useEffect } from 'react';
 import { TextEffect } from './CoreEffect'; // Adjust the import path to where your CoreEffect file is located
 
@@ -8,7 +11,7 @@ interface TextEffectTriggerProps {
   threshold?: number; // Optional threshold for the IntersectionObserver, defaults to 0.5
 }
 
-const TextEffectTrigger: React.FC<TextEffectTriggerProps> = ({ text, delay = 0.5, threshold = 0.5 }) => {
+const TextEffectTrigger: React.FC<TextEffectTriggerProps> = ({ text, delay = 0.5, threshold = 0.1 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const textRef = useRef<HTMLDivElement | null>(null); // UseRef with a proper type for the div element
 

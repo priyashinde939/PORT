@@ -15,7 +15,9 @@ import Blank from '@/components/Blank/Blank'
 
 import SectionTransition from '@/components/SectionTransition/SectionTransition'
 import FlowerSection from '@/components/FlowerSection/FlowerSection'
-import HowItWorks from '@/components/HowItWorks/HowItWorks'
+import HowItWorks2 from '@/components/HowItWorks2/HowItWorks2'
+import { InViewBasicMultiple } from '@/components/SideInView/SideInView'
+
 
 
 
@@ -51,15 +53,20 @@ const index = () => {
 
       <Sticky />
  
-      <Blank />
+      {/* <Blank /> */}
 
-      <HowItWorks />
+      {/* <HowItWorks /> */}
+      <InViewBasicMultiple />
       <FlowerSection />
-      <SectionTransition />
+      <HowItWorks2 />
+      {/* <Blank /> */}
       <Blank />
+      <SectionTransition />
+
+      
       {/* <Clump /> */}
 
-
+      {/* <RibbonMarquee /> */}
       {/* <Card /> */}
       {/* <Projects /> */}
       {/* <Contact /> */}
@@ -71,7 +78,7 @@ const index = () => {
             <PerspectiveSection1 />
             <Marquee />  
       <HorizontalText />
-      <RibbonMarquee />
+
 
 
 

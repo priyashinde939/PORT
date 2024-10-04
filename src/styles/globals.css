@@ -58,9 +58,10 @@ body::after {
   height: 100%;
   z-index: 3023023023020;
   pointer-events: none;
-  opacity:0.2; 
-  mix-blend-mode:soft-light;
+  opacity:0.8; 
+  mix-blend-mode:saturation;
   /* mix-blend-mode:color-dodge; */
+  
 } 
 
 body::before {

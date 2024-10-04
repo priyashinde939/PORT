@@ -4,10 +4,10 @@ import Button from '../Button/Button';
 const SectionOne: React.FC = () => {
   return (
     <div className="flex lg:md:flex-row flex-col h-screen px-4">
-
+{/* 
       <div 
       className="relative lg:w-[50%] sm:w-full flex flex-col lg:top-[30%] top-[15%] lg:gap-4 ">
-        {/* container */}
+
         <motion.div
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -32,9 +32,9 @@ const SectionOne: React.FC = () => {
           DEVELOPER
         </motion.div>
       </div>
-{/* ----------------- */}
+
       <div className="lg:w-[50%] w-full h-screen justify-center flex flex-col gap-4">
-        {/* container */}
+
         <motion.div 
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ const SectionOne: React.FC = () => {
         className="flex place-content-end ">
           <Button title="CONTACT ME" href="#"/>
         </motion.div>
-      </div>
+      </div> */}
 
     </div>
   );
