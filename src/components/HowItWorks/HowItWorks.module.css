@@ -15,13 +15,13 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    max-width: 35rem;
+    max-width: 39rem;
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .tag {
-    font-size: 3rem; /* Adjust the size here */
+    font-size: 6rem; /* Adjust the size here */
     font-weight:bolder;
 }
 
