@@ -1,6 +1,5 @@
 import React, {useRef} from 'react'
-import SkillMarquees from '../Skills/SkillMarquees'
-import  TextEffectPresence  from '../TextEffects/TextEffectPresence'
+import { SkillSlider } from '../Slider/SkillSlider'
 
 const FlowerSection = () => {
     const sectionRef = useRef(null)
@@ -33,15 +32,11 @@ const FlowerSection = () => {
         </div>
 
     </div>
-    {/* <div className='relative text-xl w-[30%] p-10 text-wrap'>
-    <TextEffectPresence  text="I specialize in creating dynamic, interactive websites using Framer Motio"/> 
-
-    </div> */}
 
 
     {/* Marquee Section*/}
-
-    <SkillMarquees />
+    <SkillSlider />
+    {/* <SkillMarquees /> */}
     </section>
   )
 }

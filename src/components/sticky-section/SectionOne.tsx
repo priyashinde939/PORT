@@ -7,7 +7,7 @@ const SectionOne: React.FC = () => {
     <div className="flex lg:md:flex-row flex-col h-screen px-4">
      
       <div 
-      className="relative lg:w-[50%] sm:w-full flex flex-col lg:top-[30%] top-[15%] lg:gap-4  h-fit">
+      className="relative lg:w-[50%] sm:w-full flex flex-col lg:top-[30%] top-[10%] lg:gap-4  h-fit">
         {/* container */}
 
         <motion.div
@@ -23,7 +23,7 @@ const SectionOne: React.FC = () => {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8,delay:0.4 }}
-         className="items-start  font-black lg:text-7xl md:text-6xl text-5xl">
+         className="items-start text-[#f3f3f3a9]  font-black lg:text-[5rem] md:text-6xl text-5xl">
           DESIGNER 
           <span className="relative ml-3 text-2xl font-medium text-[#9eb3f5] ">&</span>
         </motion.div>
@@ -31,19 +31,19 @@ const SectionOne: React.FC = () => {
                                 initial={{ opacity: 0, y: -20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8,delay:0.8 }}
-        className="items-start  font-black lg:text-8xl md:text-8xl text-6xl">
+        className="items-start text-[#f0eeee]  font-black lg:text-[6rem] md:text-8xl text-6xl">
           DEVELOPER
 
         </motion.div>
       </div>
 {/* ----------------- */}
-      <div className="lg:w-[50%] w-full h-screen justify-center flex flex-col gap-4">
+      <div className="lg:w-[50%] w-full h-screen items-end justify-center flex flex-col gap-4">
         {/* container */}
         <motion.div 
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-        className="flex flex-col gap-0 items-end text-md lg:text-xl font-medium mt-10 mr-10">
+        className="flex gap-0 items-end text-md lg:text-xl md:text-lg sm:text-sm font-medium lg:md:mt-10">
           <span>
             Available 
           </span>
