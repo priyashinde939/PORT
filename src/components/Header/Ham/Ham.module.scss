@@ -1,0 +1,10 @@
+
+.socialDiv .overlay {
+    top: 100%;
+    transition: all 0.5s ease;
+
+}
+
+.socialDiv:hover .overlay {
+    top: 0;
+}

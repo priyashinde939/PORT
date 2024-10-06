@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Button from '../Button/Button';
-import { TextEffectWithCustomVariants } from '../TextEffects/TextEffectClr'
+import Button2 from '../Button/Button2';
+// import { TextEffectWithCustomVariants } from '../TextEffects/TextEffectClr'
 
 const SectionOne: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const SectionOne: React.FC = () => {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8,delay:0.4 }}
-         className="items-start text-[#f3f3f3a9]  font-black lg:text-[5rem] md:text-6xl text-5xl">
+         className="items-start text-[#e4e6f1fc]  font-black lg:text-[5rem] md:text-6xl text-5xl">
           DESIGNER 
           <span className="relative ml-3 text-2xl font-medium text-[#9eb3f5] ">&</span>
         </motion.div>
@@ -31,7 +32,7 @@ const SectionOne: React.FC = () => {
                                 initial={{ opacity: 0, y: -20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8,delay:0.8 }}
-        className="items-start text-[#f0eeee]  font-black lg:text-[6rem] md:text-8xl text-6xl">
+        className="items-start text-[#e4e6f1fc] font-black lg:text-[6rem] md:text-8xl text-6xl">
           DEVELOPER
 
         </motion.div>
@@ -51,19 +52,24 @@ const SectionOne: React.FC = () => {
             For Work 
           </span>
         </motion.div>
-        <motion.p 
+        <motion.div 
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-        className="flex place-self-end p-3 text-end lg:max-w-[70%] md:sm:w-full font-medium text-[#979797] text-pretty lg:text-[1.5rem] sm:text-lg md:text-xl border border-[#35353549] rounded-3xl">
-        I am a Front-End Web Developer, I focus on creating creative and interactive websites. I’m passionate about building user-friendly, dynamic experiences and continuously improving my coding skills. 
-        </motion.p>
+        className="flex flex-col place-self-end p-3 text-end lg:max-w-[70%] md:sm:w-full font-medium text-[#979797] text-pretty lg:text-[1.5rem] sm:text-lg md:text-xl border border-[#35353549] rounded-3xl">
+        <h1> Hey...</h1>
+        <h1>Im Priya</h1>
+        <h1>And i love writing beautiful code</h1>
+          
+        {/* I am a Front-End Web Developer, I focus on creating creative and interactive websites. I’m passionate about building user-friendly, dynamic experiences and continuously improving my coding skills.  */}
+        </motion.div>
         <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.8 }} 
         className="flex place-content-end ">
-                    <Button title="CONTACT ME" href="#"/>
+          <Button2 bgColor='transparent' text='CONTACT' />
+                    {/* <Button title="CONTACT ME" href="#"/> */}
         </motion.div>
 
       </div>

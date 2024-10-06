@@ -17,6 +17,7 @@ import SectionTransition from '@/components/SectionTransition/SectionTransition'
 import FlowerSection from '@/components/FlowerSection/FlowerSection'
 import HowItWorks2 from '@/components/HowItWorks2/HowItWorks2'
 import { InViewBasicMultiple } from '@/components/SideInView/SideInView'
+import { SkillAccordion } from '@/components/Accordion/SkillAccordion'
 
 
 
@@ -57,6 +58,7 @@ const index = () => {
 
       {/* <HowItWorks /> */}
       <InViewBasicMultiple />
+      <SkillAccordion />
       <FlowerSection />
       <HowItWorks2 />
       {/* <Blank /> */}
