@@ -4,6 +4,7 @@ import { useScroll, useTransform, motion, MotionValue, useInView } from 'framer-
 // import SectionOne from './SectionOne';
 import { TextEffectWithCustomVariants } from '../TextEffects/TextEffectClr';
 import SectionOne from './SectionOne';
+import useCursor from '../Test/cursor-provider'; 
 
 
 
@@ -20,7 +21,7 @@ const Sticky: React.FC = () => {
         <div 
             style={{ backgroundImage: 'url("./images/bg/stone1.jpg")' }}
             ref={container} 
-            className="relative h-[200vh] bg-contain bg-blend-multiply"
+            className="relative h-[200vh] bg-contain bg-blend-multiply cursor-none"
         >
             <Section1 scrollYProgress={scrollYProgress} />
             <Section2 scrollYProgress={scrollYProgress} />
@@ -56,7 +57,7 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
     // Create a ref for the section and use useInView to track its visibility
     const sectionRef = useRef(null);
     const isInView = useInView(sectionRef, { once: true });
-
+    const { setCursor, resetCursor } = useCursor(); 
     
     return (
         <motion.div
@@ -66,7 +67,12 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
             className="relative h-[120vh] bg-[#000000] rounded-3xl "
         >
             
-            <div className="relative rounded-3xl text-[1rem] md:lg:text-[2rem] font-semibold w-[60%] top-[40%] left-[20%]">
+            <div
+                    onMouseEnter={() => {
+                        setCursor({ variant: "blurred", content: "", color: "#e82626" }); // Set blurred cursor
+                    }}
+                    onMouseLeave={resetCursor} 
+             className="relative rounded-3xl text-[1rem] md:lg:text-[2rem] font-semibold w-[60%] top-[40%] left-[20%]">
                 {isInView && <TextEffectWithCustomVariants />}
             </div>
         </motion.div>

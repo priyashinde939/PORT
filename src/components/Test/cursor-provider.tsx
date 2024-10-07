@@ -23,20 +23,33 @@ const variants = {
     width: 14,
     height: 14,
     opacity: 1,
+    // border: '1px solid white',
   },
   withText: {
     width: 96,
     height: 96,
     opacity: 0.9,
-    mixBlendMode: "difference" as const, // Ensure the value is from allowed literals
+    backgroundColor: "#f5f0e93b", // Transparent background
+    backdropFilter: "blur(2px)", 
+    mixBlendMode: "lighten" as const, // Ensure the value is from allowed literals
   },
   blurred: {
     width: 96,
     height: 96,
     opacity: 1,
-    backgroundColor: "transparent", // Transparent background
-    backdropFilter: "blur(10px)", // Blur effect
-    mixBlendMode: "screen" as const, // Valid mixBlendMode value
+    backgroundColor: "#f5f0e93b", // Transparent background
+    backdropFilter: "blur(2px)", // Blur effect
+    mixBlendMode: "lighten" as const, // Valid mixBlendMode value
+    // border: '2px solid #93a8d7d2'
+  },
+  lowblurred: {
+    width: 96,
+    height: 96,
+    opacity: 1,
+    backgroundColor: "#f5f0e93b", // Transparent background
+    backdropFilter: "blur(2px)", // Blur effect
+    mixBlendMode: "lighten" as const, // Valid mixBlendMode value
+    // border: '2px solid #93a8d7d2'
   },
 };
 

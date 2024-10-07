@@ -6,12 +6,11 @@ const SectionOne: React.FC = () => {
     const { setCursor, resetCursor } = useCursor(); // Using the cursor context
 
     return (
-        <div className="flex lg:md:flex-row flex-col h-screen px-4">
+        <div 
+
+        className="flex lg:md:flex-row flex-col h-screen px-4">
             <div 
-                                onMouseEnter={() => {
-                                  setCursor({ variant: "blurred", content: " Contact", color: "#e82626" }); // Set blurred cursor
-                              }}
-                              onMouseLeave={resetCursor} // Reset cursor on leave
+
                 className="relative lg:w-[50%] sm:w-full flex flex-col xl:lg:top-[20%] xl:lg:left-[5%] top-[10%] lg:gap-4 h-fit">
                 {/* container */}
 
@@ -19,8 +18,13 @@ const SectionOne: React.FC = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="items-start">
-                    <span className="text-xl lg:text-2xl font-medium text-[#9eb3f5]">
+                    className="items-start p-3">
+                    <span 
+                            onMouseEnter={() => {
+                                setCursor({ variant: "blurred", content: "HOLA", color: "#e82626" }); // Set blurred cursor
+                            }}
+                            onMouseLeave={resetCursor} 
+                    className="text-xl lg:text-2xl font-medium text-[#9eb3f5]">
                         Creative
                     </span>
                 </motion.div>
@@ -29,20 +33,16 @@ const SectionOne: React.FC = () => {
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="items-start text-[#e4e6f1fc] font-black xl:lg:text-[7rem] md:text-6xl text-5xl"
-
-                >
-                    DESIGNER 
-                    <span className="relative ml-6 text-3xl font-medium text-[#9ebff5] text-[#e82626]">&</span>
+                    className="items-start text-[#e4e6f1fc] font-black xl:lg:text-[7rem] md:text-6xl text-5xl">
+                        DESIGNER 
+                    <span className="relative ml-6 text-3xl font-medium text-[#9ebff5] ">&</span>
                 </motion.div>
 
                 <motion.div 
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="items-start text-[#e4e6f1fc] font-black xl:lg:text-[8rem] md:text-8xl text-6xl"
-
-                >
+                    className="items-start text-[#e4e6f1fc] font-black xl:lg:text-[8rem] md:text-8xl text-6xl">
                     DEVELOPER
                 </motion.div>
             </div>

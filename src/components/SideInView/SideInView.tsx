@@ -91,7 +91,7 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#d2ad76] p-10 items-center justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem] bg-[#a296b9] p-10 items-center justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
               <strong className='flex justify-center font-bold text-zinc-50'>Debugging</strong>
               <div className="flex py-5 justify-center text-center">

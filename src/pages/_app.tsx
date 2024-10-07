@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <> 
         <main className="font-mont bg-dark w-full min-h-screen" >
           <SmoothScroll>
-          <CursorProvider accentColor={'#9eb2f5a9'}>
+          <CursorProvider accentColor={'#f5f0e93b'}>
             <Header2 />
             <Component key={router.asPath} {...pageProps} />
           </CursorProvider>

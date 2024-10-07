@@ -57,8 +57,8 @@ const FaqCard = ({ data }: FaqCardProps) => {
         className=" w-full px-10 flex lg:flex-row flex-col justify-between   lg:items-center relative z-40"
       >
         <h1
-          className={`xl:text-2xl font-bold text-[#ff6776]  ${
-            isHovered ? "text-transparent lg:text-white md:text-white" : "text-pink "
+          className={`xl:text-2xl font-bold text-[#b92458]  ${
+            isHovered ? "text-transparent lg:text-[#edebe9] md:text-white" : "text-pink "
           } `}
         >
           {data.textHead}
@@ -121,7 +121,7 @@ const FaqCard = ({ data }: FaqCardProps) => {
           },
         }}
         transition={transition}
-        className="w-full h-32 absolute flex justify-end lg:justify-end md:justify-start px-10 lg:pr-20 md:pt-10 items-center lg:pt-0 text-white bg-[#55699e]"
+        className="w-full h-32 absolute flex justify-end lg:justify-end md:justify-start px-10 lg:pr-20 md:pt-10 items-center lg:pt-0 text-white bg-[#060c1d]"
       >
         {" "}
         <p className="lg:w-1/2 text-sm xl:text-base"> {data.textDesc}</p>
