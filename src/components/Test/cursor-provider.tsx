@@ -36,7 +36,7 @@ const variants = {
     opacity: 1,
     backgroundColor: "transparent", // Transparent background
     backdropFilter: "blur(10px)", // Blur effect
-    mixBlendMode: "overlay" as const, // Valid mixBlendMode value
+    mixBlendMode: "screen" as const, // Valid mixBlendMode value
   },
 };
 
