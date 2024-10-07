@@ -11,7 +11,7 @@ import React, {
 } from "react";
 import { motion, useSpring, useMotionValue } from "framer-motion";
 import { useEventListener, useMediaQuery } from "usehooks-ts";
-import { Blend } from "lucide-react";
+
 
 const variants = {
   hidden: {
@@ -28,7 +28,7 @@ const variants = {
     width: 96,
     height: 96,
     opacity: 0.9,
-    mixBlendMode: "difference",
+    mixBlendMode: "difference" as const, // Ensure the value is from allowed literals
   },
   blurred: {
     width: 96,
@@ -36,9 +36,10 @@ const variants = {
     opacity: 1,
     backgroundColor: "transparent", // Transparent background
     backdropFilter: "blur(10px)", // Blur effect
-    mixBlendMode: "overlay", // You can choose any blend mode
+    mixBlendMode: "overlay" as const, // Valid mixBlendMode value
   },
 };
+
 
 type Variants = keyof typeof variants;
 
