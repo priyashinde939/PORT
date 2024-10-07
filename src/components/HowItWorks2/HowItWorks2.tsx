@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { tagVariants, titleVariants } from '@/lib/animation';
 import './HowItWorks2.module.scss';
+import useCursor from '../Test/cursor-provider'; 
+
 
 interface Feature {
   title: string;
@@ -37,12 +39,18 @@ const featureVariants = {
 };
 
 const HowItWorks2: React.FC = () => {
+  const { setCursor, resetCursor } = useCursor(); 
   return (
     <div className="hiw-wrapper py-32 ">
       <div className="container mx-auto">
         <div className="hiw-container flex flex-col gap-8">
           {/* head */}
-          <div className="hiw-head text-center flex flex-col gap-8 mx-auto max-w-xl mb-36">
+          <div
+          onMouseEnter={() => {
+            setCursor({ variant: "gradientShadow", content: "", color: "#da0505" }); 
+            }}
+            onMouseLeave={resetCursor} 
+          className="hiw-head text-center flex flex-col gap-8 mx-auto max-w-xl mb-36">
             <motion.span
               variants={tagVariants}
               initial="offscreen"
@@ -55,7 +63,7 @@ const HowItWorks2: React.FC = () => {
               variants={titleVariants}
               initial="offscreen"
               whileInView="onscreen"
-              className="title text-[1rem] font-bold text-[#7086bc]"
+              className="title text-[1rem] font-bold text-[#7086bc] "
             >
               Unlocking potential along the growth journey
             </motion.span>

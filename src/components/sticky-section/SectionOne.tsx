@@ -10,7 +10,10 @@ const SectionOne: React.FC = () => {
 
         className="flex lg:md:flex-row flex-col h-screen px-4">
             <div 
-
+                    onMouseEnter={() => {
+                        setCursor({ variant: "blurred", content: "", color: "#e82626" }); // Set blurred cursor
+                    }}
+                    onMouseLeave={resetCursor} 
                 className="relative lg:w-[50%] sm:w-full flex flex-col xl:lg:top-[20%] xl:lg:left-[5%] top-[10%] lg:gap-4 h-fit">
                 {/* container */}
 
@@ -20,10 +23,7 @@ const SectionOne: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="items-start p-3">
                     <span 
-                    onMouseEnter={() => {
-                        setCursor({ variant: "blurred", content: "HOLA", color: "#e82626" }); // Set blurred cursor
-                    }}
-                    onMouseLeave={resetCursor} 
+
                     className="text-xl lg:text-2xl font-medium text-[#9eb3f5]">
                         Creative
                     </span>
@@ -51,10 +51,7 @@ const SectionOne: React.FC = () => {
             <div className="lg:w-[50%] xl:lg:pr-5 w-full h-screen items-end justify-center flex flex-col gap-4">
                 {/* container */}
                 <motion.div 
-                    onMouseEnter={() => {
-                        setCursor({ variant: "blurred", content: "lets talk", color: "#eae6e6" }); // Set blurred cursor
-                    }}
-                    onMouseLeave={resetCursor} 
+
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
