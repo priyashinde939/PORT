@@ -7,8 +7,7 @@ import Sticky from '@/components/sticky-section/StickySection'
 import FooterSection from '@/components/Footer/FooterSection'
 import { HorizontalText } from '@/components/horizontal-Text/horizontal-Text'
 import { RibbonMarquee2 } from '@/components/RibbonMarquee2/RibbonMarquee2'
-import PerspectiveSection1 from '@/components/PerspectiveSection/PerspectiveSection1'
-import PerspectiveSection2 from '@/components/PerspectiveSection/PerspectiveSection2'
+
 import Contact from '@/components/Contact/Contact'
 import { RibbonMarquee } from '@/components/RibbonMarquee/RibbonMarquee'
 import Blank from '@/components/Blank/Blank'
@@ -18,6 +17,8 @@ import FlowerSection from '@/components/FlowerSection/FlowerSection'
 import HowItWorks2 from '@/components/HowItWorks2/HowItWorks2'
 import { InViewBasicMultiple } from '@/components/SideInView/SideInView'
 import { SkillAccordion } from '@/components/Accordion/SkillAccordion'
+import AboutMe from '@/components/AboutMe/AboutMe'
+
 
 
 
@@ -58,9 +59,13 @@ const index = () => {
 
       {/* <HowItWorks /> */}
       <InViewBasicMultiple />
+      <AboutMe />
       <SkillAccordion />
+  
       <FlowerSection />
+
       <HowItWorks2 />
+
       {/* <Blank /> */}
       <Blank />
       <SectionTransition />

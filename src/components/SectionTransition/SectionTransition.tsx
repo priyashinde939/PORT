@@ -5,6 +5,7 @@ import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
 import SectionOne from './SectionOne';
 
 
+
 const SectionTransition: React.FC = () => {
     const container = useRef<HTMLDivElement | null>(null);
 
@@ -59,6 +60,7 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
             style={{scale }}
             className="relative h-[100vh] bg-[#000000]"
         >
+
                 {/* <TextEffect /> */}
         </motion.div>
     );

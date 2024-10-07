@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Icon/Icon.js", "src/components/Marquee/Marquee.jsx", "src/components/Layout/Layout.js", "src/components/Button/Button.tsx", "src/components/Balls/Clump.tsx", "src/common/Curve.jsx", "src/components/Nav/index.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Icon/Icon.js", "src/components/Marquee/Marquee.jsx", "src/components/Layout/Layout.js", "src/components/Button/Button.tsx", "src/components/Balls/Clump.tsx", "src/common/Curve.jsx", "src/components/Nav/index.jsx", "src/components/Cursor/MaskCursor/MaskCursor.js", "src/components/Test/ColorBoard.jsx"],
   "exclude": ["node_modules"]
 }

@@ -1,8 +1,12 @@
 'use client';
 import { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue, useInView } from 'framer-motion';
-import SectionOne from './SectionOne';
+// import SectionOne from './SectionOne';
 import { TextEffectWithCustomVariants } from '../TextEffects/TextEffectClr';
+import SectionOne from './SectionOne';
+
+
+
 
 const Sticky: React.FC = () => {
     const container = useRef<HTMLDivElement | null>(null);
@@ -16,7 +20,7 @@ const Sticky: React.FC = () => {
         <div 
             style={{ backgroundImage: 'url("./images/bg/stone1.jpg")' }}
             ref={container} 
-            className="relative h-[200vh] bg-contain bg-blend-multiply "
+            className="relative h-[200vh] bg-contain bg-blend-multiply"
         >
             <Section1 scrollYProgress={scrollYProgress} />
             <Section2 scrollYProgress={scrollYProgress} />
@@ -39,6 +43,7 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
             style={{ scale, rotate, opacity }}
             className="sticky top-10 h-[90vh] bg-[#050404be] backdrop-blur-sm rounded-3xl mx-6 border border-[#a22327]"
         >
+
             <SectionOne />
         </motion.div>
     );
@@ -52,13 +57,15 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
     const sectionRef = useRef(null);
     const isInView = useInView(sectionRef, { once: true });
 
+    
     return (
         <motion.div
             ref={sectionRef}
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
-            className="relative h-[120vh] bg-[#000000] rounded-3xl"
+            className="relative h-[120vh] bg-[#000000] rounded-3xl "
         >
+            
             <div className="relative rounded-3xl text-[1rem] md:lg:text-[2rem] font-semibold w-[60%] top-[40%] left-[20%]">
                 {isInView && <TextEffectWithCustomVariants />}
             </div>
