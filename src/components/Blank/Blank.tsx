@@ -11,7 +11,7 @@ const Blank = () => {
                 <h1
                     onMouseEnter={() => setCursor({ variant: "withText", content: "", bgColor: "#e2592b", color: "#000" })}
                     onMouseLeave={resetCursor} 
-                    className="justify-center items-center text-[10rem] font-black text-[#f5f0e93b]"
+                    className="justify-center items-center text-[10rem] font-black text-[#fffcf890]"
                 >
                     hola amigos
                 </h1>

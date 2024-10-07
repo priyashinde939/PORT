@@ -20,10 +20,10 @@ const SectionOne: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="items-start p-3">
                     <span 
-                            onMouseEnter={() => {
-                                setCursor({ variant: "blurred", content: "HOLA", color: "#e82626" }); // Set blurred cursor
-                            }}
-                            onMouseLeave={resetCursor} 
+                    onMouseEnter={() => {
+                        setCursor({ variant: "blurred", content: "HOLA", color: "#e82626" }); // Set blurred cursor
+                    }}
+                    onMouseLeave={resetCursor} 
                     className="text-xl lg:text-2xl font-medium text-[#9eb3f5]">
                         Creative
                     </span>
@@ -51,10 +51,14 @@ const SectionOne: React.FC = () => {
             <div className="lg:w-[50%] xl:lg:pr-5 w-full h-screen items-end justify-center flex flex-col gap-4">
                 {/* container */}
                 <motion.div 
+                    onMouseEnter={() => {
+                        setCursor({ variant: "blurred", content: "lets talk", color: "#eae6e6" }); // Set blurred cursor
+                    }}
+                    onMouseLeave={resetCursor} 
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="p-2 flex gap-0 items-end text-md lg:text-xl md:text-lg sm:text-sm font-medium lg:md:mt-10"
+                    className="p-2 flex gap-0 text-[#eae6e6] items-end text-md lg:text-xl md:text-lg sm:text-sm font-medium lg:md:mt-10"
                 >
                     <span>Available</span>
                     <span>For Work</span>

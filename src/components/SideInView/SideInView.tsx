@@ -12,7 +12,7 @@ export function InViewBasicMultiple() {
 
       <div className=" flex xl:lg:text-[4rem] md:text-[3rem] text-[2rem] font-black py-36 xl:lg:mx-[20vw]  md:px-10 px-10 text-center justify-center" >
         <div
-        onMouseEnter={() => setCursor({ variant: "blurred", content: "HOLA", color: "#e4e6f1fc" })} // Set blurred cursor
+        onMouseEnter={() => setCursor({ variant: "gradientShadow", content: "", color: "#e4e6f1fc" })} // Set blurred cursor
         onMouseLeave={resetCursor} 
         className="w-full">
         These are the cool things i can do for you
