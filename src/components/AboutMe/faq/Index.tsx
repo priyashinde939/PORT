@@ -18,7 +18,7 @@ const Faq = () => {
     {
       textHead: "How can we communicate?",
       textMsg: "Way to understand indeed.",
-      textDesc: "You can always contact me at yeromrenandra07@gmail.com!",
+      textDesc: "You can always contact me at priya.shinde9390@gmail.com!",
     },
     {
       textHead: "Where am i currently work?",
