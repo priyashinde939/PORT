@@ -27,7 +27,7 @@ const Blank = () => {
                     onMouseLeave={resetCursor}
                     className='justify-center items-center text-[10rem] font-black'
                 >
-                    como estes
+                    como estas
                 </h1>
 
             </div>
