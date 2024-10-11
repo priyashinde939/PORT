@@ -14,7 +14,7 @@ export function InViewBasicMultiple() {
         <div
         onMouseEnter={() => setCursor({ variant: "gradientShadow", content: "", color: "#e4e6f1fc" })} // Set blurred cursor
         onMouseLeave={resetCursor} 
-        className="w-full">
+        className="w-full cursor-none">
         These are the cool things i can do for you
         </div>
       </div>

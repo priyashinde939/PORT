@@ -25,51 +25,45 @@ const variants = {
     opacity: 1,
     transition: { duration: 0.2, ease: "easeInOut" },
   },
-  withText: {
-    width: 96,
-    height: 96,
-    opacity: 0.9,
-    backgroundColor: "#f5f0e93b", // Transparent background
-    backdropFilter: "blur(2px)", 
-    mixBlendMode: "lighten" as const, // Ensure the value is from allowed literals
-  },
   blurred: {
     width: 96,
     height: 96,
     opacity: 1,
-    backgroundColor: "#f5f0e93b", // Transparent background
-    backdropFilter: "blur(2px)", // Blur effect
-    mixBlendMode: "lighten" as const, // Valid mixBlendMode value
+    backgroundColor: "#f5f0e93b", 
+    backdropFilter: "blur(2px)",
+    mixBlendMode: "lighten" as const,
   },
   lowblurred: {
     width: 96,
     height: 96,
-    opacity: 1,
-    backgroundColor: "#ff6565", // Transparent background
-    backdropFilter: "blur(10px)", // Blur effect
-    mixBlendMode: "hard-light" as const, // Valid mixBlendMode value
+    opacity: 0.55,
+    backgroundColor: "#ff6565", 
+    backdropFilter: "blur(10px)", 
+    mixBlendMode: "screen" as const, 
+    //About me
+
   },
-  cool: {
-    width: 80,
-    height: 80,
+  glow: {
+    width: 100,
+    height: 100,
     opacity: 0.9,
-    backgroundColor: "#00ffcc", // Neon greenish-blue
-    borderRadius: "50%", // Rounded shape
-    boxShadow: "0 0 20px 5px rgba(0, 255, 204, 0.7)", // Neon glow effect
-    backdropFilter: "blur(15px)", // Increased blur effect
-    mixBlendMode: "screen" as const, // Gives a nice glowing effect with a light screen blend
-    transition: { duration: 0.2, ease: "easeInOut" }, // Correct Framer Motion transition format
+    borderRadius: "50%", 
+    boxShadow: "0 0 20px 5px rgba(0, 0, 117, 0.28)", 
+    backdropFilter: "blur(4px)",
+    mixBlendMode: "darken" as const, 
+    transition: { duration: 0.2, ease: "easeInOut" }, 
   },
   gradientShadow: {
-    width: 90,
-    height: 90,
+    width: 140,
+    height: 140,
     opacity: 0.85,
-    background: "linear-gradient(135deg, #ff7a7a, #ff6565)", // Smooth gradient from pink to red
-    borderRadius: "50%", // Circular shape
-    boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)", // Soft shadow for depth
-    backdropFilter: "blur(2px)", // Slight blur effect
-    mixBlendMode: "soft-light" as const, // Soft, balanced light blend mode
-    transition: { duration: 0.3, ease: "easeInOut" }, // Correct transition format
+    background: "linear-gradient(135deg, #ff7a7a, #ff6565)", 
+    borderRadius: "50%", 
+    boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)", 
+    backdropFilter: "blur(2px)", 
+    mixBlendMode: "soft-light" as const, 
+    transition: { duration: 0.3, ease: "easeInOut" },
+    // used in cool things heading
   },
 };
 
