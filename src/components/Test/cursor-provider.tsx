@@ -65,6 +65,7 @@ const variants = {
     transition: { duration: 0.3, ease: "easeInOut" },
     // used in cool things heading
   },
+  
 };
 
 
