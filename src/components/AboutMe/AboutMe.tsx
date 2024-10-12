@@ -25,6 +25,7 @@ const AboutMe = () => {
             </div>
           </div>
           <Faq />
+          
 
 
 
