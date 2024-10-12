@@ -28,8 +28,8 @@ const variants = {
   blurred: {
     width: 96,
     height: 96,
-    opacity: 1,
-    backgroundColor: "#f5f0e93b", 
+    opacity: 0.6,
+    backgroundColor: "#f1f0f050", 
     backdropFilter: "blur(2px)",
     mixBlendMode: "lighten" as const,
   },
@@ -54,9 +54,9 @@ const variants = {
     transition: { duration: 0.2, ease: "easeInOut" }, 
   },
   gradientShadow: {
-    width: 140,
-    height: 140,
-    opacity: 0.85,
+    width: 100,
+    height: 100,
+    opacity: 0.5,
     background: "linear-gradient(135deg, #ff7a7a, #ff6565)", 
     borderRadius: "50%", 
     boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)", 
@@ -113,7 +113,8 @@ export const CursorProvider = ({
   const [cursorState, setCursorState] =
     useState<CursorStateType>(defaultCursorState);
 
-  const variantRef = useRef<CursorStateType["variant"]>("hidden");
+  // const variantRef = useRef<CursorStateType["variant"]>("default");
+  const variantRef = useRef<CursorStateType["variant"]>("hidden");  
   useEffect(() => {
     variantRef.current = cursorState.variant;
   }, [cursorState]);
@@ -142,13 +143,13 @@ export const CursorProvider = ({
   const ySpring = useSpring(y, springConfig);
 
   const mouseMoved = (e: MouseEvent) => {
-    const sizeX = variants[variantRef.current].width / 2;
-    const sizeY = variants[variantRef.current].height / 2;
-
+    const variant = variants[variantRef.current] || variants["default"];
+    const sizeX = variant.width / 2;
+    const sizeY = variant.height / 2;
+  
     x.set(e.clientX - sizeX);
     y.set(e.clientY - sizeY);
-
-    // For clean transition when switching from hidden
+  
     setTimeout(() => {
       setIsHidden(false);
     }, 100);

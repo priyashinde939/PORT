@@ -11,7 +11,7 @@ const SectionOne: React.FC = () => {
         className="flex lg:md:flex-row flex-col h-screen px-4">
             <div 
                     onMouseEnter={() => {
-                        setCursor({ variant: "blurred", content: "", color: "#e82626" }); // Set blurred cursor
+                        setCursor({ variant: "blurred", content: ""}); 
                     }}
                     onMouseLeave={resetCursor} 
                 className="relative lg:w-[50%] sm:w-full flex flex-col xl:lg:top-[20%] xl:lg:left-[5%] top-[10%] lg:gap-4 h-fit">

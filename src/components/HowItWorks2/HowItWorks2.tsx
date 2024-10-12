@@ -41,13 +41,13 @@ const featureVariants = {
 const HowItWorks2: React.FC = () => {
   const { setCursor, resetCursor } = useCursor(); 
   return (
-    <div className="hiw-wrapper py-32 ">
+    <div className="hiw-wrapper py-32 cursor-none">
       <div className="container mx-auto">
         <div className="hiw-container flex flex-col gap-8">
           {/* head */}
           <div
           onMouseEnter={() => {
-            setCursor({ variant: "gradientShadow", content: "", color: "#da0505" }); 
+            setCursor({ variant: "blurred", content: "" }); 
             }}
             onMouseLeave={resetCursor} 
           className="hiw-head text-center flex flex-col gap-8 mx-auto max-w-xl mb-36">
@@ -70,7 +70,8 @@ const HowItWorks2: React.FC = () => {
           </div>
 
           {/* features */}
-          <div className="hiw-features flex flex-col items-center gap-8">
+          <div 
+            className="hiw-features flex flex-col items-center gap-8">
             {hitFeatures.map((feature, i) => (
               <motion.div
                 key={i}

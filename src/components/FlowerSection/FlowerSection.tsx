@@ -4,7 +4,7 @@ import { SkillSlider } from '../Slider/SkillSlider'
 const FlowerSection = () => {
     const sectionRef = useRef(null)
   return (
-    <section className="my-10">
+    <section className="my- cursor-none">
 
     <div className="relative h-screen bg-black flex flex-col lg:md:flex-row mx-20">
         <div style={{backgroundImage:'url(./images/bg/stone.jpg)'}}
@@ -13,7 +13,7 @@ const FlowerSection = () => {
         </div>
         <div 
         // style={{ WebkitTextStroke: '1px pink' }}
-        className="flex flex-col lg:md:w-[1/2%] w-[80%] h-full font-semibold lg:text-8xl md:text-7xl text-3xl text-[#9aaee3] mix-blend-exclusion z-40">
+        className="flex flex-col lg:md:w-[1/2%] w-[80%] h-full font-semibold lg:text-8xl md:text-7xl text-3xl text-[#9aaee3] mix-blend-exclusion z-40 ">
             <span>
                 WE
             </span>

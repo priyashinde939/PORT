@@ -51,7 +51,7 @@ const index = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </Head>
 
-    <main className='min-h-screen w-[100%] '>
+    <main className='min-h-screen w-[100%]  cursor-none'>
 
       <Sticky />
  
