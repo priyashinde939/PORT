@@ -78,7 +78,7 @@ const HowItWorks2: React.FC = () => {
                 variants={featureVariants}
                 initial="offscreen"
                 whileInView="onscreen"
-                className={`hiw-feature bg-[#dbdcdf] rounded-3xl flex items-center max-w-[40rem] py-4 px-6 shadow-lg ${
+                className={`hiw-feature bg-[#697fc3] rounded-3xl flex items-center max-w-[40rem] py-4 px-6 shadow-lg ${
                   i % 2 === 0 ? 'md:mr-20' : 'md:ml-20'
                 }`}
               >
@@ -90,11 +90,11 @@ const HowItWorks2: React.FC = () => {
                     x: 0,
                     transition: { type: "easeIn", duration: 1, delay: 0.7 },
                   }}
-                  className="detail flex flex-col gap-4 items-start text-[rgb(96,126,162)]"
+                  className="detail flex flex-col gap-4 items-start text-[rgb(0,0,0)]"
                 >
                   <span className="text-lg font-semibold">0{i + 1}</span>
                   <span className="sec-title text-xl font-black">{feature.title}</span>
-                  <span className="text-[#000000] font-semibold">{feature.des}</span>
+                  <span className="text-[#c8cfc6] font-semibold">{feature.des}</span>
                 </motion.div>
 
                 {/* right side */}
