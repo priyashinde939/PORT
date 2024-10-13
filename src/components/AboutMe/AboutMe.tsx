@@ -11,7 +11,7 @@ const AboutMe = () => {
   const { setCursor, resetCursor } = useCursor(); 
 
   return (
-    <div className="relative h-full w-auto bg-[#dbdbdb] justify-center items-center">
+    <div className="relative h-full w-auto bg-[#d7d8d8] justify-center items-center rounded-3xl mb-[10rem]">
     <div className="relative h-[20vh] xl:lg:mx-14 "/>
 
           <div className=" relative flex xl:lg:text-[4rem] md:text-[3rem] text-[2rem] font-black pt-20 xl:lg:mx-[20vw]  md:px-10 px-10 text-center justify-center" >
@@ -20,7 +20,7 @@ const AboutMe = () => {
             setCursor({ variant: "lowblurred" }); 
             }}
             onMouseLeave={resetCursor} 
-            className="w-full text-[#1943c2e6] rounded-3xl">
+            className="w-full text-[#e77a36]">
             About Me
             </div>
           </div>

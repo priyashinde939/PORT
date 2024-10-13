@@ -64,7 +64,7 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
             ref={sectionRef}
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
-            className="relative h-[120vh] bg-[#000000] rounded-3xl "
+            className="relative h-[120vh] bg-[#000000] rounded-3xl"
         >
             
             <div

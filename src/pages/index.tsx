@@ -1,24 +1,24 @@
 import React from 'react'
 // import  Curve from "@/common/Curve";
-import Marquee from '@/components/Marquee/Marquee'
+// import Marquee from '@/components/Marquee/Marquee'
 import Head from 'next/head'
-import  { RevealText }  from '@/components/RevealText/RevealText'
+// import  { RevealText }  from '@/components/RevealText/RevealText'
 import Sticky from '@/components/sticky-section/StickySection'
 import FooterSection from '@/components/Footer/FooterSection'
-import { HorizontalText } from '@/components/horizontal-Text/horizontal-Text'
-import { RibbonMarquee2 } from '@/components/RibbonMarquee2/RibbonMarquee2'
+// import { HorizontalText } from '@/components/horizontal-Text/horizontal-Text'
+// import { RibbonMarquee2 } from '@/components/RibbonMarquee2/RibbonMarquee2'
 
-import Contact from '@/components/Contact/Contact'
-import { RibbonMarquee } from '@/components/RibbonMarquee/RibbonMarquee'
+// import Contact from '@/components/Contact/Contact'
+// import { RibbonMarquee } from '@/components/RibbonMarquee/RibbonMarquee'
 import Blank from '@/components/Blank/Blank'
 
 import SectionTransition from '@/components/SectionTransition/SectionTransition'
 import FlowerSection from '@/components/FlowerSection/FlowerSection'
 import HowItWorks2 from '@/components/HowItWorks2/HowItWorks2'
 import { InViewBasicMultiple } from '@/components/SideInView/SideInView'
-import { SkillAccordion } from '@/components/Accordion/SkillAccordion'
+// import { SkillAccordion } from '@/components/Accordion/SkillAccordion'
 import AboutMe from '@/components/AboutMe/AboutMe'
-import SkillSection from '@/components/AboutMe copy/SkillSection'
+// import SkillSection from '@/components/AboutMe copy/SkillSection'
 
 
 
@@ -72,8 +72,7 @@ const index = () => {
       <Blank />
       <SectionTransition />
 
-      
-      {/* <Clump /> */}
+
 
       {/* <RibbonMarquee /> */}
       {/* <Card /> */}
@@ -95,7 +94,6 @@ const index = () => {
       <FooterSection /> 
 
     </main>
-    {/* </Curve> */}
     </>
   )
 }

@@ -14,7 +14,7 @@ export function InViewBasicMultiple() {
         <div
         onMouseEnter={() => setCursor({ variant: "blurred", content: "", color: "#e4e6f1fc" })} // Set blurred cursor
         onMouseLeave={resetCursor} 
-        className="w-full cursor-none text-[#0443ffe6]">
+        className="w-full cursor-none text-gradient3">
         These are the cool things i can do for you
         </div>
       </div>
@@ -35,10 +35,10 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem]  bg-[#1e1e20] p-10 justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem]  bg-[#84848e] p-10 justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
-              <strong className='flex justify-center font-bold text-zinc-50'>Responsive Design</strong>
-              <div className="flex py-5 justify-center text-center">
+              <strong className='flex justify-center font-black text-zinc-50'>Responsive Design</strong>
+              <div className="flex py-5 justify-center text-center font-medium">
                   Go on and Resize the window, see for yourself.
               </div>
             </div>
@@ -63,10 +63,10 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#333a47] p-10 items-center justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem] bg-[#8a8585] p-10 items-center justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
-              <strong className='flex justify-center font-bold text-zinc-50'>Web Design</strong>
-              <div className="flex py-5 justify-center text-center">
+              <strong className='flex justify-center font-black text-zinc-50'>Web Design</strong>
+              <div className="flex py-5 justify-center text-center font-medium">
               I love creating fun and engaging web experiences! With my passion for creative design and animations, I aim to make every interface shine.
               </div>
             </div>
@@ -91,10 +91,10 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#292f34] p-10 items-center justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem] bg-[#696d71] p-10 items-center justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
-              <strong className='flex justify-center font-bold text-zinc-50'>Debugging</strong>
-              <div className="flex py-5 justify-center text-center">
+              <strong className='flex justify-center font-black text-zinc-50'>Debugging</strong>
+              <div className="flex py-5 justify-center text-center font-medium">
               After countless sleepless nights troubleshooting bugs and errors, Ive developed a strong skill set for resolving them and documenting solutions for future reference.
               </div>
             </div>

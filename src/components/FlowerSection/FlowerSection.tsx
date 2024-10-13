@@ -8,26 +8,26 @@ const FlowerSection = () => {
 
     <div className="relative h-screen bg-black flex flex-col lg:md:flex-row mx-20">
         <div style={{backgroundImage:'url(./images/bg/1.jpg)' }}
-        className="absolute border border-dashed border-[#053bff4e] w-[70%] lg:h-[40%] md:h-[25vh] sm:h-[20vh] bg-bottom rounded-lg">
+        className="absolute xl:lg:border border-dashed border-[#053bff4e] w-[70%]  xl:lg:h-[40%] md:h-[40vh] h-[40vh] bg-bottom rounded-lg">
 
         </div>
         <div 
         // style={{ WebkitTextStroke: '1px pink' }}
-        className="flex flex-col lg:md:w-[1/2%] w-[80%] h-full font-semibold lg:text-8xl md:text-7xl text-3xl text-[#9aaee3] mix-blend-exclusion z-40 ">
+        className={`text-gradient3 flex flex-col text-nowrap font-semibold lg:md:w-[100%] w-[80%] h-full lg:text-8xl md:text-7xl text-3xl  text-[#9aaee3] mix-blend-hard-light z-40` }>
             <span>
-                WE
+                BRINGING
             </span>
             <span>
-                MAKE
+                YOUR
             </span>
             <span>
-                COOL
+              VISION TO LIFE
             </span>
             <span>
-                WEBSITES
+
             </span>
         </div>
-        <div className="lg:md:w-[1/2%] w-full h-full p-5 pb-32 font-thin text-end lg:text-2xl md:text-lg text-md text-slate-400 place-content-end">
+        <div className="lg:md:w-[1/2%] w-full h-full p-5 mt-10 pb-32 font-thin text-end xl:lg:text-2xl md:text-lg text-sm text-slate-400 place-content-end z-20 overflow-visible">
         I specialize in creating dynamic, interactive websites using Framer Motion animations and a focus on web performance. <br/> If you’re ready for a website that vibes with your vision and sets you apart, lets make some magic happen...!        
         </div>
 

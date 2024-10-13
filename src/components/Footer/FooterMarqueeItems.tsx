@@ -30,7 +30,7 @@ const MarqueeItem: React.FC<MarqueeItemProps> = ({ texts, from, to }) => {
         className="flex flex-shrink-0"
       >
         {texts.map((text, index) => (
-          <div className="text-9xl font-normal pr-20" key={index}>
+          <div className="xl:lg:text-9xl md:text-[7xl] text-[3xl] font-normal pr-20" key={index}>
             {text}
           </div>
         ))}

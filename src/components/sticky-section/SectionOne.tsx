@@ -14,7 +14,7 @@ const SectionOne: React.FC = () => {
                         setCursor({ variant: "blurred", content: ""}); 
                     }}
                     onMouseLeave={resetCursor} 
-                className="relative lg:w-[50%] sm:w-full flex flex-col xl:lg:top-[20%] xl:lg:left-[5%] top-[10%] lg:gap-4 h-fit">
+                className="relative lg:w-[60%] sm:w-full flex flex-col xl:lg:top-[20%] xl:lg:left-[4%] top-[10%] lg:gap-4 h-fit">
                 {/* container */}
 
                 <motion.div
@@ -33,7 +33,7 @@ const SectionOne: React.FC = () => {
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="items-start text-[#d4d4d4fc] font-black xl:lg:text-[7rem] md:text-6xl text-5xl">
+                    className="items-start  font-black xl:lg:text-[7rem] md:text-6xl text-5xl text-gradient3">
                         DESIGNER 
                     <span className="relative ml-6 text-3xl font-medium text-[#9ebff5] ">&</span>
                 </motion.div>
@@ -42,7 +42,7 @@ const SectionOne: React.FC = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="items-start text-[#d4d4d4fc] font-black xl:lg:text-[8rem] md:text-8xl text-6xl">
+                    className="items-start text-gradient3 font-black xl:lg:text-[8rem] md:text-8xl text-6xl">
                     DEVELOPER
                 </motion.div>
             </div>

@@ -1,47 +1,56 @@
+import Image from 'next/image';
 import { InfiniteSlider } from './Slider';
 
-export function sSkillSlider() {
+export function SkillSlider() {
   return (
     <InfiniteSlider gap={70} reverse>
-      <img
-        src='./images/logo/apple_music_logo.svg'
+      <Image
+        src='/images/logo/apple_music_logo.svg'
         alt='Apple Music logo'
-        className='h-[120px] w-auto'
+        width={120}  // Specify width
+        height={120} // Specify height
       />
-      <img
-        src='./images/logo/chrome_logo.svg'
+      <Image
+        src='/images/logo/chrome_logo.svg'
         alt='Chrome logo'
-        className='h-[120px] w-auto'
+        width={120}
+        height={120}
       />
-      <img
-        src='./images/logo/strava_logo.svg'
+      <Image
+        src='/images/logo/strava_logo.svg'
         alt='Strava logo'
-        className='h-[120px] w-auto'
+        width={120}
+        height={120}
       />
-      <img
-        src='./images/logo/nintendo_logo.svg'
+      <Image
+        src='/images/logo/nintendo_logo.svg'
         alt='Nintendo logo'
-        className='h-[120px] w-auto'
+        width={120}
+        height={120}
       />
-      <img
-        src='./images/logo/jquery_logo.svg'
+      <Image
+        src='/images/logo/jquery_logo.svg'
         alt='Jquery logo'
-        className='h-[120px] w-auto'
+        width={120}
+        height={120}
       />
-      <img
-        src='./images/logo/prada_logo.svg'
+      <Image
+        src='/images/logo/prada_logo.svg'
         alt='Prada logo'
-        className='h-[120px] w-auto'
+        width={120}
+        height={120}
       />
-            <img
-        src='./images/logo/apple_music_logo.svg'
+      <Image
+        src='/images/logo/apple_music_logo.svg'
         alt='Apple Music logo'
-        className='h-[120px] w-auto'
+        width={120}
+        height={120}
       />
-      <img
-        src='./images/logo/chrome_logo.svg'
+      <Image
+        src='/images/logo/chrome_logo.svg'
         alt='Chrome logo'
-        className='h-[120px] w-auto'
+        width={120}
+        height={120}
       />
     </InfiniteSlider>
   );

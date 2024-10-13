@@ -13,7 +13,7 @@ const FooterMarquee: React.FC = () => {
 
   return (
     <div 
-    className=" container mx-auto max-w-full sticky bottom-0 overflow-hidden font-day">
+    className=" container mx-auto max-w-full sticky bottom-0 overflow-hidden">
       <MarqueeItems texts={upperMarqueeTexts} from={0} to={"-100%"} />
       <MarqueeItems texts={lowerMarqueeTexts} from={"-100%"} to={0} />
     </div>

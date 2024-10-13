@@ -98,14 +98,20 @@ body::before {
 
 .text-gradient {
   /* @apply bg-gradient-to-r from-red-500 to-yellow-600 bg-clip-text text-transparent; */
-  @apply bg-gradient-to-b from-red-600 to-amber-600 bg-clip-text text-transparent;
+  @apply bg-gradient-to-b from-blue-400 to-amber-600 bg-clip-text text-transparent;
   background-size: 200% 200%;
 }
 
 
 .text-gradient2 {
   /* @apply bg-gradient-to-r from-red-500 to-yellow-600 bg-clip-text text-transparent; */
-  @apply bg-gradient-to-b from-[#f30041]  to-[#02096b98] bg-clip-text text-transparent;
+  @apply bg-gradient-to-b from-[#d3bf9d]  to-[#000000] bg-clip-text text-transparent;
+  background-size: 200% 200%;
+}
+
+.text-gradient3 {
+  /* @apply bg-gradient-to-r from-red-500 to-yellow-600 bg-clip-text text-transparent; */
+  @apply bg-gradient-to-tl from-[#c6a38c] via-[#c55f0cc3] to-[#e0bc95c5] bg-clip-text text-transparent;
   background-size: 200% 200%;
 }
 
