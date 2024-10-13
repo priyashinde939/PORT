@@ -115,6 +115,11 @@ body::before {
   background-size: 200% 200%;
 }
 
+.text-stroke {
+    -webkit-text-stroke: 1.5px rgb(183, 255, 74); 
+    color: transparent;
+}
+
 
 
 @layer utilities {

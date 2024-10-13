@@ -35,9 +35,9 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem]  bg-[#84848e] p-10 justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem]  bg-[#84848e6b] p-10 justify-center rounded-2xl border border-[#cf2e2e9e]'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
-              <strong className='flex justify-center font-black text-zinc-50'>Responsive Design</strong>
+              <strong className='flex justify-center font-black text-[#e7dfdf]'>Responsive Design</strong>
               <div className="flex py-5 justify-center text-center font-medium">
                   Go on and Resize the window, see for yourself.
               </div>
@@ -63,9 +63,9 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#8a8585] p-10 items-center justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem] bg-[#86858a3e]  border border-[#cf2e2e9e] p-10 items-center justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
-              <strong className='flex justify-center font-black text-zinc-50'>Web Design</strong>
+              <strong className='flex justify-center font-bold text-[#e7dfdf] '>Web Design</strong>
               <div className="flex py-5 justify-center text-center font-medium">
               I love creating fun and engaging web experiences! With my passion for creative design and animations, I aim to make every interface shine.
               </div>
@@ -91,9 +91,9 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#696d71] p-10 items-center justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem] bg-[#696d7176] border border-[#cf2e2e9e] p-10 items-center justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
-              <strong className='flex justify-center font-black text-zinc-50'>Debugging</strong>
+              <strong className='flex justify-center font-black text-[#e7dfdf]'>Debugging</strong>
               <div className="flex py-5 justify-center text-center font-medium">
               After countless sleepless nights troubleshooting bugs and errors, Ive developed a strong skill set for resolving them and documenting solutions for future reference.
               </div>

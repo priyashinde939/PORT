@@ -20,7 +20,7 @@ const AboutMe = () => {
             setCursor({ variant: "lowblurred" }); 
             }}
             onMouseLeave={resetCursor} 
-            className="w-full text-[#e77a36]">
+            className="w-full text-[#080721] ">
             About Me
             </div>
           </div>
