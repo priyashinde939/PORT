@@ -90,7 +90,7 @@ const HowItWorks2: React.FC = () => {
                     x: 0,
                     transition: { type: "easeIn", duration: 1, delay: 0.7 },
                   }}
-                  className="detail flex flex-col gap-4 items-start text-[rgb(0,0,0)]"
+                  className="detail flex flex-col gap-4 items-start text-black"
                 >
                   <span className="text-lg font-semibold">0{i + 1}</span>
                   <span className="sec-title text-xl font-black">{feature.title}</span>
