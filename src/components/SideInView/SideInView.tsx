@@ -14,7 +14,7 @@ export function InViewBasicMultiple() {
         <div
         onMouseEnter={() => setCursor({ variant: "blurred", content: "", color: "#e4e6f1fc" })} // Set blurred cursor
         onMouseLeave={resetCursor} 
-        className="w-full cursor-none">
+        className="w-full cursor-none text-[#0443ffe6]">
         These are the cool things i can do for you
         </div>
       </div>
@@ -35,7 +35,7 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem]  bg-[#aeafb9] p-10 justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem]  bg-[#1e1e20] p-10 justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
               <strong className='flex justify-center font-bold text-zinc-50'>Responsive Design</strong>
               <div className="flex py-5 justify-center text-center">
@@ -63,7 +63,7 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#7794c5] p-10 items-center justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem] bg-[#333a47] p-10 items-center justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
               <strong className='flex justify-center font-bold text-zinc-50'>Web Design</strong>
               <div className="flex py-5 justify-center text-center">
@@ -91,7 +91,7 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#a296b9] p-10 items-center justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem] bg-[#292f34] p-10 items-center justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
               <strong className='flex justify-center font-bold text-zinc-50'>Debugging</strong>
               <div className="flex py-5 justify-center text-center">

@@ -8,7 +8,7 @@ const Blank = () => {
         <CursorProvider accentColor={'#000000'}>
             <div className="flex flex-col h-[100vh] bg-[#000000] justify-center items-center text-[#e2592b] ">
                 
-                <h1 className="justify-center items-center text-[10rem] font-black text-[#fffcf890]"
+                <h1 className="justify-center items-center text-[5rem] font-black text-[#fffcf890]"
                 >
                     hola amigos
                 </h1>
@@ -22,7 +22,7 @@ const Blank = () => {
                         })
                     }
                     onMouseLeave={resetCursor}
-                    className='justify-center items-center text-[10rem] font-black'
+                    className='justify-center items-center text-[5rem] font-black'
                 >
                     como estas
                 </h1>

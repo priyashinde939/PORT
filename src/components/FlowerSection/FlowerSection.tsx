@@ -7,8 +7,8 @@ const FlowerSection = () => {
     <section className="my- cursor-none">
 
     <div className="relative h-screen bg-black flex flex-col lg:md:flex-row mx-20">
-        <div style={{backgroundImage:'url(./images/bg/stone.jpg)'}}
-        className="absolute border border-dashed border-[#053bff4e] w-[70%] lg:h-[40%] md:h-[25vh] sm:h-[20vh] bg-contain rounded-lg">
+        <div style={{backgroundImage:'url(./images/bg/1.jpg)' }}
+        className="absolute border border-dashed border-[#053bff4e] w-[70%] lg:h-[40%] md:h-[25vh] sm:h-[20vh] bg-bottom rounded-lg">
 
         </div>
         <div 

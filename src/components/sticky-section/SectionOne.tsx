@@ -33,7 +33,7 @@ const SectionOne: React.FC = () => {
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="items-start text-[#e4e6f1fc] font-black xl:lg:text-[7rem] md:text-6xl text-5xl">
+                    className="items-start text-[#d4d4d4fc] font-black xl:lg:text-[7rem] md:text-6xl text-5xl">
                         DESIGNER 
                     <span className="relative ml-6 text-3xl font-medium text-[#9ebff5] ">&</span>
                 </motion.div>
@@ -42,7 +42,7 @@ const SectionOne: React.FC = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="items-start text-[#e4e6f1fc] font-black xl:lg:text-[8rem] md:text-8xl text-6xl">
+                    className="items-start text-[#d4d4d4fc] font-black xl:lg:text-[8rem] md:text-8xl text-6xl">
                     DEVELOPER
                 </motion.div>
             </div>
@@ -55,7 +55,7 @@ const SectionOne: React.FC = () => {
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="p-2 flex gap-0 text-[#eae6e6] items-end text-md lg:text-xl md:text-lg sm:text-sm font-medium lg:md:mt-10"
+                    className="p-2 flex gap-0 text-[#d4d4d4fc] items-end text-md lg:text-xl md:text-lg sm:text-sm font-medium lg:md:mt-10"
                 >
                     <span>Available</span>
                     <span>For Work</span>
@@ -65,7 +65,7 @@ const SectionOne: React.FC = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="flex flex-col place-self-end p-3 text-end lg:max-w-[70%] md:sm:w-full font-medium text-[#979797] text-pretty lg:text-[1.5rem] sm:text-lg md:text-xl border border-[#35353549] rounded-3xl"
+                    className="flex flex-col place-self-end p-3 text-end lg:max-w-[70%] md:sm:w-full font-medium text-[#6975d6] text-pretty lg:text-[1.5rem] sm:text-lg md:text-xl border border-[#35353549] rounded-3xl"
                 >
                     <h1> Hey</h1>
                     <h1>Im Priya</h1>
@@ -76,9 +76,9 @@ const SectionOne: React.FC = () => {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.8 }} 
-                    className="flex place-content-end"
+                    className="flex place-content-end text-[#8a99ef]"
                 >
-                    <Button2 bgColor='transparent' text='CONTACT' />
+                    <Button2  text='CONTACT' />
                 </motion.div>
             </div>
         </div>

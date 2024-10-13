@@ -23,6 +23,7 @@ const variants = {
     width: 14,
     height: 14,
     opacity: 1,
+    mixBlendMode: "screen" as const,
     transition: { duration: 0.2, ease: "easeInOut" },
   },
   blurred: {

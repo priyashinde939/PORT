@@ -1,6 +1,6 @@
 import { InfiniteSlider } from './Slider';
 
-export function SkillSlider() {
+export function sSkillSlider() {
   return (
     <InfiniteSlider gap={70} reverse>
       <img

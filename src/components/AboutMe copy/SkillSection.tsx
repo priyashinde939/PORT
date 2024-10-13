@@ -1,17 +1,17 @@
 import React from 'react'
 // import AboutImages from './animated-image/Index'
-import Faq from './faq/Index'
+import Faq from './skill/Index'
 import useCursor from '../Test/cursor-provider'; 
 
 
 
 
 
-const AboutMe = () => {
+const SkillSection = () => {
   const { setCursor, resetCursor } = useCursor(); 
 
   return (
-    <div className="relative h-full w-auto bg-[#dbdbdb] justify-center items-center">
+    <div className="relative h-full w-auto bg-[#fcfbfb] justify-center items-center">
     <div className="relative h-[20vh] xl:lg:mx-14 "/>
 
           <div className=" relative flex xl:lg:text-[4rem] md:text-[3rem] text-[2rem] font-black pt-20 xl:lg:mx-[20vw]  md:px-10 px-10 text-center justify-center" >
@@ -20,8 +20,8 @@ const AboutMe = () => {
             setCursor({ variant: "lowblurred" }); 
             }}
             onMouseLeave={resetCursor} 
-            className="w-full text-[#1943c2e6] rounded-3xl">
-            About Me
+            className="w-full text-[#132450] rounded-3xl">
+            Technical Skills
             </div>
           </div>
           <Faq />
@@ -40,4 +40,4 @@ const AboutMe = () => {
 )
 }
 
-export default AboutMe
+export default SkillSection

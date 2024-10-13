@@ -24,7 +24,7 @@ function Social() {
                 return (
                     <div key={index}>                    
                         <Link  href={item.socLink} target='_blank' >
-                        <div className={`socialDiv ${style.socialDiv} w-full py-[6vw] sm:py-[1.5vw] overflow-hidden flex items-center justify-center relative hover:cursor-pointer`}>
+                        <div className={`socialDiv ${style.socialDiv} w-full py-[6vw] sm:py-[1.5vw] overflow-hidden flex items-center justify-center relative`}>
                             <div className={`overlay ${style.overlay} w-[100%] h-[100%] flex items-center justify-center  absolute left-0 bg-[#222222]`}>
                                 <motion.div 
                                     className={`flex items-center justify-center `}

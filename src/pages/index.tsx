@@ -18,6 +18,7 @@ import HowItWorks2 from '@/components/HowItWorks2/HowItWorks2'
 import { InViewBasicMultiple } from '@/components/SideInView/SideInView'
 import { SkillAccordion } from '@/components/Accordion/SkillAccordion'
 import AboutMe from '@/components/AboutMe/AboutMe'
+import SkillSection from '@/components/AboutMe copy/SkillSection'
 
 
 
@@ -60,7 +61,8 @@ const index = () => {
       {/* <HowItWorks /> */}
       <InViewBasicMultiple />
       <AboutMe />
-      <SkillAccordion />
+      {/* <SkillSection />
+      <SkillAccordion /> */}
   
       <FlowerSection />
 

@@ -6,11 +6,18 @@ import {
     AccordionContent,
     } from './Accordion';
     import { ChevronRight } from 'lucide-react';
+    import useCursor from '../Test/cursor-provider'; 
     
     export function SkillAccordion() {
+    const { setCursor, resetCursor } = useCursor(); 
     return (
     <section id='About' className="flex flex-col gap-20 items-center justify-center px-36 my-[20vh]">
-        <div className="font-black text-center xl:lg:text-[4rem] md:text-[3rem] text-[2rem]  ">
+        <div 
+        onMouseEnter={() => {
+        setCursor({ variant: "blurred", content: "" }); 
+        }}
+        onMouseLeave={resetCursor} 
+        className="font-black text-center xl:lg:text-[4rem] md:text-[3rem] text-[2rem]  ">
             Technical Skills
         </div>
 {/* ----------------------- */}

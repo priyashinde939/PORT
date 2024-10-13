@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
+import { SkillSlider } from "@/components/Slider/SkillSlider";
+import { SkillMarquee } from "../SkillMarquee";
 
 interface FaqCardProps {
   data: {
@@ -12,7 +14,7 @@ interface FaqCardProps {
   };
 }
 
-const FaqCard = ({ data }: FaqCardProps) => {
+const Skill = ({ data }: FaqCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const hoverControls = useAnimation();
 
@@ -43,9 +45,9 @@ const FaqCard = ({ data }: FaqCardProps) => {
     <div
       onMouseEnter={() => handleHover()}
       onMouseLeave={() => handleLeave()}
-      className="w-full h-32  overflow-hidden   flex lg:flex-row flex-col justify-center lg:justify-between items-center  relative   cursor-pointer"
+      className="w-full h-32  overflow-hidden   flex lg:flex-row flex-col justify-center lg:justify-between items-center relative cursor-pointer"
     >
-      <motion.div
+<motion.div
         animate={hoverControls}
         initial={"initial"}
         variants={{
@@ -56,15 +58,8 @@ const FaqCard = ({ data }: FaqCardProps) => {
             color: "#FFFFFF",
           },
         }}
-        className=" w-full px-10 flex lg:flex-row flex-col justify-between   lg:items-center relative z-40"
+        className=" w-full px-10 flex lg:flex-row flex-col justify-center lg:items-center relative z-40"
       >
-        <h1
-          className={`xl:text-2xl font-bold text-[#b92458]  ${
-            isHovered ? "text-transparent lg:text-[#edebe9] md:text-white" : "text-pink "
-          } `}
-        >
-          {data.textHead}
-        </h1>
         <div className="flex justify-between lg:justify-center items-center gap-4">
           <motion.p
             animate={hoverControls}
@@ -77,12 +72,15 @@ const FaqCard = ({ data }: FaqCardProps) => {
                 y: -120,
               },
             }}
-            className=" font-semibold text-lg xl:text-3xl"
+            className=" font-black text-lg xl:text-3xl"
             transition={transition}
           >
             {data.textMsg}
           </motion.p>
-          <motion.div
+
+
+
+          {/* <motion.div
             animate={hoverControls}
             initial={"initial"}
             variants={{
@@ -105,7 +103,7 @@ const FaqCard = ({ data }: FaqCardProps) => {
               height={20}
               className="w-4 h-4 lg:w-6 lg:h-6  "
             />
-          </motion.div>
+          </motion.div> */}
         </div>
       </motion.div>
 
@@ -123,13 +121,15 @@ const FaqCard = ({ data }: FaqCardProps) => {
           },
         }}
         transition={transition}
-        className="w-full h-32 absolute flex justify-end lg:justify-end md:justify-start px-10 lg:pr-20 md:pt-10 items-center lg:pt-0 text-white bg-[#060c1d]"
+        className="w-full h-32 absolute flex justify-center lg:justify-center md:justify-start px-10 lg:pr-20 md:pt-10 items-center lg:pt-0 text-[#e8e7e6] bg-[#060c1d]"
       >
         {" "}
-        <p className="lg:w-1/2 text-sm xl:text-base"> {data.textDesc}</p>
+        <p className="lg:w-auto text-xl xl:text-2xl text-center font-medium"> {data.textDesc}</p>
+        {/* <SkillSlider /> */}
+        {/* <SkillMarquee /> */}
       </motion.div>
     </div>
   );
 };
 
-export default FaqCard;
+export default Skill;

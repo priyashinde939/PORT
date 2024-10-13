@@ -19,9 +19,9 @@ const Sticky: React.FC = () => {
 
     return (
         <div 
-            style={{ backgroundImage: 'url("./images/bg/stone1.jpg")' }}
+            style={{ backgroundImage: 'url("./images/bg/1.jpg")', }}
             ref={container} 
-            className="relative h-[200vh] bg-contain bg-blend-multiply cursor-none"
+            className="relative h-[200vh] bg-contain cursor-none"
         >
             <Section1 scrollYProgress={scrollYProgress} />
             <Section2 scrollYProgress={scrollYProgress} />
@@ -42,7 +42,7 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 40, damping: 100 }}
             style={{ scale, rotate, opacity }}
-            className="sticky top-10 h-[90vh] bg-[#050404be] backdrop-blur-sm rounded-3xl mx-6 border border-[#a22327]"
+            className="sticky top-10 h-[90vh] bg-[#050404ac] bg-blend-multiply backdrop-blur-sm rounded-3xl mx-6 border border-[#a22327]"
         >
 
             <SectionOne />
