@@ -18,6 +18,10 @@ import HowItWorks2 from '@/components/HowItWorks2/HowItWorks2'
 import { InViewBasicMultiple } from '@/components/SideInView/SideInView'
 // import { SkillAccordion } from '@/components/Accordion/SkillAccordion'
 import AboutMe from '@/components/AboutMe/AboutMe'
+import Lan from '@/components/Blank/Lan'
+import Frame from '@/components/Blank/Frame'
+import Tools from '@/components/Blank/Tools'
+import Blank2 from '@/components/Blank/Blank2'
 // import SkillSection from '@/components/AboutMe copy/SkillSection'
 
 
@@ -61,15 +65,22 @@ const index = () => {
       {/* <HowItWorks /> */}
       <InViewBasicMultiple />
       <AboutMe />
+
       {/* <SkillSection />
       <SkillAccordion /> */}
   
       <FlowerSection />
 
+
       <HowItWorks2 />
+      <Blank2 />
+
 
       {/* <Blank /> */}
-      <Blank />
+      {/* <Blank /> */}
+
+      {/*  <Frame />
+      <Tools /> */}
       <SectionTransition />
 
 

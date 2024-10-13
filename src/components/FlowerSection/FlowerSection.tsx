@@ -13,7 +13,7 @@ const FlowerSection = () => {
         </div>
         <div 
         // style={{ WebkitTextStroke: '1px pink' }}
-        className={`text-gradient3 flex flex-col text-nowrap font-semibold lg:md:w-[100%] w-[80%] h-full lg:text-8xl md:text-7xl text-3xl  text-[#9aaee3] mix-blend-hard-light z-40` }>
+        className={`text-gradient3 flex flex-col text-nowrap font-bold lg:md:w-[100%] w-[80%] h-full lg:text-8xl md:text-7xl text-3xl  text-[#9aaee3] mix-blend-hard-light z-40` }>
             <span>
                 BRINGING
             </span>

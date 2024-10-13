@@ -7,6 +7,7 @@ import useCursor from '../Test/cursor-provider';
 
 
 interface Feature {
+  head: string;
   title: string;
   des: string;
   icon: string;
@@ -15,18 +16,21 @@ interface Feature {
 const hitFeatures: Feature[] = [
   {
     icon: "/images/logo/6.png",
-    title: "Connect",
-    des: "Register and qualify for funding in less than 5 mins. Connect revenue and marketing platforms you already use.",
+    head: "Web & UI design",
+    title: "Responsive web design, UI/UX design, Adobe CC, Figma, Affinity, Design systems",
+    des: "I thoughtfully design websites and interfaces that solve problems, deliver results, and delight users.",
   },
   {
     icon: "/next.svg",
-    title: "Get Funded",
-    des: "Get a term sheet with up to 3 funding offers. Select option that best suits and complete onboarding to receive funds in days.",
+    head: "Full-stack development",
+    title: "HTML5, CSS3, JavaScript, WordPress, PHP, MySQL, Git",
+    des: "I turn ideas into prototypes and develop responsive, high-performing websites using React, Next.js, and Tailwind CSS.",
   },
   {
     icon: "/images/logo/9.png",
-    title: "Support Growth",
-    des: "Access curated feed of actionable insights and on-demand execution expertise. Auto qualify for follow-on funding as you grow.",
+    head: "Web Performance Optimization",
+    title: "optimizing load times, reducing resource sizes, and implementing lazy loading and caching.",
+    des: "I optimize website performance for fast, responsive, and smooth experiences on all devices.",
   },
 ];
 
@@ -50,14 +54,14 @@ const HowItWorks2: React.FC = () => {
             setCursor({ variant: "blurred", content: "" }); 
             }}
             onMouseLeave={resetCursor} 
-          className="hiw-head text-center flex flex-col gap-8 mx-auto max-w-xl mb-36">
+          className="hiw-head text-center flex flex-col gap-8 mx-auto max-w-2xl mb-36">
             <motion.span
               variants={tagVariants}
               initial="offscreen"
               whileInView="onscreen"
               className="tag text-gradient3 font-black text-[5rem]"
             >
-              How it works
+              Skills
             </motion.span>
             <motion.span
               variants={titleVariants}
@@ -90,11 +94,12 @@ const HowItWorks2: React.FC = () => {
                     x: 0,
                     transition: { type: "easeIn", duration: 1, delay: 0.7 },
                   }}
-                  className="detail flex flex-col gap-4 items-start text-black"
+                  className="detail flex flex-col gap-3 items-start text-black p-3"
                 >
-                  <span className="text-lg font-semibold">0{i + 1}</span>
-                  <span className="sec-title text-xl font-black">{feature.title}</span>
-                  <span className="text-[#c8cfc6] font-semibold">{feature.des}</span>
+                  {/* <span className="text-lg font-semibold">{i + 1}</span> */}
+                  <span className="text-xl font-black">{feature.head}</span>
+                  <span className="text-[#070e23] text-lg">{feature.title}</span>
+                  <span className="text-[#eeeeee] text-lg ">{feature.des}</span>
                 </motion.div>
 
                 {/* right side */}

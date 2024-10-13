@@ -23,6 +23,7 @@ const defaultVariants = {
   visible: { opacity: 1 },
 };
 
+
 export function InView({
   children,
   variants = defaultVariants,
@@ -31,7 +32,6 @@ export function InView({
 }: InViewProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, viewOptions);
-
   return (
     <motion.div
       ref={ref}

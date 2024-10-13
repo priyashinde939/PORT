@@ -54,7 +54,7 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
     const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
     const rotate = useTransform(scrollYProgress, [0, 1], [4, 0]);
 
-    // Create a ref for the section and use useInView to track its visibility
+
     const sectionRef = useRef(null);
     const isInView = useInView(sectionRef, { once: true });
     const { setCursor, resetCursor } = useCursor(); 
