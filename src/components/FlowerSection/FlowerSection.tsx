@@ -2,13 +2,16 @@ import React, {useRef} from 'react'
 import { SkillSlider } from '../Slider/SkillSlider'
 
 const FlowerSection = () => {
-    const sectionRef = useRef(null)
+    // const sectionRef = useRef(null)
   return (
     <section className="my- cursor-none">
 
     <div className="relative h-screen bg-black flex flex-col lg:md:flex-row mx-20">
-        <div style={{backgroundImage:'url(./images/bg/1.jpg)' }}
-        className="absolute xl:lg:border border-dashed border-[#053bff4e] w-[70%]  xl:lg:h-[40%] md:h-[40vh] h-[40vh] bg-bottom rounded-lg">
+        <div style={{backgroundImage:'url(/images/bg/1.jpg)',   
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat' }}
+        className="absolute xl:lg:border border-dashed border-[#053bff4e] w-[70%]  xl:lg:h-[40%] md:h-[40vh] h-[40vh] rounded-lg">
 
         </div>
         <div 
