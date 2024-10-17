@@ -1,10 +1,9 @@
 'use client';
 import { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue, useInView } from 'framer-motion';
-// import SectionOne from './SectionOne';
-import { TextEffectWithCustomVariants } from '../TextEffects/TextEffectClr';
 import SectionOne from './SectionOne';
-import useCursor from '../Test/cursor-provider'; 
+import useCursor from '../Cursor/cursor-provider'; 
+import { TextEffectClr } from '../TextEffects/TextEffectClr';
 
 
 
@@ -19,7 +18,7 @@ const Sticky: React.FC = () => {
 
     return (
         <div 
-            style={{ backgroundImage: 'url("./images/bg/1.jpg")', }}
+            style={{ backgroundImage: 'url("/images/2.jpg")', }}
             ref={container} 
             className="relative h-[200vh] bg-contain cursor-none"
         >
@@ -42,7 +41,7 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 40, damping: 100 }}
             style={{ scale, rotate, opacity }}
-            className="sticky top-10 h-[90vh] bg-[#050404ac] bg-blend-multiply backdrop-blur-sm rounded-3xl mx-6 border border-[#a22327]"
+            className="sticky top-10 h-[90vh] bg-[#050404cb] bg-blend-multiply backdrop-blur-sm rounded-3xl mx-6 border border-[#ff7d37]"
         >
 
             <SectionOne />
@@ -65,15 +64,15 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
             className="relative h-[120vh] bg-[#000000] rounded-3xl"
+            onMouseEnter={() => {
+                setCursor({ variant: "blurred", content: "", color: "#e82626" }); // Set blurred cursor
+            }}
+            onMouseLeave={resetCursor} 
         >
             
             <div
-                    onMouseEnter={() => {
-                        setCursor({ variant: "blurred", content: "", color: "#e82626" }); // Set blurred cursor
-                    }}
-                    onMouseLeave={resetCursor} 
-             className="relative rounded-3xl text-[1rem] md:lg:text-[2rem] font-semibold w-[60%] top-[40%] left-[20%]">
-                {isInView && <TextEffectWithCustomVariants />}
+            className="relative rounded-3xl text-[1rem] md:lg:text-[2rem] font-semibold w-[60%] top-[40%] left-[20%] select-none pointer-events-none ">
+                {isInView && <TextEffectClr />}
             </div>
         </motion.div>
     );

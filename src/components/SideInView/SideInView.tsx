@@ -1,8 +1,8 @@
 import { InView } from './InView';
-import useCursor from '../Test/cursor-provider'; 
+import useCursor from '../Cursor/cursor-provider'; 
 
 
-export function InViewBasicMultiple() {
+export function SideInView() {
   const { setCursor, resetCursor } = useCursor(); 
   return (
     <div className='max-h-full w-full overflow-y-auto overflow-x-hidden'>
@@ -35,7 +35,7 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem]  bg-[#797996] p-10 justify-center rounded-2xl border border-[#cf2e2e9e]'>
+          <div className='flex w-[70vw] h-[12rem]  bg-[#7a7af8] p-10 justify-center rounded-2xl border border-[#cf2e2e9e]'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
               <strong className='flex justify-center font-black text-[#e7dfdf]'>Responsive Design</strong>
               <div className="flex py-5 justify-center text-center font-medium">
@@ -63,7 +63,7 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#9c98ae]  border border-[#cf2e2e9e] p-10 items-center justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem] bg-[#aa98f8]  border border-[#cf2e2e9e] p-10 items-center justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
               <strong className='flex justify-center font-bold text-[#e7dfdf] '>Web Design</strong>
               <div className="flex py-5 justify-center text-center font-medium">
@@ -91,7 +91,7 @@ export function InViewBasicMultiple() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#5a7654] border border-[#cf2e2ebd] p-10 items-center justify-center rounded-2xl'>
+          <div className='flex w-[70vw] h-[12rem] bg-[#7a7af8] border border-[#cf2e2ebd] p-10 items-center justify-center rounded-2xl'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
               <strong className='flex justify-center font-black text-[#e7dfdf]'>Debugging</strong>
               <div className="flex py-5 justify-center text-center font-medium">
@@ -102,7 +102,7 @@ export function InViewBasicMultiple() {
         </InView>
       </div>
 
-          <div className="h-[20vh]" />
+          <div className="h-[30vh]" />
     </div>
   );
 }

@@ -1,7 +1,9 @@
+//TextEffectClr.tsx
+
 'use client';
 import { TextEffect } from './CoreEffect';
 
-export function TextEffectWithCustomVariants() {
+export function TextEffectClr() {
   const getRandomColor = () => {
     const letters = '0123456789ABCDEF';
     let color = '#';

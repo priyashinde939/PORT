@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import Header2 from "@/components/Header/Header2";
-import { CursorProvider } from "@/components/Test/cursor-provider";
+import { CursorProvider } from "@/components/Cursor/cursor-provider";
 
 
 

@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const Texteffect = ({
+export const Texteffects = ({
   words,
   className,
   filter = true,
@@ -80,4 +80,4 @@ export const Texteffect = ({
   return <div className={cn("flex", className)}>{renderWords()}</div>;
 };
 
-export default Texteffect 
+export default Texteffects 

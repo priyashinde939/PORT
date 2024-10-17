@@ -1,7 +1,7 @@
 'use client';
 import { AnimatedGroup } from './AnimatedGroup';
-import Image from 'next/image'; // Import the Next.js Image component
-import { motion } from 'framer-motion'; // Import motion from framer-motion
+import Image from 'next/image';
+import { motion } from 'framer-motion'; 
 
 type GroupProps = {
   items: {

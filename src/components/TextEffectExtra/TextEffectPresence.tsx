@@ -2,18 +2,18 @@
 //TextEffectPresence
 
 import React, { useRef, useState, useEffect } from 'react';
-import { TextEffect } from './CoreEffect'; // Adjust the import path to where your CoreEffect file is located
+import { TextEffect } from '../TextEffects/CoreEffect'; 
 
-// Define the props type for TextEffectTrigger
+
 interface TextEffectTriggerProps {
   text: string;
-  delay?: number; // Optional delay, defaults to 0.5
-  threshold?: number; // Optional threshold for the IntersectionObserver, defaults to 0.5
+  delay?: number; 
+  threshold?: number; 
 }
 
 const TextEffectTrigger: React.FC<TextEffectTriggerProps> = ({ text, delay = 0.5, threshold = 0.1 }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const textRef = useRef<HTMLDivElement | null>(null); // UseRef with a proper type for the div element
+  const textRef = useRef<HTMLDivElement | null>(null); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -78,7 +78,6 @@ const TextEffectTrigger: React.FC<TextEffectTriggerProps> = ({ text, delay = 0.5
       {isVisible && (
         <TextEffect
           per="char"
-          delay={delay}
           variants={{
             container: variants.container,
             item: variants.item,

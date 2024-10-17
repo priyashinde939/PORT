@@ -9,7 +9,6 @@ const images = [
   { id: 5, src: '/images/logo/7.png', alt: 'img' },
   { id: 6, src: '/images/logo/mysql.svg', alt: 'img' },
   { id: 7, src: '/images/logo/1.png', alt: 'img' },
-  { id: 8, src: '/images/logo/github1.svg', alt: 'img' },
   { id: 9, src: '/images/logo/android-studio.svg', alt: 'img' },
   { id: 10, src: '/images/logo/git.svg', alt: 'img' },
   { id: 11, src: '/images/logo/npm.svg', alt: 'img' },
@@ -21,6 +20,7 @@ const images = [
   { id: 17, src: '/images/logo/css3.svg', alt: 'img' },
   { id: 18, src: '/images/logo/nextjs.svg', alt: 'img' },
   { id: 19, src: '/images/logo/framer-motion.svg', alt: 'img' }
+
 ];
 
 export function SkillSlider() {

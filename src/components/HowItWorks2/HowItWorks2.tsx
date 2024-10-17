@@ -3,7 +3,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { tagVariants, titleVariants } from '@/lib/animation';
 import './HowItWorks2.module.scss';
-import useCursor from '../Test/cursor-provider'; 
+import useCursor from '../Cursor/cursor-provider'; 
+
 
 
 interface Feature {
@@ -16,21 +17,21 @@ interface Feature {
 const hitFeatures: Feature[] = [
   {
     icon: "/images/logo/6.png",
-    head: "Web & UI design",
-    title: "Responsive web design, UI/UX design, Adobe CC, Figma, Affinity, Design systems",
-    des: "I thoughtfully design websites and interfaces that solve problems, deliver results, and delight users.",
+    head: "How can we communicate?",
+    title: "Let’s Collaborate!",
+    des: "I’d Love to Hear from You! priya.shinde9390@gmail.com",
   },
   {
     icon: "/next.svg",
-    head: "Full-stack development",
-    title: "HTML5, CSS3, JavaScript, WordPress, PHP, MySQL, Git",
-    des: "I turn ideas into prototypes and develop responsive, high-performing websites using React, Next.js, and Tailwind CSS.",
+    head: "Where am i currently work?",
+    title: "Work...",
+    des: "I'm a student, but always open to collaboration. Let me know if you're interested!",
   },
   {
     icon: "/images/logo/9.png",
-    head: "Web Performance Optimization",
-    title: "optimizing load times, reducing resource sizes, and implementing lazy loading and caching.",
-    des: "I optimize website performance for fast, responsive, and smooth experiences on all devices.",
+    head: "What type of projects did you do?",
+    title: "Anything I could.",
+    des: "From dynamic e-commerce platforms to interactive web applications.",
   },
 ];
 
@@ -61,7 +62,7 @@ const HowItWorks2: React.FC = () => {
               whileInView="onscreen"
               className="tag text-gradient3 font-black text-[5rem]"
             >
-              Skills
+              About me
             </motion.span>
             <motion.span
               variants={titleVariants}
@@ -69,21 +70,22 @@ const HowItWorks2: React.FC = () => {
               whileInView="onscreen"
               className="title text-[1rem] font-bold text-[#7086bc] "
             >
-              Unlocking potential along the growth journey
+              {/* Unlocking potential along the growth journey */}
+              :)
             </motion.span>
           </div>
 
           {/* features */}
           <div 
-            className="hiw-features flex flex-col items-center gap-8">
+            className="hiw-features flex flex-col items-center gap-20">
             {hitFeatures.map((feature, i) => (
               <motion.div
                 key={i}
                 variants={featureVariants}
                 initial="offscreen"
                 whileInView="onscreen"
-                className={`hiw-feature bg-[#697fc3] rounded-3xl flex items-center max-w-[40rem] py-4 px-6 shadow-lg ${
-                  i % 2 === 0 ? 'md:mr-20' : 'md:ml-20'
+                className={`hiw-feature bg-[#f1ecec] rounded-3xl flex items-center max-w-[40rem] py-4 px-6 shadow-lg ${
+                  i % 2 === 0 ? 'md:mr-56' : 'md:ml-60'
                 }`}
               >
                 {/* left side */}
@@ -99,7 +101,7 @@ const HowItWorks2: React.FC = () => {
                   {/* <span className="text-lg font-semibold">{i + 1}</span> */}
                   <span className="text-xl font-black">{feature.head}</span>
                   <span className="text-[#070e23] text-lg">{feature.title}</span>
-                  <span className="text-[#eeeeee] text-lg ">{feature.des}</span>
+                  <span className="text-[#3030bd] text-lg ">{feature.des}</span>
                 </motion.div>
 
                 {/* right side */}

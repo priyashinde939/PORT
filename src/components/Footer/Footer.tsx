@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
 
         {/* Copyright and Back to Top */}
         <div className="flex justify-between mt-16 text-zinc-500 mx-14 my-20">
-          <p className="font-semibold text-xl">© 2024, Format-3. All Rights Reserved.</p>
+          <p className="font-semibold text-xl">© 2024, Hola. All Rights Reserved.</p>
           <motion.a
             initial={{ color: 'white' }}
             whileHover={{ color: '#71717a' }}

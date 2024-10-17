@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Button2 from '../Button/Button2';
-import useCursor from '../Test/cursor-provider'; // Make sure the path is correct
+import useCursor from '../Cursor/cursor-provider'; // Make sure the path is correct
 
 const SectionOne: React.FC = () => {
     const { setCursor, resetCursor } = useCursor(); // Using the cursor context
@@ -8,7 +8,7 @@ const SectionOne: React.FC = () => {
     return (
         <div 
 
-        className="flex lg:md:flex-row flex-col h-screen px-4">
+        className="flex lg:md:flex-row flex-col h-screen px-4 select-none">
             <div 
                     onMouseEnter={() => {
                         setCursor({ variant: "blurred", content: ""}); 

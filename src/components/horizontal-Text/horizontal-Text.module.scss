@@ -13,46 +13,31 @@
   top: 0;
   overflow: hidden;
   display: flex;
-  // border: 1px solid red; /* Debugging border */
-  color:rgb(209, 60, 15);
-
-  // --svg-width: #{tovw(674px)};
+  color: rgb(209, 60, 15);
   --svg-width: #{tovw(800px)};
-
   --right: calc(50vw - var(--svg-width) / 3);
-
-  // --svg-width: 674px; // Or adjust this value to a smaller one
-  // --right: calc(50vw - var(--svg-width) / 2); // Center align if needed
-  justify-content: center; // Center the content horizontally
+  justify-content: center; /* Center the content horizontally */
 }
 
 .animated {
   height: 100vh;
   position: absolute;
-  // right: var(--right );
-  // right:   calc(var(--svg-width) - tovw(500px));
-  right:  tovw(100px);
-
-  // border: 1px solid rgb(184, 255, 69); /* Debugging border */
+  right: tovw(100px);
   display: flex;
   align-items: center;
   width: fit-content;
   white-space: nowrap;
   font-weight: 900;
   font-size: tovw(500px);
-
   cursor: default;
   user-select: none;
 }
 
 .worldSvg {
-  width: var(--svg-width, 100%); /* Ensure it has width */
+  width: var(--svg-width, 100%);
   height: auto; /* Maintain aspect ratio */
-  display: flex;/* Prevent inline SVG collapsing */
+  display: flex; /* Prevent inline SVG collapsing */
   inset: 0;
-  right: 0 ;
-  // mix-blend-mode:luminosity;
-  mix-blend-mode:color-dodge;
-
+  right: 0;
+  mix-blend-mode: color-dodge;
 }
-

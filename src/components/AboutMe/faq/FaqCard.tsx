@@ -75,7 +75,7 @@ const FaqCard = ({ data }: FaqCardProps) => {
         transition={transition}
       >
         <h1
-          className={`xl:text-2xl font-bold text-[#5f6a74] ${
+          className={`xl:text-2xl font-bold text-[#5d6dd1] ${
             isHovered ? "text-transparent lg:text-[#edebe9] md:text-white" : "text-pink"
           } `}
         >

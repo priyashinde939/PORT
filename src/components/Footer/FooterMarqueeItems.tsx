@@ -9,7 +9,7 @@ interface MarqueeItemProps {
 
 const MarqueeItem: React.FC<MarqueeItemProps> = ({ texts, from, to }) => {
   return (
-    <div className="flex MyGradient ">
+    <div className="flex MyGradient font-day ">
       <motion.div
         initial={{ x: from }}
         animate={{ x: to }}

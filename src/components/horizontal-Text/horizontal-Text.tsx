@@ -1,21 +1,20 @@
-import React, { useEffect, useRef, forwardRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import s from "./horizontal-Text.module.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const phrase = "FROM THE LABORATORY...";
+const phrase = "Behind the Code ....";
 const splitted = phrase.split("");
 const charsLength = splitted.length;
 
 export const HorizontalText: React.FC = () => {
   const marqueeRef = useRef<HTMLDivElement | null>(null);
   const animatedTextRef = useRef<HTMLDivElement | null>(null);
-  const svgRef = useRef<SVGSVGElement | null>(null);
 
   useEffect(() => {
-    if (!marqueeRef.current || !animatedTextRef.current || !svgRef.current) return;
+    if (!marqueeRef.current || !animatedTextRef.current) return;
 
     // Animation for moving the entire text
     gsap.fromTo(
@@ -29,7 +28,6 @@ export const HorizontalText: React.FC = () => {
           start: "top top+=300px",
           end: "bottom top",
           scrub: true,
-          markers: true, // Optional: remove if not needed
         },
       }
     );
@@ -61,32 +59,6 @@ export const HorizontalText: React.FC = () => {
         }
       );
     });
-
-    // Animation for the WorldSvg
-    gsap.fromTo(
-      svgRef.current,
-      
-      { scale: 0.1, opacity: 0, y:-200, x: -300, rotate:0,
-        scrollTrigger: {
-          trigger: marqueeRef.current,
-          start: "0% top",
-          end: "30% top",
-          scrub: true,
-        },
-      },
-      {
-        scale: 0.6,
-        rotate:360,
-        opacity: 1,
-        ease: "linear", 
-        scrollTrigger: {
-          trigger: marqueeRef.current,
-          start: "30% top",
-          end: "120% top",
-          scrub: true,
-        },
-      }
-    );
   }, []);
 
   return (
@@ -104,30 +76,8 @@ export const HorizontalText: React.FC = () => {
               </span>
             ))}
           </p>
-
-
         </div>
-        <WorldSvg ref={svgRef} />
       </div>
     </section>
   );
 };
-
-const WorldSvg = forwardRef<SVGSVGElement>((_, ref) => {
-  return (
-    <svg
-      viewBox="0 0 699 467"
-      fill="none"
-      className={s.worldSvg}
-      ref={ref}
-      
-      
-    >
-      {/* d="M140 20C73 20 20 74 20 140c0 135 136 170 228 303 88-132 229-173 229-303 0-66-54-120-120-120-48 0-90 28-109 69-19-41-60-69-108-69z"  */}
-    <path d="M10 10 H 90 V 90 H 10 L 10 10" 
-     fill="lime" />
-    </svg>
-  );
-});
-WorldSvg.displayName = "WorldSvg";
-

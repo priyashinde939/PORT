@@ -2,8 +2,7 @@
 import { useScroll, useTransform, motion, useSpring } from 'framer-motion';
 import Image from 'next/image';
 import { useRef } from 'react';
-import Picture1 from '../../../public/images/git.svg';
-import Picture2 from '../../../public//images/next.svg';
+import Picture1 from '../../../public/images/logo/git.svg';
 
 interface SlideProps {
   src: 'Picture1';
@@ -29,7 +28,7 @@ export default function Marquee() {
       <div className="h-[20vh]" />
       <div ref={container}>
         <Slide src={Picture1} direction="left" left="-40%" progress={scrollYProgress} />
-        <Slide src={Picture2} direction="right" left="-25%" progress={scrollYProgress} />
+        <Slide src={Picture1} direction="right" left="-25%" progress={scrollYProgress} />
       </div>
       <div className="h-[20vh]" />
     </main>
@@ -54,19 +53,31 @@ const translateX = useSpring(
     </motion.div>
   );
 }
-
+// #cb8b93
 const Phrase: React.FC<PhraseProps> = ({ src }) => {
   return (
-    <div className="px-5 text-[3vw] flex gap-1 items-center text-[#cb8b93] border-y border-gray-600 ">
-      <p>Some Text Content</p>
+    <div className="px-5 text-[3vw] flex gap-1 items-center text-[#fff9fa]">
+      <p>Skill Set Overview</p>
       <span className="relative h-[5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
       </span>
-      <p>Some Text Content</p>
+      <p>Skill Set Overview</p>
       <span className="relative h-[5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
       </span>
-      <p>Some Text Content</p>
+      <p>Skill Set Overview</p>
+      <span className="relative h-[5vw] aspect-[2] rounded-full overflow-hidden">
+        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
+      </span>
+      <p>Skill Set Overview</p>
+      <span className="relative h-[5vw] aspect-[2] rounded-full overflow-hidden">
+        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
+      </span>
+      <p>Skill Set Overview</p>
+      <span className="relative h-[5vw] aspect-[2] rounded-full overflow-hidden">
+        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
+      </span>
+      <p>Skill Set Overview</p>
       <span className="relative h-[5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
       </span>

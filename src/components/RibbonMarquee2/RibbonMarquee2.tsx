@@ -189,7 +189,7 @@ Marquee.displayName = "Marquee";
 // LabSvg Component
 const Star: React.FC = () => {
   return (
-    <img className={s.star} src="/images/git.svg" alt="img"/>
+    <img className={s.star} src="/images/next.svg" alt="img"/>
   );
 };
 
