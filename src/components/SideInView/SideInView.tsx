@@ -1,12 +1,12 @@
 import { InView } from './InView';
 import useCursor from '../Cursor/cursor-provider'; 
-import MovingBorderWrapper from '../Test/MovingBorder';
+
 
 
 export function SideInView() {
   const { setCursor, resetCursor } = useCursor(); 
   return (
-    <div className='max-h-full w-full overflow-y-auto overflow-x-hidden'>
+    <div className='max-h-full w-full overflow-y-auto overflow-x-hidden bg-[#dcd7e7]'>
 
       <div className="h-[20vh]" />
 
@@ -15,10 +15,10 @@ export function SideInView() {
         <div
         onMouseEnter={() => setCursor({ variant: "blurred", content: "", color: "#e4e6f1fc" })} // Set blurred cursor
         onMouseLeave={resetCursor} 
-        className="w-full cursor-none text-gradient3">
-           <MovingBorderWrapper >
+        className="w-full cursor-none text-[#000]">
+
         These are the cool things i can do for you
-        </MovingBorderWrapper>
+
         </div>
       </div>
       
@@ -38,16 +38,16 @@ export function SideInView() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <MovingBorderWrapper >
-          <div className='flex w-[70vw] h-[12rem]  bg-[#7a7af8] p-10 justify-center rounded-2xl border border-[#cf2e2e9e]'>
-          <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
-              <strong className='flex justify-center font-black text-[#e7dfdf]'>Responsive Design</strong>
-              <div className="flex py-5 justify-center text-center font-medium">
+
+          <div className='flex w-[70vw] h-[12rem]  bg-[#ffcb82] p-10 justify-center rounded-2xl border border-[#db5812]'>
+          <div className=' flex flex-col text-white xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
+              <strong className='flex justify-center font-black text-[#000000]'>Responsive Design</strong>
+              <div className="flex py-5 justify-center text-center font-medium text-gradient3">
                   Go on and Resize the window, see for yourself.
               </div>
             </div>
           </div>
-          </MovingBorderWrapper>
+
         </InView>
       </div>
       
@@ -68,10 +68,10 @@ export function SideInView() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#aa98f8]  border border-[#cf2e2e9e] p-10 items-center justify-center rounded-2xl'>
-          <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
-              <strong className='flex justify-center font-bold text-[#e7dfdf] '>Web Design</strong>
-              <div className="flex py-5 justify-center text-center font-medium">
+          <div className='flex w-[70vw] h-[12rem] bg-[#ea7040]  border border-[#db5812] p-10 items-center justify-center rounded-2xl'>
+          <div className=' flex flex-col text-white  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
+              <strong className='flex justify-center font-bold text-[#000000] '>Web Design</strong>
+              <div className="flex py-5 justify-center text-center font-medium text-gradient3">
               I love creating fun and engaging web experiences! With my passion for creative design and animations, I aim to make every interface shine.
               </div>
             </div>
@@ -96,10 +96,10 @@ export function SideInView() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
-          <div className='flex w-[70vw] h-[12rem] bg-[#7a7af8] border border-[#cf2e2ebd] p-10 items-center justify-center rounded-2xl'>
-          <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
-              <strong className='flex justify-center font-black text-[#e7dfdf]'>Debugging</strong>
-              <div className="flex py-5 justify-center text-center font-medium">
+          <div className='flex w-[70vw] h-[12rem] bg-[#faaeb8] border border-[#db5812] p-10 items-center justify-center rounded-2xl'>
+          <div className=' flex flex-col text-white  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
+              <strong className='flex justify-center font-black text-[#000000]'>Debugging</strong>
+              <div className="flex py-5 justify-center text-center font-medium text-gradient3">
               After countless sleepless nights troubleshooting bugs and errors, Ive developed a strong skill set for resolving them and documenting solutions for future reference.
               </div>
             </div>
