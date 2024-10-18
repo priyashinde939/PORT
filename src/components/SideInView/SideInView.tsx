@@ -1,5 +1,6 @@
 import { InView } from './InView';
 import useCursor from '../Cursor/cursor-provider'; 
+import MovingBorderWrapper from '../Test/MovingBorder';
 
 
 export function SideInView() {
@@ -15,7 +16,9 @@ export function SideInView() {
         onMouseEnter={() => setCursor({ variant: "blurred", content: "", color: "#e4e6f1fc" })} // Set blurred cursor
         onMouseLeave={resetCursor} 
         className="w-full cursor-none text-gradient3">
+           <MovingBorderWrapper >
         These are the cool things i can do for you
+        </MovingBorderWrapper>
         </div>
       </div>
       
@@ -35,6 +38,7 @@ export function SideInView() {
           transition={{ duration: 0.8, ease: 'easeInOut' }}
           viewOptions={{ margin: '0px 0px -50px 0px' }}
         >
+          <MovingBorderWrapper >
           <div className='flex w-[70vw] h-[12rem]  bg-[#7a7af8] p-10 justify-center rounded-2xl border border-[#cf2e2e9e]'>
           <div className=' flex flex-col text-black  xl:lg:text-[1.5rem] md:text-[1.2rem] text-[0.6rem] p-3'>
               <strong className='flex justify-center font-black text-[#e7dfdf]'>Responsive Design</strong>
@@ -43,6 +47,7 @@ export function SideInView() {
               </div>
             </div>
           </div>
+          </MovingBorderWrapper>
         </InView>
       </div>
       

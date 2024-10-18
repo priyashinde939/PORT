@@ -60,7 +60,7 @@ const HowItWorks2: React.FC = () => {
               variants={tagVariants}
               initial="offscreen"
               whileInView="onscreen"
-              className="tag text-gradient3 font-black text-[5rem]"
+              className="tag font-black text-[5rem]"
             >
               About me
             </motion.span>
