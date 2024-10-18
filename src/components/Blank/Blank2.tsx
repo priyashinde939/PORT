@@ -6,14 +6,14 @@ import Tools from './Tools'
 const Blank2 = () => {
   return (
    <section >
-            <div
-        className="w-full cursor-none px-60 text-start text-6xl font-medium my-[10rem] text-white">
-       Languages and Frame works
+
+<div className=" flex xl:lg:text-[4rem] md:text-[3rem] text-[2rem] font-black py-36 xl:lg:mx-[20vw]  md:px-10 px-10 text-center justify-center" >
+        <div className="w-full cursor-none text-gradient3">
+            Languages and Frame works
         </div>
+      </div>
           <Lan />
           <div className="w-full h-[50vh] "/>
-          {/* <Frame />
-          <Tools /> */}
    </section>
   )
 }

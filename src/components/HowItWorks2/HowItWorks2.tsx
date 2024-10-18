@@ -84,9 +84,10 @@ const HowItWorks2: React.FC = () => {
                 variants={featureVariants}
                 initial="offscreen"
                 whileInView="onscreen"
-                className={`hiw-feature bg-[#f1ecec] rounded-3xl flex items-center max-w-[40rem] py-4 px-6 shadow-lg ${
+                className={`hiw-feature bg-[#ca553e] rounded-3xl flex items-center max-w-[40rem] py-4 px-6 shadow-lg ${
                   i % 2 === 0 ? 'md:mr-56' : 'md:ml-60'
                 }`}
+                
               >
                 {/* left side */}
                 <motion.div
@@ -101,7 +102,7 @@ const HowItWorks2: React.FC = () => {
                   {/* <span className="text-lg font-semibold">{i + 1}</span> */}
                   <span className="text-xl font-black">{feature.head}</span>
                   <span className="text-[#070e23] text-lg">{feature.title}</span>
-                  <span className="text-[#3030bd] text-lg ">{feature.des}</span>
+                  <span className="text-[#eaeaf7] text-lg font-medium ">{feature.des}</span>
                 </motion.div>
 
                 {/* right side */}

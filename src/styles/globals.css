@@ -59,7 +59,7 @@ body::after {
   z-index: 3023023023020;
   pointer-events: none;
   opacity:0.7; 
-  mix-blend-mode:color-burn;
+  mix-blend-mode:overlay;
 
 
 } 
