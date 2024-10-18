@@ -40,7 +40,7 @@ body {
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); 
     margin: 0;
     inset:0;
     padding:0
@@ -60,16 +60,14 @@ body::after {
   pointer-events: none;
   opacity:0.7; 
   mix-blend-mode:color-burn;
-  /* mix-blend-mode:color-burn;  */
 
-  
+
 } 
+  
 
 body::before {
   filter: url(#grainy);
-} 
-
-
+}  
 .hover {
 	color: #18272f;
 	position: relative;
@@ -93,7 +91,7 @@ body::before {
 .hover:hover::before {
 	transform-origin: left;
 	transform: scaleX(1);
-}
+} 
 
 
 .text-gradient {

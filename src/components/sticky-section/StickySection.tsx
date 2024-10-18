@@ -55,7 +55,7 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
 
 
     const sectionRef = useRef(null);
-    const isInView = useInView(sectionRef, { once: true });
+    const isInView = useInView(sectionRef, { once: false });
     const { setCursor, resetCursor } = useCursor(); 
     
     return (

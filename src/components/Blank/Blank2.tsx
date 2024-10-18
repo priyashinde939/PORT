@@ -7,7 +7,7 @@ const Blank2 = () => {
   return (
    <section >
             <div
-        className="w-full cursor-none px-60 text-start text-6xl font-medium my-[10rem]">
+        className="w-full cursor-none px-60 text-start text-6xl font-medium my-[10rem] text-white">
        Languages and Frame works
         </div>
           <Lan />
