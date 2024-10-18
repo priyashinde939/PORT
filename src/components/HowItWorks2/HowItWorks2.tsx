@@ -16,7 +16,7 @@ interface Feature {
 
 const hitFeatures: Feature[] = [
   {
-    icon: "/images/logo/6.png",
+    icon: "/next.svg",
     head: "How can we communicate?",
     title: "Let’s Collaborate!",
     des: "I’d Love to Hear from You! priya.shinde9390@gmail.com",
@@ -28,7 +28,7 @@ const hitFeatures: Feature[] = [
     des: "I'm a student, but always open to collaboration. Let me know if you're interested!",
   },
   {
-    icon: "/images/logo/9.png",
+    icon: "/next.svg",
     head: "What type of projects did you do?",
     title: "Anything I could.",
     des: "From dynamic e-commerce platforms to interactive web applications.",
@@ -84,7 +84,7 @@ const HowItWorks2: React.FC = () => {
                 variants={featureVariants}
                 initial="offscreen"
                 whileInView="onscreen"
-                className={`hiw-feature bg-[#ca553e] rounded-3xl flex items-center max-w-[40rem] py-4 px-6 shadow-lg ${
+                className={`hiw-feature bg-[#ec6f56] rounded-3xl flex items-center max-w-[40rem] py-4 px-6  ${
                   i % 2 === 0 ? 'md:mr-56' : 'md:ml-60'
                 }`}
                 
