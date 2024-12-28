@@ -7,6 +7,7 @@ import HowItWorks2 from '@/components/HowItWorks2/HowItWorks2'
 import { HorizontalText } from '@/components/horizontal-Text/horizontal-Text'
 import { SideInView } from '@/components/SideInView/SideInView'
 import Blank2 from '@/components/Blank/Blank2'
+import ButtonComponent from '@/components/Test/ButtonComponent'
 
 
 
@@ -33,7 +34,8 @@ const index = () => {
 
 
           {/* <RibbonMarquee2 /> */}
-
+          
+<ButtonComponent />
           <FooterSection /> 
       </main>
     </>
