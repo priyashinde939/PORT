@@ -12,9 +12,9 @@ interface RevealLinksProps {
 export const RevealLinks: React.FC<RevealLinksProps> = ({
   links,
   textColor = "text-black",
-  duration = 0.25,
+  duration = 0.8,
   stagger = 0.025,
-  textSize = "text-4xl sm:text-7xl md:text-8xl lg:text-9xl",
+
 }) => {
   return (
     <section className={`grid place-content-center gap-2 px-8 py-24 ${textColor}`}>
@@ -24,7 +24,7 @@ export const RevealLinks: React.FC<RevealLinksProps> = ({
           href={link.href}
           duration={duration}
           stagger={stagger}
-          textSize={textSize}
+
         >
           {link.label}
         </FlipButton>
@@ -38,7 +38,7 @@ interface FlipButtonProps {
   href: string;
   duration: number;
   stagger: number;
-  textSize: string;
+
 }
 
 export const FlipButton: React.FC<FlipButtonProps> = ({
@@ -46,14 +46,14 @@ export const FlipButton: React.FC<FlipButtonProps> = ({
   href,
   duration,
   stagger,
-  textSize,
+
 }) => {
   return (
     <motion.a
       initial="initial"
       whileHover="hovered"
       href={href}
-      className={`relative inline-block overflow-hidden whitespace-nowrap font-black uppercase ${textSize}`}
+      className={`relative inline-block overflow-hidden whitespace-nowrap font-semibold uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl `}
       style={{
         lineHeight: 0.85,
       }}
@@ -68,9 +68,13 @@ export const FlipButton: React.FC<FlipButtonProps> = ({
             }}
             transition={{
               duration,
-              ease: "easeInOut",
+              ease: "linear",
               delay: stagger * index,
+              type: 'spring',
+              bounce: 0.5,
+
             }}
+
             className="inline-block"
           >
             {char}
@@ -87,8 +91,10 @@ export const FlipButton: React.FC<FlipButtonProps> = ({
             }}
             transition={{
               duration,
-              ease: "easeInOut",
+              ease: "linear",
               delay: stagger * index,
+              type: 'spring',
+              bounce: 0.5,
             }}
             className="inline-block"
           >
