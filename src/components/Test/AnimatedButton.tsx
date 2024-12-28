@@ -79,6 +79,7 @@ export const FlipButton: React.FC<FlipButtonProps> = ({
           >
             {char}
           </motion.span>
+          
         ))}
       </div>
       <div className="absolute inset-0">
