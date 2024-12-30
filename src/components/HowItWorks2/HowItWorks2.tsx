@@ -50,7 +50,7 @@ const HowItWorks2: React.FC = () => {
       <div className="container mx-auto">
         <div className="hiw-container flex flex-col gap-8">
           {/* head */}
-          <div
+          {/* <div
           onMouseEnter={() => {
             setCursor({ variant: "blurred", content: "" }); 
             }}
@@ -70,10 +70,10 @@ const HowItWorks2: React.FC = () => {
               whileInView="onscreen"
               className="title text-[1rem] font-bold text-[#7086bc] "
             >
-              {/* Unlocking potential along the growth journey */}
+              Unlocking potential along the growth journey
               :)
             </motion.span>
-          </div>
+          </div> */}
 
           {/* features */}
           <div 

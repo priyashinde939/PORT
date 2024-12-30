@@ -39,7 +39,7 @@ const FlowerSection = () => {
 
 
     {/* Marquee Section*/}
-    <SkillSlider />
+    {/* <SkillSlider /> */}
     {/* <SkillMarquees /> */}
     </section>
   )

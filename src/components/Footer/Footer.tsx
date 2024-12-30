@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
 
         {/* Marquee */}
         <div className="my-14 justify-center content-center align-top pb-3 pt-2 border-y border-zinc-800">
-          <FooterMarquee />
+          {/* <FooterMarquee /> */}
         </div>
 
         {/* Copyright and Back to Top */}

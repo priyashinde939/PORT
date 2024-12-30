@@ -8,6 +8,7 @@ import { HorizontalText } from '@/components/horizontal-Text/horizontal-Text'
 import { SideInView } from '@/components/SideInView/SideInView'
 import Blank2 from '@/components/Blank/Blank2'
 import ButtonComponent from '@/components/Test/ButtonComponent'
+import AC from '@/components/Test/AC'
 
 
 
@@ -23,19 +24,19 @@ const index = () => {
       </Head>
       <main className='min-h-screen w-[100%]  cursor-none'>
           <Sticky />
-          <SideInView />
+          {/* <SideInView /> */}
           <Blank2 />
           <FlowerSection />
 
-          <HorizontalText />
+          {/* <HorizontalText /> */}
           <HowItWorks2 />
 
           {/* <AboutMe /> */}
 
 
           {/* <RibbonMarquee2 /> */}
-          
-<ButtonComponent />
+          {/* <AC/>
+<ButtonComponent /> */}
           <FooterSection /> 
       </main>
     </>

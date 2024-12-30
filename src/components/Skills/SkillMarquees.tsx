@@ -11,8 +11,7 @@ function SkillMarquees() {
            'Scss',      
            'Bootstrap',     
            'Typescript',     
-           'JavaScript',     
-           'Java',      
+           'JavaScript',         
            'C++',
            'VsCode'
         ],
@@ -23,8 +22,7 @@ function SkillMarquees() {
           'Scss',      
           'Bootstrap',     
           'Typescript',     
-          'JavaScript',     
-          'Java',      
+          'JavaScript',       
           'C++',
           'VsCode'     
         ]

@@ -35,8 +35,8 @@
 
 .worldSvg {
   width: var(--svg-width, 100%);
-  height: auto; /* Maintain aspect ratio */
-  display: flex; /* Prevent inline SVG collapsing */
+  height: auto;  
+  display: flex; 
   inset: 0;
   right: 0;
   mix-blend-mode: color-dodge;

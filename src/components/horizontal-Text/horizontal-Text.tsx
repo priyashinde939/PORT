@@ -27,7 +27,7 @@ export const HorizontalText: React.FC = () => {
           trigger: marqueeRef.current,
           start: "top top+=300px",
           end: "bottom top",
-          scrub: true,
+          scrub: 0.3,
         },
       }
     );
@@ -54,7 +54,7 @@ export const HorizontalText: React.FC = () => {
             trigger: marqueeRef.current,
             start: `${charStart * 100}% top`,
             end: `${charEnd * 100}% top`,
-            scrub: true,
+            scrub: 0.3,
           },
         }
       );

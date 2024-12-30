@@ -3,12 +3,13 @@ import  { RevealLinks } from './AnimatedButton'
 
 const ButtonComponent = () => {
     return (
-        <div className="relative bg-white h-screen ">
+        <div className="relative bg-black h-screen ">
             <RevealLinks
                 links={[
-                    { href: "#", label: "Twitter and twitter" }
+                    { href: "#", label: "BUTTONBUTTON" }
                 ]}
-                textColor="text-black"
+                textColor="text-white"
+                duration={1}
                 />
         </div>
     )

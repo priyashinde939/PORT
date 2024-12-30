@@ -61,14 +61,6 @@ const Phrase: React.FC<PhraseProps> = ({ src }) => {
       <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
         <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
       </span>
-      {/* <p className="text-[4vw]">Some Text Content</p>
-      <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
-        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
-      </span>
-      <p className="text-[4vw]">Some Text Content</p>
-      <span className="relative h-[7.5vw] aspect-[2] rounded-full overflow-hidden">
-        <Image style={{ objectFit: 'contain' }} src={src} alt="image" fill />
-      </span> */}
     </div>
   );
 }

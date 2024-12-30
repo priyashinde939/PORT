@@ -1,20 +1,23 @@
 import { motion } from 'framer-motion';
 import Button2 from '../Button/Button2';
-import useCursor from '../Cursor/cursor-provider'; // Make sure the path is correct
+import useCursor from '../Cursor/cursor-provider'; 
+import clsx from "clsx";
+import s from "./SectionTransition.module.scss"; 
 
 const SectionOne: React.FC = () => {
-    const { setCursor, resetCursor } = useCursor(); // Using the cursor context
+    const { setCursor, resetCursor } = useCursor(); 
 
     return (
+        
         <div 
-
-        className="flex lg:md:flex-row flex-col h-screen px-4 select-none">
+className="relative flex lg:md:flex-row flex-col h-screen px-4 ">
+        <div className={clsx(s.SectionOne, "absolute h-full w-full overflow-hidden")}>
+            <div className={s.stars}></div>
+            <div className={s.stars2}></div>
+            <div className={s.stars3}></div>
+        </div>
             <div 
-                    onMouseEnter={() => {
-                        setCursor({ variant: "blurred", content: ""}); 
-                    }}
-                    onMouseLeave={resetCursor} 
-                className="relative lg:w-[60%] sm:w-full flex flex-col xl:lg:top-[20%] xl:lg:left-[4%] top-[10%] lg:gap-4 h-fit">
+                className="relative lg:w-[50%] sm:w-full flex flex-col xl:lg:top-[20%] xl:lg:left-[5%] top-[10%] lg:gap-4 h-fit">
                 {/* container */}
 
                 <motion.div
@@ -23,7 +26,10 @@ const SectionOne: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="items-start p-3">
                     <span 
-
+                            onMouseEnter={() => {
+                                setCursor({ variant: "blurred", content: "HOLA", color: "#e82626" }); // Set blurred cursor
+                            }}
+                            onMouseLeave={resetCursor} 
                     className="text-xl lg:text-2xl font-medium text-[#9eb3f5]">
                         Creative
                     </span>

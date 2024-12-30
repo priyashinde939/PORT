@@ -4,6 +4,8 @@ import { useScroll, useTransform, motion, MotionValue, useInView } from 'framer-
 import SectionOne from './SectionOne';
 import useCursor from '../Cursor/cursor-provider'; 
 import { TextEffectClr } from '../TextEffects/TextEffectClr';
+// import clsx from "clsx";
+// import s from "./SectionTransition.module.scss"; 
 
 
 
@@ -41,9 +43,14 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
         <motion.div
             transition={{ type: "spring", stiffness: 40, damping: 100 }}
             style={{ scale, rotate, opacity }}
-            className="sticky top-10 h-[90vh] bg-[#050404cb] bg-blend-multiply backdrop-blur-sm rounded-3xl mx-6 border border-[#ff7d37]"
-        >
+            className= "sticky top-10 h-[90vh] bg-[#050404cb] bg-blend-multiply backdrop-blur-sm rounded-3xl mx-6 border border-[#ff7d37]">
 
+             {/* Add starry background */}
+             {/* <div className={s.stars}></div>
+            <div className={s.stars2}></div>
+            <div className={s.stars3}></div> */}
+
+            {/* SectionOne content */}
             <SectionOne />
         </motion.div>
     );
