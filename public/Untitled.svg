@@ -1,0 +1,12 @@
+<svg 
+    viewBox="0 0 300 300" 
+    shape-rendering="geometricPrecision" 
+    text-rendering="geometricPrecision" 
+    project-id="58ee01845d7e4d718740b2e57373fc7f" 
+    export-id="c8a30d66c9364f92977fd13b29738007" >
+        <path d="M0,0C0,104.721195,8.813791,119.556399,107.715152,87.907964s160.220204-23.736326,92.967279,36.593504-104.835443,156.264149-11.868164,131.538809s93.874658-18.133051,105.289065,27.524577" 
+        transform="translate(.000002 0)" 
+        fill="none" 
+        stroke="#3f5787" 
+        stroke-width="0.6"/>
+    </svg>

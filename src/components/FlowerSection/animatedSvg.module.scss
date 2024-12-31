@@ -1,0 +1,22 @@
+// animatedSvg.module.scss
+
+@keyframes drawPath {
+  from {
+    stroke-dashoffset: 4464.71; /* Start at path length */
+  }
+  to {
+    stroke-dashoffset: 0; /* End at 0 */
+  }
+}
+
+.squiggle path {
+  transition: stroke-dashoffset 0.1s linear; /* Smooth transition */
+  stroke-dasharray: 4464.71;
+  stroke-dashoffset: 4464.71;
+}
+
+.animate path {
+  animation: drawPath 3.5s linear; /* Apply animation */
+}
+
+// ease forwards

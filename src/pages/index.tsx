@@ -5,10 +5,10 @@ import FooterSection from '@/components/Footer/FooterSection'
 import FlowerSection from '@/components/FlowerSection/FlowerSection'
 import HowItWorks2 from '@/components/HowItWorks2/HowItWorks2'
 import { HorizontalText } from '@/components/horizontal-Text/horizontal-Text'
-import { SideInView } from '@/components/SideInView/SideInView'
 import Blank2 from '@/components/Blank/Blank2'
-import ButtonComponent from '@/components/Test/ButtonComponent'
-import AC from '@/components/Test/AC'
+import SvgSection from '@/components/FlowerSection/SvgSection'
+
+
 
 
 
@@ -23,7 +23,10 @@ const index = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
       <main className='min-h-screen w-[100%]  cursor-none'>
+
+   <SvgSection />
           <Sticky />
+          
           {/* <SideInView /> */}
           <Blank2 />
           <FlowerSection />
@@ -35,8 +38,7 @@ const index = () => {
 
 
           {/* <RibbonMarquee2 /> */}
-          {/* <AC/>
-<ButtonComponent /> */}
+ 
           <FooterSection /> 
       </main>
     </>
