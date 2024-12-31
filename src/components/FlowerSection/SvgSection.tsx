@@ -17,4 +17,5 @@ const SvgSection = () => {
     )
 }
 
+
 export default SvgSection
