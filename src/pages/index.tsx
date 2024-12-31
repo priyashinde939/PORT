@@ -4,9 +4,11 @@ import Sticky from '@/components/sticky-section/StickySection'
 import FooterSection from '@/components/Footer/FooterSection'
 import FlowerSection from '@/components/FlowerSection/FlowerSection'
 import HowItWorks2 from '@/components/HowItWorks2/HowItWorks2'
-import { HorizontalText } from '@/components/horizontal-Text/horizontal-Text'
+// import { HorizontalText } from '@/components/horizontal-Text/horizontal-Text'
 import Blank2 from '@/components/Blank/Blank2'
-import SvgSection from '@/components/FlowerSection/SvgSection'
+// import SvgSection from '@/components/FlowerSection/SvgSection'
+import AnimatedSVG from '@/components/Line/AnimatedSVG'
+
 
 
 
@@ -24,8 +26,10 @@ const index = () => {
       </Head>
       <main className='min-h-screen w-[100%]  cursor-none'>
 
-   <SvgSection />
+
           <Sticky />
+          <AnimatedSVG />
+      
           
           {/* <SideInView /> */}
           <Blank2 />

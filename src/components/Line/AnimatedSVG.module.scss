@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  max-width: 1145px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.squiggle {
+  width: 100%;
+  height: auto;
+}
+
+.squiggle path {
+  transition: stroke-dashoffset var(--animation-duration, 0.5s) var(--animation-easing, ease-in-out);
+}
+
+.animate:not(.reverse) path {
+  stroke-dashoffset: 0 !important;
+}
+
+.animate.reverse path {
+  stroke-dashoffset: 1839 !important;
+}
