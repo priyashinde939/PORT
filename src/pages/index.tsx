@@ -8,6 +8,7 @@ import HowItWorks2 from '@/components/HowItWorks2/HowItWorks2'
 import Blank2 from '@/components/Blank/Blank2'
 // import SvgSection from '@/components/FlowerSection/SvgSection'
 import AnimatedSVG from '@/components/Line/AnimatedSVG'
+import SignatureAnimation from '@/components/SignatureAnimation/SignatureAnimation'
 
 
 
@@ -29,7 +30,7 @@ const index = () => {
 
           <Sticky />
           <AnimatedSVG />
-      
+          <SignatureAnimation />
           
           {/* <SideInView /> */}
           <Blank2 />
