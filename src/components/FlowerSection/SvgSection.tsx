@@ -9,9 +9,9 @@ const SvgSection = () => {
                 {/* <AnimatedSVG/> */}
                 <AnimatedSVG />
             </div>
-            {/* <div className="absolute border-pink-500 h-[100vh]">
+            <div className="absolute border-pink-500 ">
                 <FlowerSection/>   
-            </div> */}
+            </div>
 
         </section>
     )

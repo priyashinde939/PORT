@@ -10,7 +10,7 @@ const FlowerSection = () => {
         {/* Background Image */}
         <div
           style={{
-            backgroundImage: 'url(/images/2.jpg)',
+            // backgroundImage: 'url(/images/2.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
