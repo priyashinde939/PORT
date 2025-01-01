@@ -10,7 +10,9 @@ const SignatureAnimation: React.FC = () => {
       <div id="trigger1">
         <Spacer size="small" />
       </div>
+      
       <Signature />
+      
       <Spacer size="large" />
     </div>
   );
