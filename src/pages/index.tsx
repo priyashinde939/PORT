@@ -29,7 +29,7 @@ const index = () => {
 
 
           <Sticky />
-          <AnimatedSVG />
+          {/* <AnimatedSVG /> */}
           <SignatureAnimation />
           
           {/* <SideInView /> */}

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { tagVariants, titleVariants } from '@/lib/animation';
 import './HowItWorks2.module.scss';
 import useCursor from '../Cursor/cursor-provider'; 
+import SignatureAnimation from '../SignatureAnimation/SignatureAnimation';
 
 
 
@@ -46,7 +47,10 @@ const featureVariants = {
 const HowItWorks2: React.FC = () => {
   const { setCursor, resetCursor } = useCursor(); 
   return (
-    <div className="hiw-wrapper py-32 cursor-none">
+    <div className="hiw-wrapper py-32 cursor-none bg-white">
+      <div className="absolute h-full w-full">
+        <SignatureAnimation />
+      </div>
       <div className="container mx-auto">
         <div className="hiw-container flex flex-col gap-8">
           {/* head */}
