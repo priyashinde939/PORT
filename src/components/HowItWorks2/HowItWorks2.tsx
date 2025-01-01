@@ -78,7 +78,7 @@ const HowItWorks2: React.FC = () => {
               :)
             </motion.span>
           </div> */}
-
+{/* bg-[#ec6f56] */}
           {/* features */}
           <div 
             className="hiw-features flex flex-col items-center gap-20">
@@ -88,7 +88,7 @@ const HowItWorks2: React.FC = () => {
                 variants={featureVariants}
                 initial="offscreen"
                 whileInView="onscreen"
-                className={`hiw-feature bg-[#ec6f56] rounded-3xl flex items-center max-w-[40rem] py-4 px-6  ${
+                className={`hiw-feature bg-[#567eec] rounded-3xl flex items-center max-w-[40rem] py-4 px-6  ${
                   i % 2 === 0 ? 'md:mr-56' : 'md:ml-60'
                 }`}
                 
