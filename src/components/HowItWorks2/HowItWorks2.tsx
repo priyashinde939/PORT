@@ -81,6 +81,7 @@ const HowItWorks2: React.FC = () => {
 {/* bg-[#ec6f56] */}
           {/* features */}
           <div 
+        
             className="hiw-features flex flex-col items-center gap-20">
             {hitFeatures.map((feature, i) => (
               <motion.div
