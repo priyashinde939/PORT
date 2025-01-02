@@ -9,6 +9,7 @@ const Preloader2: React.FC = () => {
         viewBox="0 0 800 600"
         className={styles.preloader2Svg}
         preserveAspectRatio="xMidYMid meet"
+        
       >
         <Preloader2Path />
       </svg>
