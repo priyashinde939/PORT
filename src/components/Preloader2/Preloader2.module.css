@@ -12,6 +12,8 @@
   background-color: transparent;
   z-index: 100;
   padding: 1%;
+  cursor: none;
+  pointer-events: none;
 }
 
 .preloader2Svg {

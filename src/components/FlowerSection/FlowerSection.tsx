@@ -15,7 +15,7 @@ const FlowerSection = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
           }}
-          className="absolute xl:lg:border border-dashed border-[#053bff4e] w-[70%] xl:lg:h-[40%] md:h-[40vh] h-[40vh] rounded-lg"
+          className="absolute xl:lg:border border-dashed border-[#ff0d0d] w-[70%] xl:lg:h-[40%] md:h-[40vh] h-[40vh] rounded-lg"
         ></div>
 
         {/* Heading Text */}
