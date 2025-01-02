@@ -53,6 +53,7 @@ import { CursorProvider } from "@/components/Cursor/cursor-provider";
 
 import React, { useState, useEffect } from 'react';
 import Preloader from '../components/Preloader/Preloader';
+import Preloader2 from "@/components/Preloader2/Preloader2";
 
 
 
@@ -71,6 +72,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <> 
+    <Preloader2/>
         <Preloader />
         <main className="font-mont bg-dark bg-#000 w-full min-h-screen" >
           <SmoothScroll>

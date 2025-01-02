@@ -1,4 +1,4 @@
-.preloaderContainer {
+.preloader2Container {
   /* position: fixed;
   top: 0;
   left: 0; */
@@ -10,11 +10,11 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  z-index: 50;
+  z-index: 100;
   padding: 1%;
 }
 
-.preloaderSvg {
+.preloader2Svg {
   width: 100vw;
   height: auto;
   /* max-height: 80vh;
@@ -22,10 +22,11 @@
   aspect-ratio: 4/3;
 }
 
-.preloaderPath {
+.preloader2Path {
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
-  animation: drawPath 3s ease-in-out forwards;
+  /* animation: drawPath 4s ease-in-out forwards; */
+  animation: drawPath 4s cubic-bezier(0.4, 0, 0.2, 1) 1 forwards;
 }
 
 @keyframes drawPath {
@@ -40,13 +41,13 @@
 
 /* Responsive adjustments */
 @media (max-width: 640px) {
-  .preloaderSvg {
+  .preloader2Svg {
     aspect-ratio: 3/4;
   }
 }
 
 @media (min-width: 1024px) {
-  .preloaderSvg {
+  .preloader2Svg {
     max-width: 100vw;
   }
 }
