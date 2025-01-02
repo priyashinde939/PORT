@@ -2,7 +2,7 @@
 import { useRef } from 'react';
 import { useScroll, useTransform, motion, MotionValue, useInView } from 'framer-motion';
 import SectionOne from './SectionOne';
-import useCursor from '../Cursor/cursor-provider'; 
+// import useCursor from '../Cursor/cursor-provider'; 
 import { TextEffectClr } from '../TextEffects/TextEffectClr';
 // import clsx from "clsx";
 // import s from "./SectionTransition.module.scss"; 
@@ -44,13 +44,6 @@ const Section1: React.FC<SectionProps> = ({ scrollYProgress }) => {
             transition={{ type: "spring", stiffness: 40, damping: 100 }}
             style={{ scale, rotate, opacity }}
             className= "sticky top-10 h-[90vh] bg-[#050404cb] bg-blend-multiply backdrop-blur-sm rounded-3xl mx-6 border border-[#ff7d37]">
-
-             {/* Add starry background */}
-             {/* <div className={s.stars}></div>
-            <div className={s.stars2}></div>
-            <div className={s.stars3}></div> */}
-
-            {/* SectionOne content */}
             <SectionOne />
         </motion.div>
     );
@@ -63,7 +56,7 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
 
     const sectionRef = useRef(null);
     const isInView = useInView(sectionRef, { once: true });
-    const { setCursor, resetCursor } = useCursor(); 
+    // const { setCursor, resetCursor } = useCursor(); 
     
     return (
         <motion.div
@@ -71,10 +64,10 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
             transition={{ type: "spring", stiffness: 50, damping: 10 }}
             style={{ scale, rotate }}
             className="relative h-[120vh] bg-[#000000] rounded-3xl"
-            onMouseEnter={() => {
-                setCursor({ variant: "blurred", content: "", color: "#e82626" }); // Set blurred cursor
-            }}
-            onMouseLeave={resetCursor} 
+            // onMouseEnter={() => {
+            //     setCursor({ variant: "blurred", content: "", color: "#e82626" }); // Set blurred cursor
+            // }}
+            // onMouseLeave={resetCursor} 
         >
             
             <div
